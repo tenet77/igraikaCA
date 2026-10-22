@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Document uuid="8ff65da5-cd8a-4057-96a4-81ebf4965f64">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.УстановкаЦенНоменклатуры" category="Object">
+				<xr:TypeId>168cd046-b5f8-44b7-b561-a7c45962d6ae</xr:TypeId>
+				<xr:ValueId>653169de-a653-4ddd-aeee-9feb4a924ad2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.УстановкаЦенНоменклатуры" category="Ref">
+				<xr:TypeId>67f782c9-440e-47dc-995b-36cb9de782b2</xr:TypeId>
+				<xr:ValueId>a150face-525e-4d42-a1bd-eb2f96af851e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.УстановкаЦенНоменклатуры" category="Selection">
+				<xr:TypeId>2c99581a-7d47-426f-906e-d5025911caa1</xr:TypeId>
+				<xr:ValueId>9ce0cb32-065e-4604-81f3-737d7cb27ab1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.УстановкаЦенНоменклатуры" category="List">
+				<xr:TypeId>f9695610-246e-43e2-9371-0deaedf88be7</xr:TypeId>
+				<xr:ValueId>9e82f170-24f2-4e79-97b5-55bbbadb6525</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.УстановкаЦенНоменклатуры" category="Manager">
+				<xr:TypeId>b0c52b68-4532-468c-8fb8-40f930b35e0d</xr:TypeId>
+				<xr:ValueId>30b8e72a-a807-47e8-815d-2759a04f7389</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>УстановкаЦенНоменклатуры</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>d69e99a6-b6b4-4e1c-95d1-d7997206773c</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаДокумента</Form>
+			<Form>игр_ЗагрузкаЦен</Form>
+			<Form>ФормаНастройкиПечатнойФормыУстановкиЦенНоменклатуры</Form>
+			<TabularSection uuid="92db7a3e-e43b-413d-98b9-e32776dac355">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.УстановкаЦенНоменклатуры.Товары" category="TabularSection">
+						<xr:TypeId>c81d296d-94d3-43a3-9541-94b54f749c9c</xr:TypeId>
+						<xr:ValueId>931b9ae5-f555-42a4-8266-6c3e15c535c0</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.УстановкаЦенНоменклатуры.Товары" category="TabularSectionRow">
+						<xr:TypeId>2be4b624-4ee9-4de0-a8be-9ddd1ff6aedd</xr:TypeId>
+						<xr:ValueId>d2ae32d3-06a1-444f-b81d-6909d97876f1</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Товары</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>fa358103-b0d9-4936-b18c-99a353b041d9</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="64eb0826-e1a1-4416-9ea5-17257b09ac85">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Номенклатура</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>9d03fe16-0be3-43c0-946b-4e518d310a23</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="34f94978-411a-4129-a0d5-ea4704f14c59">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ВидЦены</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>2beacb5e-cd3f-441c-9b57-c6700bc34ecf</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ВидыЦен</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<Template>ПФ_MXL_УстановкаЦенНоменклатурыОстаток</Template>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

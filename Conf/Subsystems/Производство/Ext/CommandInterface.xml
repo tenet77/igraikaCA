@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<CommandsVisibility>
+		<Command name="CommonCommand.ДополнительныеОтчетыПроизводство">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:05dbcefc-7517-45a5-8bb1-eed152295647">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПанельСправочниковПроизводство.Command.РазделСправочниковПроизводство">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="DataProcessor.ПанельСправочниковПроизводство.Command.РазделСправочниковПроизводство">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="0:78ed7f7a-cb17-4be2-b07a-eba1d68fc9d1">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОбработкиПроизводство">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ПанельОтчетовПроизводство">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПанельСправочниковПроизводство.Command.РазделСправочниковПроизводство">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ФункциональнаяМодельПроизводство">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.СостояниеОбеспечения.Command.СостояниеОбеспеченияЗаказов">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.Производство.Subsystem.НастройкиИСправочники</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.НСИ</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.МежцеховоеУправление2_2</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.МежцеховоеУправление2_1</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.МежцеховоеУправление2_1_СЗаголовком</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.МежцеховоеУправление2_2_СЗаголовком</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.ВнутрицеховоеУправление2_1</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.ВнутрицеховоеУправление2_2</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.ВнутрицеховоеУправление2_1_СЗаголовком</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.ВнутрицеховоеУправление2_2_СЗаголовком</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.МатериальныйУчет2_1</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.ВнутрицеховойУчет</Subsystem>
+		<Subsystem>10abe0db-38cf-498d-ad73-0dbed9e113b1</Subsystem>
+		<Subsystem>8ef42a6e-c3d6-48af-b112-f99fa8be82b0</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.ПередачаВПереработку</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.Трудозатраты</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.ПроизводственныеЗатраты2_1</Subsystem>
+		<Subsystem>9f78eee2-0570-4125-88c9-f2ce2bbe03eb</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.АнализСебестоимости2_1</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.КонтрольЗатратНЗП</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.Ремонты</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.АнализСебестоимости2_1_СЗаголовком</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.АнализСебестоимости2_2</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.АнализСебестоимости2_2_СЗаголовком</Subsystem>
+		<Subsystem>28c7eb01-9183-4feb-ae4e-adc46a504dcb</Subsystem>
+		<Subsystem>816b548a-4710-4dd3-9237-6ed829f626fe</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>ActionsPanelTools</Group>
+		<Group>ActionsPanelCreate</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>NavigationPanelImportant</Group>
+	</GroupsOrder>
+</CommandInterface>

@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗаполнитьДерево" id="17">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаполнитьДерево</CommandName>
+				<BackColor>web:White</BackColor>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сохранить настройки</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаЗаполнитьДеревоРасширеннаяПодсказка" id="18"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="КаталогСохранения" id="38">
+			<DataPath>КаталогСохранения</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="КаталогСохраненияКонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="КаталогСохраненияРасширеннаяПодсказка" id="40"/>
+			<Events>
+				<Event name="StartChoice">КаталогСохраненияНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<Table name="НастройкиДляСохранения" id="19">
+			<Representation>Tree</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>НастройкиДляСохранения</DataPath>
+			<ContextMenu name="НастройкиДляСохраненияКонтекстноеМеню" id="20"/>
+			<AutoCommandBar name="НастройкиДляСохраненияКоманднаяПанель" id="21">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="НастройкиДляСохраненияУстановитьВсеФлажки" id="46">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.НастройкиДляСохраненияУстановитьВсеФлажки</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>установить все</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="НастройкиДляСохраненияУстановитьВсеФлажкиРасширеннаяПодсказка" id="47"/>
+					</Button>
+					<Button name="НастройкиДляСохраненияСнятьВсеФлажки" id="48">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.НастройкиДляСохраненияСнятьВсеФлажки</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>снять все</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="НастройкиДляСохраненияСнятьВсеФлажкиРасширеннаяПодсказка" id="49"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="НастройкиДляСохраненияРасширеннаяПодсказка" id="22"/>
+			<SearchStringAddition name="НастройкиДляСохраненияСтрокаПоиска" id="23">
+				<AdditionSource>
+					<Item>НастройкиДляСохранения</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="НастройкиДляСохраненияСтрокаПоискаКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="НастройкиДляСохраненияСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="НастройкиДляСохраненияСостояниеПросмотра" id="26">
+				<AdditionSource>
+					<Item>НастройкиДляСохранения</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="НастройкиДляСохраненияСостояниеПросмотраКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="НастройкиДляСохраненияСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="НастройкиДляСохраненияУправлениеПоиском" id="29">
+				<AdditionSource>
+					<Item>НастройкиДляСохранения</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="НастройкиДляСохраненияУправлениеПоискомКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="НастройкиДляСохраненияУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">НастройкиДляСохраненияПередНачаломДобавления</Event>
+				<Event name="OnChange">НастройкиДляСохраненияПриИзменении</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="НастройкиДляСохраненияИмя" id="32">
+					<DataPath>НастройкиДляСохранения.Имя</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НастройкиДляСохраненияИмяКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="НастройкиДляСохраненияИмяРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<CheckBoxField name="НастройкиДляСохраненияСохранить" id="35">
+					<DataPath>НастройкиДляСохранения.Сохранить</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НастройкиДляСохраненияСохранитьКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="НастройкиДляСохраненияСохранитьРасширеннаяПодсказка" id="37"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+		<CheckBoxField name="СохранятьПоОтдельности" id="43">
+			<DataPath>СохранятьПоОтдельности</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отдельными файлами</v8:content>
+				</v8:item>
+			</Title>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="СохранятьПоОтдельностиКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="СохранятьПоОтдельностиРасширеннаяПодсказка" id="45"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЭКОМ_Интеграция_EDI_ЮЗД</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="НастройкиДляСохранения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки для сохранения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сохранить" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сохранить</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="КаталогСохранения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог сохранения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СохранятьПоОтдельности" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранять настройки в отдельных файлах</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗакрытьПоУмолчанию" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипОперации" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип операции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьДерево" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить дерево</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить дерево</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьДерево</Action>
+		</Command>
+		<Command name="НастройкиДляСохраненияСнятьВсеФлажки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки для сохранения снять все флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки для сохранения снять все флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЭКОМ_СнятьВсе</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НастройкиДляСохраненияСнятьВсеФлажки</Action>
+		</Command>
+		<Command name="НастройкиДляСохраненияУстановитьВсеФлажки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки для сохранения снять все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки для сохранения снять все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЭКОМ_ОтметитьВсе</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НастройкиДляСохраненияУстановитьВсеФлажки</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="ORDERDATE" id="1">
+			<DataPath>Запись.ORDERDATE</DataPath>
+			<ContextMenu name="ORDERDATEКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ORDERDATEРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Организация" id="4">
+			<DataPath>Запись.Организация</DataPath>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Контрагент" id="7">
+			<DataPath>Запись.Контрагент</DataPath>
+			<ContextMenu name="КонтрагентКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ТочкаДоставки" id="10">
+			<DataPath>Запись.ТочкаДоставки</DataPath>
+			<ContextMenu name="ТочкаДоставкиКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ТочкаДоставкиРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ORDERNUMBER" id="13">
+			<DataPath>Запись.ORDERNUMBER</DataPath>
+			<ContextMenu name="ORDERNUMBERКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ORDERNUMBERРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Заказ" id="16">
+			<DataPath>Запись.Заказ</DataPath>
+			<ContextMenu name="ЗаказКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ЗаказРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ORDRSP" id="19">
+			<DataPath>Запись.ORDRSP</DataPath>
+			<ContextMenu name="ORDRSPКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ORDRSPРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="DESADV" id="22">
+			<DataPath>Запись.DESADV</DataPath>
+			<ContextMenu name="DESADVКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="DESADVРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="ЮЗД" id="25">
+			<DataPath>Запись.ЮЗД</DataPath>
+			<ContextMenu name="ЮЗДКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ЮЗДРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="ЮЗД_Основание" id="28">
+			<DataPath>Запись.ЮЗД_Основание</DataPath>
+			<ContextMenu name="ЮЗД_ОснованиеКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ЮЗД_ОснованиеРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="Накладная" id="31">
+			<DataPath>Запись.Накладная</DataPath>
+			<ContextMenu name="НакладнаяКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="НакладнаяРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="СЧФ" id="34">
+			<DataPath>Запись.СЧФ</DataPath>
+			<ContextMenu name="СЧФКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="СЧФРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="INVOICE" id="37">
+			<DataPath>Запись.INVOICE</DataPath>
+			<ContextMenu name="INVOICEКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="INVOICEРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="ВозвратнаяНакладная" id="40">
+			<DataPath>Запись.ВозвратнаяНакладная</DataPath>
+			<ContextMenu name="ВозвратнаяНакладнаяКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ВозвратнаяНакладнаяРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="RETINS" id="43">
+			<DataPath>Запись.RETINS</DataPath>
+			<ContextMenu name="RETINSКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="RETINSРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<InputField name="xmlКонтрагент" id="46">
+			<DataPath>Запись.xmlКонтрагент</DataPath>
+			<ContextMenu name="xmlКонтрагентКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="xmlКонтрагентРасширеннаяПодсказка" id="48"/>
+		</InputField>
+		<InputField name="xmlОрганизация" id="49">
+			<DataPath>Запись.xmlОрганизация</DataPath>
+			<ContextMenu name="xmlОрганизацияКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="xmlОрганизацияРасширеннаяПодсказка" id="51"/>
+		</InputField>
+		<InputField name="xmlТочкаДоставки" id="52">
+			<DataPath>Запись.xmlТочкаДоставки</DataPath>
+			<ContextMenu name="xmlТочкаДоставкиКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="xmlТочкаДоставкиРасширеннаяПодсказка" id="54"/>
+		</InputField>
+		<InputField name="ДатаЗаписи" id="55">
+			<DataPath>Запись.ДатаЗаписи</DataPath>
+			<ContextMenu name="ДатаЗаписиКонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="ДатаЗаписиРасширеннаяПодсказка" id="57"/>
+		</InputField>
+		<InputField name="ДатаПоставки" id="58">
+			<DataPath>Запись.ДатаПоставки</DataPath>
+			<ContextMenu name="ДатаПоставкиКонтекстноеМеню" id="59"/>
+			<ExtendedTooltip name="ДатаПоставкиРасширеннаяПодсказка" id="60"/>
+		</InputField>
+		<InputField name="ИдентификаторСчФ" id="61">
+			<DataPath>Запись.ИдентификаторСчФ</DataPath>
+			<ContextMenu name="ИдентификаторСчФКонтекстноеМеню" id="62"/>
+			<ExtendedTooltip name="ИдентификаторСчФРасширеннаяПодсказка" id="63"/>
+		</InputField>
+		<InputField name="ИдентификаторСчФ_Основание" id="64">
+			<DataPath>Запись.ИдентификаторСчФ_Основание</DataPath>
+			<ContextMenu name="ИдентификаторСчФ_ОснованиеКонтекстноеМеню" id="65"/>
+			<ExtendedTooltip name="ИдентификаторСчФ_ОснованиеРасширеннаяПодсказка" id="66"/>
+		</InputField>
+		<InputField name="КоличествоDESADV" id="67">
+			<DataPath>Запись.КоличествоDESADV</DataPath>
+			<ContextMenu name="КоличествоDESADVКонтекстноеМеню" id="68"/>
+			<ExtendedTooltip name="КоличествоDESADVРасширеннаяПодсказка" id="69"/>
+		</InputField>
+		<InputField name="КоличествоORDRSP" id="70">
+			<DataPath>Запись.КоличествоORDRSP</DataPath>
+			<ContextMenu name="КоличествоORDRSPКонтекстноеМеню" id="71"/>
+			<ExtendedTooltip name="КоличествоORDRSPРасширеннаяПодсказка" id="72"/>
+		</InputField>
+		<InputField name="КоличествоRETINS" id="73">
+			<DataPath>Запись.КоличествоRETINS</DataPath>
+			<ContextMenu name="КоличествоRETINSКонтекстноеМеню" id="74"/>
+			<ExtendedTooltip name="КоличествоRETINSРасширеннаяПодсказка" id="75"/>
+		</InputField>
+		<InputField name="КоличествоВозврат" id="76">
+			<DataPath>Запись.КоличествоВозврат</DataPath>
+			<ContextMenu name="КоличествоВозвратКонтекстноеМеню" id="77"/>
+			<ExtendedTooltip name="КоличествоВозвратРасширеннаяПодсказка" id="78"/>
+		</InputField>
+		<InputField name="КоличествоЗаказ" id="79">
+			<DataPath>Запись.КоличествоЗаказ</DataPath>
+			<ContextMenu name="КоличествоЗаказКонтекстноеМеню" id="80"/>
+			<ExtendedTooltip name="КоличествоЗаказРасширеннаяПодсказка" id="81"/>
+		</InputField>
+		<InputField name="КоличествоКвитанций" id="82">
+			<DataPath>Запись.КоличествоКвитанций</DataPath>
+			<ContextMenu name="КоличествоКвитанцийКонтекстноеМеню" id="83"/>
+			<ExtendedTooltip name="КоличествоКвитанцийРасширеннаяПодсказка" id="84"/>
+		</InputField>
+		<InputField name="КоличествоНакладная" id="85">
+			<DataPath>Запись.КоличествоНакладная</DataPath>
+			<ContextMenu name="КоличествоНакладнаяКонтекстноеМеню" id="86"/>
+			<ExtendedTooltip name="КоличествоНакладнаяРасширеннаяПодсказка" id="87"/>
+		</InputField>
+		<InputField name="НомерИсправления" id="88">
+			<DataPath>Запись.НомерИсправления</DataPath>
+			<ContextMenu name="НомерИсправленияКонтекстноеМеню" id="89"/>
+			<ExtendedTooltip name="НомерИсправленияРасширеннаяПодсказка" id="90"/>
+		</InputField>
+		<InputField name="Статус_DESADV" id="91">
+			<DataPath>Запись.Статус_DESADV</DataPath>
+			<ContextMenu name="Статус_DESADVКонтекстноеМеню" id="92"/>
+			<ExtendedTooltip name="Статус_DESADVРасширеннаяПодсказка" id="93"/>
+		</InputField>
+		<InputField name="Статус_DESSCC" id="94">
+			<DataPath>Запись.Статус_DESSCC</DataPath>
+			<ContextMenu name="Статус_DESSCCКонтекстноеМеню" id="95"/>
+			<ExtendedTooltip name="Статус_DESSCCРасширеннаяПодсказка" id="96"/>
+		</InputField>
+		<CheckBoxField name="Статус_DP_IZVPOL_05" id="97">
+			<DataPath>Запись.Статус_DP_IZVPOL_05</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_DP_IZVPOL_05КонтекстноеМеню" id="98"/>
+			<ExtendedTooltip name="Статус_DP_IZVPOL_05РасширеннаяПодсказка" id="99"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_DP_IZVPOL_06" id="100">
+			<DataPath>Запись.Статус_DP_IZVPOL_06</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_DP_IZVPOL_06КонтекстноеМеню" id="101"/>
+			<ExtendedTooltip name="Статус_DP_IZVPOL_06РасширеннаяПодсказка" id="102"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_DP_IZVPOL_08" id="103">
+			<DataPath>Запись.Статус_DP_IZVPOL_08</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_DP_IZVPOL_08КонтекстноеМеню" id="104"/>
+			<ExtendedTooltip name="Статус_DP_IZVPOL_08РасширеннаяПодсказка" id="105"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_DP_IZVPOL_10" id="106">
+			<DataPath>Запись.Статус_DP_IZVPOL_10</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_DP_IZVPOL_10КонтекстноеМеню" id="107"/>
+			<ExtendedTooltip name="Статус_DP_IZVPOL_10РасширеннаяПодсказка" id="108"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_DP_IZVPOL_23" id="109">
+			<DataPath>Запись.Статус_DP_IZVPOL_23</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_DP_IZVPOL_23КонтекстноеМеню" id="110"/>
+			<ExtendedTooltip name="Статус_DP_IZVPOL_23РасширеннаяПодсказка" id="111"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_DP_PDOTPR_03" id="112">
+			<DataPath>Запись.Статус_DP_PDOTPR_03</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_DP_PDOTPR_03КонтекстноеМеню" id="113"/>
+			<ExtendedTooltip name="Статус_DP_PDOTPR_03РасширеннаяПодсказка" id="114"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_DP_PDOTPR_07" id="115">
+			<DataPath>Запись.Статус_DP_PDOTPR_07</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_DP_PDOTPR_07КонтекстноеМеню" id="116"/>
+			<ExtendedTooltip name="Статус_DP_PDOTPR_07РасширеннаяПодсказка" id="117"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_DP_UVUTOCH_09" id="118">
+			<DataPath>Запись.Статус_DP_UVUTOCH_09</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_DP_UVUTOCH_09КонтекстноеМеню" id="119"/>
+			<ExtendedTooltip name="Статус_DP_UVUTOCH_09РасширеннаяПодсказка" id="120"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_DP_UVUTOCH_24" id="121">
+			<DataPath>Запись.Статус_DP_UVUTOCH_24</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_DP_UVUTOCH_24КонтекстноеМеню" id="122"/>
+			<ExtendedTooltip name="Статус_DP_UVUTOCH_24РасширеннаяПодсказка" id="123"/>
+		</CheckBoxField>
+		<InputField name="Статус_INVOICE" id="124">
+			<DataPath>Запись.Статус_INVOICE</DataPath>
+			<ContextMenu name="Статус_INVOICEКонтекстноеМеню" id="125"/>
+			<ExtendedTooltip name="Статус_INVOICEРасширеннаяПодсказка" id="126"/>
+		</InputField>
+		<InputField name="Статус_ORDER" id="127">
+			<DataPath>Запись.Статус_ORDER</DataPath>
+			<ContextMenu name="Статус_ORDERКонтекстноеМеню" id="128"/>
+			<ExtendedTooltip name="Статус_ORDERРасширеннаяПодсказка" id="129"/>
+		</InputField>
+		<InputField name="Статус_ORDRSP" id="130">
+			<DataPath>Запись.Статус_ORDRSP</DataPath>
+			<ContextMenu name="Статус_ORDRSPКонтекстноеМеню" id="131"/>
+			<ExtendedTooltip name="Статус_ORDRSPРасширеннаяПодсказка" id="132"/>
+		</InputField>
+		<InputField name="Статус_RECADV" id="133">
+			<DataPath>Запись.Статус_RECADV</DataPath>
+			<ContextMenu name="Статус_RECADVКонтекстноеМеню" id="134"/>
+			<ExtendedTooltip name="Статус_RECADVРасширеннаяПодсказка" id="135"/>
+		</InputField>
+		<InputField name="Статус_RETANN" id="136">
+			<DataPath>Запись.Статус_RETANN</DataPath>
+			<ContextMenu name="Статус_RETANNКонтекстноеМеню" id="137"/>
+			<ExtendedTooltip name="Статус_RETANNРасширеннаяПодсказка" id="138"/>
+		</InputField>
+		<InputField name="Статус_RETINS" id="139">
+			<DataPath>Запись.Статус_RETINS</DataPath>
+			<ContextMenu name="Статус_RETINSКонтекстноеМеню" id="140"/>
+			<ExtendedTooltip name="Статус_RETINSРасширеннаяПодсказка" id="141"/>
+		</InputField>
+		<InputField name="Статус_STATUS" id="142">
+			<DataPath>Запись.Статус_STATUS</DataPath>
+			<ContextMenu name="Статус_STATUSКонтекстноеМеню" id="143"/>
+			<ExtendedTooltip name="Статус_STATUSРасширеннаяПодсказка" id="144"/>
+		</InputField>
+		<CheckBoxField name="Статус_Палеты" id="145">
+			<DataPath>Запись.Статус_Палеты</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_ПалетыКонтекстноеМеню" id="146"/>
+			<ExtendedTooltip name="Статус_ПалетыРасширеннаяПодсказка" id="147"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_Подпись_11" id="148">
+			<DataPath>Запись.Статус_Подпись_11</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_Подпись_11КонтекстноеМеню" id="149"/>
+			<ExtendedTooltip name="Статус_Подпись_11РасширеннаяПодсказка" id="150"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_Транспорт" id="151">
+			<DataPath>Запись.Статус_Транспорт</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_ТранспортКонтекстноеМеню" id="152"/>
+			<ExtendedTooltip name="Статус_ТранспортРасширеннаяПодсказка" id="153"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_ЮЗД_01" id="154">
+			<DataPath>Запись.Статус_ЮЗД_01</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_ЮЗД_01КонтекстноеМеню" id="155"/>
+			<ExtendedTooltip name="Статус_ЮЗД_01РасширеннаяПодсказка" id="156"/>
+		</CheckBoxField>
+		<InputField name="СтатусНаправление_DP_PRANNUL_22" id="157">
+			<DataPath>Запись.СтатусНаправление_DP_PRANNUL_22</DataPath>
+			<ContextMenu name="СтатусНаправление_DP_PRANNUL_22КонтекстноеМеню" id="158"/>
+			<ExtendedTooltip name="СтатусНаправление_DP_PRANNUL_22РасширеннаяПодсказка" id="159"/>
+		</InputField>
+		<InputField name="СтатусЮЗД" id="160">
+			<DataPath>Запись.СтатусЮЗД</DataPath>
+			<ContextMenu name="СтатусЮЗДКонтекстноеМеню" id="161"/>
+			<ExtendedTooltip name="СтатусЮЗДРасширеннаяПодсказка" id="162"/>
+		</InputField>
+		<InputField name="СуммаDESADV" id="163">
+			<DataPath>Запись.СуммаDESADV</DataPath>
+			<ContextMenu name="СуммаDESADVКонтекстноеМеню" id="164"/>
+			<ExtendedTooltip name="СуммаDESADVРасширеннаяПодсказка" id="165"/>
+		</InputField>
+		<InputField name="СуммаORDRSP" id="166">
+			<DataPath>Запись.СуммаORDRSP</DataPath>
+			<ContextMenu name="СуммаORDRSPКонтекстноеМеню" id="167"/>
+			<ExtendedTooltip name="СуммаORDRSPРасширеннаяПодсказка" id="168"/>
+		</InputField>
+		<InputField name="СуммаRETINS" id="169">
+			<DataPath>Запись.СуммаRETINS</DataPath>
+			<ContextMenu name="СуммаRETINSКонтекстноеМеню" id="170"/>
+			<ExtendedTooltip name="СуммаRETINSРасширеннаяПодсказка" id="171"/>
+		</InputField>
+		<InputField name="СуммаВозврат" id="172">
+			<DataPath>Запись.СуммаВозврат</DataPath>
+			<ContextMenu name="СуммаВозвратКонтекстноеМеню" id="173"/>
+			<ExtendedTooltip name="СуммаВозвратРасширеннаяПодсказка" id="174"/>
+		</InputField>
+		<InputField name="СуммаЗаказ" id="175">
+			<DataPath>Запись.СуммаЗаказ</DataPath>
+			<ContextMenu name="СуммаЗаказКонтекстноеМеню" id="176"/>
+			<ExtendedTooltip name="СуммаЗаказРасширеннаяПодсказка" id="177"/>
+		</InputField>
+		<InputField name="СуммаНакладная" id="178">
+			<DataPath>Запись.СуммаНакладная</DataPath>
+			<ContextMenu name="СуммаНакладнаяКонтекстноеМеню" id="179"/>
+			<ExtendedTooltip name="СуммаНакладнаяРасширеннаяПодсказка" id="180"/>
+		</InputField>
+		<InputField name="СуммаНДСНакладная" id="181">
+			<DataPath>Запись.СуммаНДСНакладная</DataPath>
+			<ContextMenu name="СуммаНДСНакладнаяКонтекстноеМеню" id="182"/>
+			<ExtendedTooltip name="СуммаНДСНакладнаяРасширеннаяПодсказка" id="183"/>
+		</InputField>
+		<InputField name="СуммаСЧФ" id="184">
+			<DataPath>Запись.СуммаСЧФ</DataPath>
+			<ContextMenu name="СуммаСЧФКонтекстноеМеню" id="185"/>
+			<ExtendedTooltip name="СуммаСЧФРасширеннаяПодсказка" id="186"/>
+		</InputField>
+		<InputField name="ТекстОтклоненияАннулирования" id="187">
+			<DataPath>Запись.ТекстОтклоненияАннулирования</DataPath>
+			<ContextMenu name="ТекстОтклоненияАннулированияКонтекстноеМеню" id="188"/>
+			<ExtendedTooltip name="ТекстОтклоненияАннулированияРасширеннаяПодсказка" id="189"/>
+		</InputField>
+		<InputField name="ТекстОшибки" id="190">
+			<DataPath>Запись.ТекстОшибки</DataPath>
+			<ContextMenu name="ТекстОшибкиКонтекстноеМеню" id="191"/>
+			<ExtendedTooltip name="ТекстОшибкиРасширеннаяПодсказка" id="192"/>
+		</InputField>
+		<InputField name="ТекстПричиныАннулирования" id="193">
+			<DataPath>Запись.ТекстПричиныАннулирования</DataPath>
+			<ContextMenu name="ТекстПричиныАннулированияКонтекстноеМеню" id="194"/>
+			<ExtendedTooltip name="ТекстПричиныАннулированияРасширеннаяПодсказка" id="195"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ЭКОМ_ЦепочкиДокументовПокупателя</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

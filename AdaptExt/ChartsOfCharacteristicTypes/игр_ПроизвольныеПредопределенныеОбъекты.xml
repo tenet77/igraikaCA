@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<ChartOfCharacteristicTypes uuid="3248a8ea-b6e2-4c49-a1ac-ab4e02aac852">
+		<InternalInfo>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesObject.игр_ПроизвольныеПредопределенныеОбъекты" category="Object">
+				<xr:TypeId>59fd90a3-9e78-4b1e-ad08-90cfcf7e0459</xr:TypeId>
+				<xr:ValueId>a77dc976-2cb9-4572-afd4-9caeb1ef0c3c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesRef.игр_ПроизвольныеПредопределенныеОбъекты" category="Ref">
+				<xr:TypeId>2720a708-dac2-4cd0-a6ab-aae81d84276d</xr:TypeId>
+				<xr:ValueId>7d3a765e-00b2-44e8-b0f6-cb06a12f2af1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesSelection.игр_ПроизвольныеПредопределенныеОбъекты" category="Selection">
+				<xr:TypeId>8b6f802b-29be-4159-81d0-8b8d1db02996</xr:TypeId>
+				<xr:ValueId>4e9e2f07-9dba-4134-b5f1-d3b92840bfcc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesList.игр_ПроизвольныеПредопределенныеОбъекты" category="List">
+				<xr:TypeId>51ef4be5-020b-4740-9c52-8dc07e3bc4ef</xr:TypeId>
+				<xr:ValueId>b686198e-1a48-4bdb-b286-085f2af1e209</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="Characteristic.игр_ПроизвольныеПредопределенныеОбъекты" category="Characteristic">
+				<xr:TypeId>740e83fd-89fc-4b56-b0f8-2b8114dfd2a2</xr:TypeId>
+				<xr:ValueId>c5a7bd2e-3bc1-4add-b684-88b02fdfce29</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesManager.игр_ПроизвольныеПредопределенныеОбъекты" category="Manager">
+				<xr:TypeId>1830bdd8-ec2e-478f-8e19-9080f7e30c3d</xr:TypeId>
+				<xr:ValueId>528ce907-001a-4a89-99be-cb760d05df55</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>игр_ПроизвольныеПредопределенныеОбъекты</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>1fa24643-f8b8-49fa-b3b1-b3d07acada58</ExtendedConfigurationObject>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтатьиДвиженияДенежныхСредств</v8:Type>
+			</Type>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="1b74822f-df1d-4028-95a9-0b9a0147d814">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Значение</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>08f84448-71c4-4ae4-b1c3-170e25a58f96</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.игр_ПроизвольныеПредопределенныеОбъекты</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="e6233e4c-0fc3-486b-975c-4d852a204bbd">
+				<InternalInfo>
+					<xr:GeneratedType name="ChartOfCharacteristicTypesTabularSection.игр_ПроизвольныеПредопределенныеОбъекты.КлючЗначение" category="TabularSection">
+						<xr:TypeId>7d56233a-1a31-4070-9cab-93949d2090e9</xr:TypeId>
+						<xr:ValueId>ae39f2d4-0800-4113-9816-2de0f6797200</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="ChartOfCharacteristicTypesTabularSectionRow.игр_ПроизвольныеПредопределенныеОбъекты.КлючЗначение" category="TabularSectionRow">
+						<xr:TypeId>54a0a6fb-8ef7-4692-af06-d88a3b5f4323</xr:TypeId>
+						<xr:ValueId>c560524c-cc7b-4c5c-b1e6-14702e67e192</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>КлючЗначение</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ed42fc05-3a14-496c-8af8-487e01abb2fd</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="aa70b846-4883-484a-a41b-a89875cf6cef">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Ключ</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>ece1ab44-894e-4c2a-b353-00e753f44383</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>25</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="63577b78-56b0-4d1d-b749-6fa673d39c14">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Значение</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>5c193e6f-dc62-4f89-ad81-25d94864188e</ExtendedConfigurationObject>
+							<Type>
+								<v8:TypeSet>cfg:Characteristic.игр_ПроизвольныеПредопределенныеОбъекты</v8:TypeSet>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</ChartOfCharacteristicTypes>
+</MetaDataObject>

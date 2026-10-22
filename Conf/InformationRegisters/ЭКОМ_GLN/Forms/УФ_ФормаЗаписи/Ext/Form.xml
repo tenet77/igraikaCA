@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="Объект" id="1">
+			<DataPath>Запись.Объект</DataPath>
+			<ContextMenu name="ОбъектКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ОбъектРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="GLN" id="4">
+			<DataPath>Запись.GLN</DataPath>
+			<ContextMenu name="GLNКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="GLNРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="EDIINTERCHANGEID" id="7">
+			<DataPath>Запись.EDIINTERCHANGEID</DataPath>
+			<ContextMenu name="EDIINTERCHANGEIDКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="EDIINTERCHANGEIDРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Ид_ОЭД" id="10">
+			<DataPath>Запись.Ид_ОЭД</DataPath>
+			<ContextMenu name="Ид_ОЭДКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="Ид_ОЭДРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="eXiteАдр_Город" id="13">
+			<DataPath>Запись.eXiteАдр_Город</DataPath>
+			<ContextMenu name="eXiteАдр_ГородКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="eXiteАдр_ГородРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="eXiteАдр_Дом" id="16">
+			<DataPath>Запись.eXiteАдр_Дом</DataPath>
+			<ContextMenu name="eXiteАдр_ДомКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="eXiteАдр_ДомРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="eXiteАдр_Индекс" id="19">
+			<DataPath>Запись.eXiteАдр_Индекс</DataPath>
+			<ContextMenu name="eXiteАдр_ИндексКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="eXiteАдр_ИндексРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="eXiteАдр_КодРегиона" id="22">
+			<DataPath>Запись.eXiteАдр_КодРегиона</DataPath>
+			<ContextMenu name="eXiteАдр_КодРегионаКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="eXiteАдр_КодРегионаРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="eXiteАдр_Улица" id="25">
+			<DataPath>Запись.eXiteАдр_Улица</DataPath>
+			<ContextMenu name="eXiteАдр_УлицаКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="eXiteАдр_УлицаРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="eXiteАдр_Район" id="28">
+			<DataPath>Запись.eXiteАдр_Район</DataPath>
+			<ContextMenu name="eXiteАдр_РайонКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="eXiteАдр_РайонРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="eXiteАдр_НаселПункт" id="31">
+			<DataPath>Запись.eXiteАдр_НаселПункт</DataPath>
+			<ContextMenu name="eXiteАдр_НаселПунктКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="eXiteАдр_НаселПунктРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="eXiteАдр_Корпус" id="34">
+			<DataPath>Запись.eXiteАдр_Корпус</DataPath>
+			<ContextMenu name="eXiteАдр_КорпусКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="eXiteАдр_КорпусРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="eXiteАдр_Кварт" id="37">
+			<DataPath>Запись.eXiteАдр_Кварт</DataPath>
+			<ContextMenu name="eXiteАдр_КвартКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="eXiteАдр_КвартРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="eXiteАдр_ИностранныйАдрес" id="40">
+			<DataPath>Запись.eXiteАдр_ИностранныйАдрес</DataPath>
+			<ContextMenu name="eXiteАдр_ИностранныйАдресКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="eXiteАдр_ИностранныйАдресРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<CheckBoxField name="eXiteАдр_ЯвляетсяИностранным" id="43">
+			<DataPath>Запись.eXiteАдр_ЯвляетсяИностранным</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="eXiteАдр_ЯвляетсяИностраннымКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="eXiteАдр_ЯвляетсяИностраннымРасширеннаяПодсказка" id="45"/>
+		</CheckBoxField>
+		<InputField name="Партнер" id="46">
+			<DataPath>Запись.Партнер</DataPath>
+			<ContextMenu name="ПартнерКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="ПартнерРасширеннаяПодсказка" id="48"/>
+		</InputField>
+		<InputField name="Сертификат" id="49">
+			<DataPath>Запись.Сертификат</DataPath>
+			<ContextMenu name="СертификатКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="СертификатРасширеннаяПодсказка" id="51"/>
+		</InputField>
+		<CheckBoxField name="Контрагент_Обмен" id="52">
+			<DataPath>Запись.Контрагент_Обмен</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Контрагент_ОбменКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="Контрагент_ОбменРасширеннаяПодсказка" id="54"/>
+		</CheckBoxField>
+		<CheckBoxField name="Контрагент_ПодтвЗаказа" id="55">
+			<DataPath>Запись.Контрагент_ПодтвЗаказа</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Контрагент_ПодтвЗаказаКонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="Контрагент_ПодтвЗаказаРасширеннаяПодсказка" id="57"/>
+		</CheckBoxField>
+		<CheckBoxField name="Контрагент_ОтчетОбОтгрузке" id="58">
+			<DataPath>Запись.Контрагент_ОтчетОбОтгрузке</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Контрагент_ОтчетОбОтгрузкеКонтекстноеМеню" id="59"/>
+			<ExtendedTooltip name="Контрагент_ОтчетОбОтгрузкеРасширеннаяПодсказка" id="60"/>
+		</CheckBoxField>
+		<CheckBoxField name="Контрагент_Счет" id="61">
+			<DataPath>Запись.Контрагент_Счет</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Контрагент_СчетКонтекстноеМеню" id="62"/>
+			<ExtendedTooltip name="Контрагент_СчетРасширеннаяПодсказка" id="63"/>
+		</CheckBoxField>
+		<CheckBoxField name="Контрагент_ЮЗД" id="64">
+			<DataPath>Запись.Контрагент_ЮЗД</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Контрагент_ЮЗДКонтекстноеМеню" id="65"/>
+			<ExtendedTooltip name="Контрагент_ЮЗДРасширеннаяПодсказка" id="66"/>
+		</CheckBoxField>
+		<CheckBoxField name="Контрагент_ЭСФБезИнфПоля" id="67">
+			<DataPath>Запись.Контрагент_ЭСФБезИнфПоля</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Контрагент_ЭСФБезИнфПоляКонтекстноеМеню" id="68"/>
+			<ExtendedTooltip name="Контрагент_ЭСФБезИнфПоляРасширеннаяПодсказка" id="69"/>
+		</CheckBoxField>
+		<InputField name="Контрагент_ФорматЭСФ" id="70">
+			<DataPath>Запись.Контрагент_ФорматЭСФ</DataPath>
+			<ContextMenu name="Контрагент_ФорматЭСФКонтекстноеМеню" id="71"/>
+			<ExtendedTooltip name="Контрагент_ФорматЭСФРасширеннаяПодсказка" id="72"/>
+		</InputField>
+		<CheckBoxField name="Контрагент_ЦеныИз1С" id="73">
+			<DataPath>Запись.Контрагент_ЦеныИз1С</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Контрагент_ЦеныИз1СКонтекстноеМеню" id="74"/>
+			<ExtendedTooltip name="Контрагент_ЦеныИз1СРасширеннаяПодсказка" id="75"/>
+		</CheckBoxField>
+		<CheckBoxField name="Контрагент_ЦенаЗаказа_с_НДС" id="76">
+			<DataPath>Запись.Контрагент_ЦенаЗаказа_с_НДС</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Контрагент_ЦенаЗаказа_с_НДСКонтекстноеМеню" id="77"/>
+			<ExtendedTooltip name="Контрагент_ЦенаЗаказа_с_НДСРасширеннаяПодсказка" id="78"/>
+		</CheckBoxField>
+		<CheckBoxField name="Контрагент_ОтправитьНовыйЮЗД" id="79">
+			<DataPath>Запись.Контрагент_ОтправитьНовыйЮЗД</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Контрагент_ОтправитьНовыйЮЗДКонтекстноеМеню" id="80"/>
+			<ExtendedTooltip name="Контрагент_ОтправитьНовыйЮЗДРасширеннаяПодсказка" id="81"/>
+		</CheckBoxField>
+		<InputField name="GLN_суб" id="82">
+			<DataPath>Запись.GLN_суб</DataPath>
+			<ContextMenu name="GLN_субКонтекстноеМеню" id="83"/>
+			<ExtendedTooltip name="GLN_субРасширеннаяПодсказка" id="84"/>
+		</InputField>
+		<InputField name="ПрофильОбмена" id="85">
+			<DataPath>Запись.ПрофильОбмена</DataPath>
+			<ContextMenu name="ПрофильОбменаКонтекстноеМеню" id="86"/>
+			<ExtendedTooltip name="ПрофильОбменаРасширеннаяПодсказка" id="87"/>
+		</InputField>
+		<InputField name="SAPкод" id="88">
+			<DataPath>Запись.SAPкод</DataPath>
+			<ContextMenu name="SAPкодКонтекстноеМеню" id="89"/>
+			<ExtendedTooltip name="SAPкодРасширеннаяПодсказка" id="90"/>
+		</InputField>
+		<InputField name="Комментарий" id="91">
+			<DataPath>Запись.Комментарий</DataPath>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="92"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="93"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ЭКОМ_GLN</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

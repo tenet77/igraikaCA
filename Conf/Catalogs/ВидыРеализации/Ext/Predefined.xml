@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.18">
+	<Item id="0b381275-a209-49a8-819e-f2f1f2af7e75">
+		<Name>ВозвратТМЗ</Name>
+		<Code>000002   </Code>
+		<Description>Возврат ТМЗ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a363f46b-6a3d-45db-b6e4-263c3413f9a9">
+		<Name>ИзменениеУсловийСделки</Name>
+		<Code>000005   </Code>
+		<Description>Изменение условий сделки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e0e813d8-f5d2-4054-841a-a8fb278dcb78">
+		<Name>ИмпортТМЗМетодомЗачета</Name>
+		<Code>000003   </Code>
+		<Description>Импорт товаров, по которым НДС уплачивается методом зачета</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a721aa79-142e-4d7f-b129-2f37cc3ec37a">
+		<Name>КорректировкаРеализацииНаЭкспорт</Name>
+		<Code>000010   </Code>
+		<Description>Корректировка реализации товаров на экспорт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cea46738-cb5b-4883-84b2-162f23fb22f0">
+		<Name>НДСЗаНерезидента</Name>
+		<Code>000007   </Code>
+		<Description>НДС за нерезидента</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="37b238df-6378-4fc8-8b35-a7dc05b17201">
+		<Name>НДСПриИмпортеИзТаможенногоСоюза</Name>
+		<Code>000008   </Code>
+		<Description>НДС при импорте из таможенного союза</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0fbefb02-5c4e-4169-9fff-c159a570092b">
+		<Name>РеализацияТМЗ</Name>
+		<Code>000001   </Code>
+		<Description>Продажа товаров, оказание услуг, выполнение работ на территории РК</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4dcdb924-7fe1-4f33-85d6-93bd828d3264">
+		<Name>ПрочийОблагаемыйИмпорт</Name>
+		<Code>000004   </Code>
+		<Description>Прочий облагаемый импорт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c3cee908-2387-4fb9-9a34-7746efa3ce27">
+		<Name>РеализацияНаЭкспорт</Name>
+		<Code>000009   </Code>
+		<Description>Реализация товаров на экспорт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="85656bfd-bd8f-49f1-bcbd-53720f15acd2">
+		<Name>УслугиПоКомиссионнойТорговле</Name>
+		<Code>000006   </Code>
+		<Description>Услуги по комиссионной торговле</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

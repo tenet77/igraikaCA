@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Report uuid="e4cd3fae-8e02-40d0-962d-384766e48d61">
+		<InternalInfo>
+			<xr:GeneratedType name="ReportObject.РасчетыСКлиентами" category="Object">
+				<xr:TypeId>c2ff6310-d9f9-44e3-83db-f6fef8470de2</xr:TypeId>
+				<xr:ValueId>02319343-43cb-467d-948d-8640fa637920</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ReportManager.РасчетыСКлиентами" category="Manager">
+				<xr:TypeId>37ea6a0e-6f2e-456d-b9de-e8a11eecd955</xr:TypeId>
+				<xr:ValueId>17384e6e-4217-4bf9-9924-c3eef2f2c43f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>РасчетыСКлиентами</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>8ff8414b-5920-4cdf-9c57-e8d23e501af8</ExtendedConfigurationObject>
+			<MainDataCompositionSchema>Report.РасчетыСКлиентами.Template.игр_ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
+		</Properties>
+		<ChildObjects>
+			<Template>игр_ОсновнаяСхемаКомпоновкиДанных</Template>
+		</ChildObjects>
+	</Report>
+</MetaDataObject>

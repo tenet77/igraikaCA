@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<InformationRegister uuid="9e91848d-d6a7-4ff3-873b-d38828259c38">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.игр_ЖурналВходящихДанныхМобильноеПриложение" category="Record">
+				<xr:TypeId>43eeaf11-2f87-423e-948e-0c5c00d844bc</xr:TypeId>
+				<xr:ValueId>1448f446-98f2-4788-b14f-48f9d0b707ff</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.игр_ЖурналВходящихДанныхМобильноеПриложение" category="Manager">
+				<xr:TypeId>070b9af9-ceb0-4000-be5a-baa73bac32e1</xr:TypeId>
+				<xr:ValueId>2466256b-cb08-4e54-b7dd-42d82a50dfb5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.игр_ЖурналВходящихДанныхМобильноеПриложение" category="Selection">
+				<xr:TypeId>1d1da8cf-c342-4b90-822f-4bf4fa126151</xr:TypeId>
+				<xr:ValueId>a363aef1-2df2-4158-9d7c-c4cc53b8f6fe</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.игр_ЖурналВходящихДанныхМобильноеПриложение" category="List">
+				<xr:TypeId>56457fc6-be50-4687-9a9b-a2d51f5b6bc4</xr:TypeId>
+				<xr:ValueId>a9524330-5921-483a-b933-ab5b888b1b58</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.игр_ЖурналВходящихДанныхМобильноеПриложение" category="RecordSet">
+				<xr:TypeId>f3a9421b-b801-4e3f-b2f6-b69539bcd8d5</xr:TypeId>
+				<xr:ValueId>bfa9b682-725d-47bb-868f-b616f187f62a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.игр_ЖурналВходящихДанныхМобильноеПриложение" category="RecordKey">
+				<xr:TypeId>281fb701-bb9f-4b16-9653-089861edad80</xr:TypeId>
+				<xr:ValueId>bbae062a-2d76-48ea-b488-822f214ef66c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.игр_ЖурналВходящихДанныхМобильноеПриложение" category="RecordManager">
+				<xr:TypeId>45bf464b-ba4b-4734-a54f-1bcb4031c540</xr:TypeId>
+				<xr:ValueId>f8bc2fc0-37ad-4c8f-8c14-9113f087a9a3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>игр_ЖурналВходящихДанныхМобильноеПриложение</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>88b24690-b7b6-45b8-946f-e9d9a9965ba6</ExtendedConfigurationObject>
+			<DefaultRecordForm>InformationRegister.игр_ЖурналВходящихДанныхМобильноеПриложение.Form.ФормаЗаписи</DefaultRecordForm>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="1ccbbcbe-5c92-40bb-94b0-d5c1ccaec18f">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Описание</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>4466618d-64a8-458d-881d-c7059d0e8b06</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="c46bab2e-f975-4f4d-a51b-a0ddfe144cf2">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Данные</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>26a06df1-7829-4760-9b7b-44d70e2fc9d3</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>v8:ValueStorage</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Attribute uuid="22ec5a31-2c3d-4914-b3c3-9bcc9f6ae325">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаПолучения</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>437b27a0-f020-4c19-a377-ef646ea5a172</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2692e056-6aa1-40d0-bd93-d430f8c10209">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ОписаниеОтправителя</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f53d23ca-c4d0-4978-80f3-02a56235b497</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Dimension uuid="e08c86a5-bcfa-4896-9e57-e311b4d85dd2">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Идентификатор</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>cba876c6-dc01-494b-bc1c-7cc36938537d</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Form>ФормаЗаписи</Form>
+			<Form>ФормаВыборПересчетаТоваров</Form>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

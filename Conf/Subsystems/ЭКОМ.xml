@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Subsystem uuid="c872b7b3-36c7-47cd-868c-092e59b0170a">
+		<Properties>
+			<Name>ЭКОМ</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Docrobot</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.ЭКОМ_КомактныйЛоготип</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">WSReference.ExiteWsServiceKZ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ЭКОМ_НаправлениеОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ЭКОМ_ВидыДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ЭКОМ_Статусы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ce8ec779-2a91-4977-8bdb-23aaf0ad7440</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЭКОМ_GLN</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЭКОМ_ТочкиДоставки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЭКОМ_Объекты_События</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЭКОМ_ИсторияОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЭКОМ_ЗначениеДополнительныхКонстант</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЭКОМ_ТранспортнаяИнформация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЭКОМ_Палеты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЭКОМ_НоменклатураКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЭКОМ_Документы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЭКОМ_ОператорыЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЭКОМ_Сертификаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭКОМ_РегламентныеЗадания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭКОМ_ОбщегоНазначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭКОМ_ОбщегоНазначенияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ЭКОМ_АвтоматическиОбменEDI</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЭКОМ_Роль</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WSReference.ExiteWsServiceRU</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Style.ЭКОМ_Стиль</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭКОМ_ПодпискаСобытий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЭКОМ_ЦепочкиДокументовЭТРН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ЭКОМ_ПриЗаписиДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Interface.ЭКОМ_Интерфейс</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЭКОМ_ЦепочкиДокументовПоставщика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЭКОМ_ЦепочкиДокументовПокупателя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЭКОМ_Маркировка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЭКОМ_ЦепочкиНеструктурированныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ЭКОМ_СтатусыСостоянияЭТРН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЭКОМ_Квитанции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЭКОМ_Отметка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЭКОМ_Вопрос</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЭКОМ_МенюСкрыть</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЭКОМ_Провести</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЭКОМ_ОтменитьПроведение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЭКОМ_ПрофилиОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ЭКОМ_Документы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЭКОМ_Логирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ЭКОМ_УровниЛогирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЭКОМ_Новости</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭКОМ_ВзаимодействиеREST_API</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>Документы</Subsystem>
+			<Subsystem>Обработки</Subsystem>
+			<Subsystem>ПакетыXDTO</Subsystem>
+			<Subsystem>Прочее</Subsystem>
+			<Subsystem>Регистры</Subsystem>
+			<Subsystem>Справочники</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

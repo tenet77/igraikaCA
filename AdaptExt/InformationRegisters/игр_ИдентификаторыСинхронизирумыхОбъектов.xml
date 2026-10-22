@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<InformationRegister uuid="bcbdb5de-306c-44ce-9428-774aaa32a0d4">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.игр_ИдентификаторыСинхронизирумыхОбъектов" category="Record">
+				<xr:TypeId>5d667a82-bf2a-4401-9c44-7253d57dc661</xr:TypeId>
+				<xr:ValueId>00c36c17-0646-41a0-860f-566a77420779</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.игр_ИдентификаторыСинхронизирумыхОбъектов" category="Manager">
+				<xr:TypeId>5006c858-6626-4604-9ba5-533c0157d2f5</xr:TypeId>
+				<xr:ValueId>708def44-9732-4787-ab2e-c5455da19ddb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.игр_ИдентификаторыСинхронизирумыхОбъектов" category="Selection">
+				<xr:TypeId>91a9e95e-231b-4029-b791-086fcb14c8fb</xr:TypeId>
+				<xr:ValueId>2221421c-68ba-46ce-bae9-4ba1b365ddd9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.игр_ИдентификаторыСинхронизирумыхОбъектов" category="List">
+				<xr:TypeId>9e8a7755-4a97-437c-8077-9cac6aba579d</xr:TypeId>
+				<xr:ValueId>d40cf4c1-f5ae-4006-b085-8e0a05ded442</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.игр_ИдентификаторыСинхронизирумыхОбъектов" category="RecordSet">
+				<xr:TypeId>581d1884-135a-4018-96d7-433bbef4b0a8</xr:TypeId>
+				<xr:ValueId>c8a9c9f6-048d-480a-aeed-1bd7a176a2fb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.игр_ИдентификаторыСинхронизирумыхОбъектов" category="RecordKey">
+				<xr:TypeId>427e7205-160a-4e78-87a0-270726096f1d</xr:TypeId>
+				<xr:ValueId>56606b06-09dc-42d1-b228-a574efe30ef0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.игр_ИдентификаторыСинхронизирумыхОбъектов" category="RecordManager">
+				<xr:TypeId>c4fbe3e4-4cc0-456a-82d5-e56c86546c56</xr:TypeId>
+				<xr:ValueId>33364123-8827-4199-bcdc-10833ce03031</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>игр_ИдентификаторыСинхронизирумыхОбъектов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>db943cc0-f76e-4db9-8468-445b9cb1f468</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="486c7b06-4558-4d18-b082-8820b8533ac7">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Идентификатор</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>706a26a0-c5c9-4e2f-9c61-a5cbfb8cb63f</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="796b2492-02e8-4813-8f76-6b3d2397d2f0">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Объект</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>6401d1a7-769c-4094-95aa-35bb21120273</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="44019591-3862-4993-892b-b1e2121aaa0f">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Характеристика</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c69d9610-f4c1-4bc6-a241-b6ebfed44113</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ХарактеристикиНоменклатуры</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

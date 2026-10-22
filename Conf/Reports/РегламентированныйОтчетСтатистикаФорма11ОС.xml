@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Report uuid="f2143a2d-caa9-491f-8dc2-b5c75ae9dda6">
+		<InternalInfo>
+			<xr:GeneratedType name="ReportObject.РегламентированныйОтчетСтатистикаФорма11ОС" category="Object">
+				<xr:TypeId>90f10a1f-3074-4488-820f-235721122000</xr:TypeId>
+				<xr:ValueId>a2cc212a-d570-4e56-9b7f-1b8fa5cc76af</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ReportManager.РегламентированныйОтчетСтатистикаФорма11ОС" category="Manager">
+				<xr:TypeId>fc3411df-502a-4677-8a23-4fbca433a5cb</xr:TypeId>
+				<xr:ValueId>8281c5e0-ac78-4baa-b79e-89585a6cdd0c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>РегламентированныйОтчетСтатистикаФорма11ОС</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регламентированный отчет форма № 11 ОС Годовая</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>Report.РегламентированныйОтчетСтатистикаФорма11ОС.Form.ОсновнаяФорма</DefaultForm>
+			<AuxiliaryForm/>
+			<MainDataCompositionSchema/>
+			<DefaultSettingsForm/>
+			<AuxiliarySettingsForm/>
+			<DefaultVariantForm/>
+			<VariantsStorage/>
+			<SettingsStorage/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ОсновнаяФорма</Form>
+			<Form>ФормаОтчета112016Кв4</Form>
+			<Form>ФормаПодбораНаправленийДеятельности</Form>
+			<Form>ФормаОтчета112017Кв4</Form>
+			<Form>ФормаОтчета112019Кв4</Form>
+			<Template>Показатели</Template>
+			<Template>КлассификаторОсновныхФондов_2016</Template>
+			<Template>ФормаОтчета112016Кв4_Титульный</Template>
+			<Template>ФормаОтчета112016Кв4_Раздел2</Template>
+			<Template>ФормаОтчета112016Кв4_Раздел3</Template>
+			<Template>ФормаОтчета112016Кв4_Раздел4</Template>
+			<Template>ФормаОтчета112016Кв4_Раздел5</Template>
+			<Template>ФормаОтчета112016Кв4_Раздел6</Template>
+			<Template>ФормаОтчета112016Кв4_Подписи</Template>
+			<Template>СоставПоказателей2016Кв4</Template>
+			<Template>ФормаОтчета112017Кв4_Титульный</Template>
+			<Template>ФормаОтчета112017Кв4_Раздел2</Template>
+			<Template>ФормаОтчета112017Кв4_Раздел3</Template>
+			<Template>ФормаОтчета112017Кв4_Раздел4</Template>
+			<Template>ФормаОтчета112017Кв4_Раздел5</Template>
+			<Template>ФормаОтчета112017Кв4_Раздел6</Template>
+			<Template>ФормаОтчета112017Кв4_Подписи</Template>
+			<Template>ФормаОтчета112019Кв4_Титульный</Template>
+			<Template>ФормаОтчета112019Кв4_Раздел2</Template>
+			<Template>ФормаОтчета112019Кв4_Раздел3</Template>
+			<Template>ФормаОтчета112019Кв4_Раздел4</Template>
+			<Template>ФормаОтчета112019Кв4_Раздел5</Template>
+			<Template>ФормаОтчета112019Кв4_Раздел6</Template>
+			<Template>ФормаОтчета112019Кв4_Подписи</Template>
+		</ChildObjects>
+	</Report>
+</MetaDataObject>

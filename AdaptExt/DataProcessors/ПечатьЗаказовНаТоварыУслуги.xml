@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<DataProcessor uuid="f3b4b997-fc16-4d69-a1c1-653e982668af">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ПечатьЗаказовНаТоварыУслуги" category="Object">
+				<xr:TypeId>3157a06f-ab11-4671-a159-9f2e2f31c647</xr:TypeId>
+				<xr:ValueId>b75c14fa-e70b-4797-9f62-b57fd4075f1e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ПечатьЗаказовНаТоварыУслуги" category="Manager">
+				<xr:TypeId>42f953d6-d90c-4746-a43d-7226a4553efe</xr:TypeId>
+				<xr:ValueId>6f4b7e8f-1d8f-4fde-a9d7-3ee6099ddb04</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПечатьЗаказовНаТоварыУслуги</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>75316008-3969-4c56-915c-9f1fd0c75c92</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Template>игр_ПФ_MXL_ЗаказКлиента</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоляВПравеОбщейСобственностиЧислитель</dataPath>
+			<field>ДоляВПравеОбщейСобственностиЧислитель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоМесяцевВладения</dataPath>
+			<field>КоличествоМесяцевВладения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаВыпуска</dataPath>
+			<field>ДатаВыпуска</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата выпуска</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОсновноеСредство</dataPath>
+			<field>ОсновноеСредство</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РегистрационныйЗнак</dataPath>
+			<field>РегистрационныйЗнак</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодРасчета</dataPath>
+			<field>ПериодРасчета</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтранаПроизводитель</dataPath>
+			<field>СтранаПроизводитель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИдентификационныйНомер</dataPath>
+			<field>ИдентификационныйНомер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИФНС</dataPath>
+			<field>ИФНС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаВвозаНаТерриториюРК</dataPath>
+			<field>ДатаВвозаНаТерриториюРК</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕдиницаИзмерения</dataPath>
+			<field>ЕдиницаИзмерения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоляВПравеОбщейСобственностиЗнаменатель</dataPath>
+			<field>ДоляВПравеОбщейСобственностиЗнаменатель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НалоговаяБаза</dataPath>
+			<field>НалоговаяБаза</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаНалогаКУплате</dataPath>
+			<field>СуммаНалогаКУплате</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭксплуатацияВРКдо1апреля1999г</dataPath>
+			<field>ЭксплуатацияВРКдо1апреля1999г</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаНалога</dataPath>
+			<field>СуммаНалога</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Марка</dataPath>
+			<field>Марка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭкологическийКласс</dataPath>
+			<field>ЭкологическийКласс</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НалоговаяСтавка</dataPath>
+			<field>НалоговаяСтавка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НалоговыйОрган</dataPath>
+			<field>НалоговыйОрган</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Налоговый орган</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидТранспортногоСредства</dataPath>
+			<field>ВидТранспортногоСредства</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид транспортного средства</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	РасчетТранспортногоНалога.ПериодРасчета,
+	РасчетТранспортногоНалога.Организация,
+	РасчетТранспортногоНалога.ИФНС КАК НалоговыйОрган,
+	РасчетТранспортногоНалога.ОсновноеСредство,
+	РасчетТранспортногоНалога.КодВидаТранспортногоСредства КАК ВидТранспортногоСредства,
+	РасчетТранспортногоНалога.ИдентификационныйНомер,
+	РасчетТранспортногоНалога.Марка,
+	РасчетТранспортногоНалога.РегистрационныйЗнак,
+	РасчетТранспортногоНалога.НалоговаяБаза,
+	РасчетТранспортногоНалога.ЕдиницаИзмерения,
+	РасчетТранспортногоНалога.КоличествоМесяцевВладения,
+	РасчетТранспортногоНалога.НалоговаяСтавка,
+	РасчетТранспортногоНалога.СуммаНалога,
+	РасчетТранспортногоНалога.СуммаНалогаКУплате,
+	РасчетТранспортногоНалога.ЭкологическийКласс,
+	РасчетТранспортногоНалога.ДоляВПравеОбщейСобственностиЧислитель,
+	РасчетТранспортногоНалога.ДоляВПравеОбщейСобственностиЗнаменатель,
+	РасчетТранспортногоНалога.ОсновноеСредство.ДатаВыпуска КАК ДатаВыпуска,
+	РасчетТранспортногоНалога.ДатаВвозаНаТерриториюРК,
+	РасчетТранспортногоНалога.СтранаПроизводитель,
+	РасчетТранспортногоНалога.ЭксплуатацияВРКдо1апреля1999г
+	//РасчетТранспортногоНалога.СуммаАвансовыхПлатежей1Кв
+	
+ИЗ
+	РегистрСведений.РасчетТранспортногоНалога КАК РасчетТранспортногоНалога
+ГДЕ
+	РасчетТранспортногоНалога.ПериодРасчета = &amp;Период
+	И РасчетТранспортногоНалога.Активность
+{ГДЕ
+	РасчетТранспортногоНалога.Организация,
+	РасчетТранспортногоНалога.ИФНС
+	}</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОсновноеСредство</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВидТранспортногоСредства</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НалоговаяБаза</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НалоговаяСтавка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаНалога</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Организация</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>НалоговыйОрган</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ОсновноеСредство</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Организация</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>НалоговыйОрган</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

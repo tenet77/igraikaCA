@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<InformationRegister uuid="9152cbe0-a778-4c76-a64f-6a04fd1633c6">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.игр_КонтрольДоступаККассам" category="Record">
+				<xr:TypeId>0e45f37b-87b5-44ba-90cc-d0b07b84a947</xr:TypeId>
+				<xr:ValueId>a976681d-2980-4697-a8e9-78e3ec886d17</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.игр_КонтрольДоступаККассам" category="Manager">
+				<xr:TypeId>5fe24c5b-da71-4210-98f9-cc3e7064126b</xr:TypeId>
+				<xr:ValueId>f7b84107-a437-4007-b184-87abe073a6e2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.игр_КонтрольДоступаККассам" category="Selection">
+				<xr:TypeId>4d44de1d-813c-4e2d-b278-dc4e460d3acd</xr:TypeId>
+				<xr:ValueId>af8e3fb2-05d6-47ad-86a0-1a66ae84d997</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.игр_КонтрольДоступаККассам" category="List">
+				<xr:TypeId>1510b91a-91de-41b8-bde1-511ab7bd3112</xr:TypeId>
+				<xr:ValueId>98c5cf4b-9565-45dd-870d-4645583396f9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.игр_КонтрольДоступаККассам" category="RecordSet">
+				<xr:TypeId>b7aa50a5-7375-445e-a93c-512e78daf5cc</xr:TypeId>
+				<xr:ValueId>22f13853-5a0a-4ac7-ba8c-13e9c0e603e0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.игр_КонтрольДоступаККассам" category="RecordKey">
+				<xr:TypeId>26209a61-e368-48e3-a367-21e305464172</xr:TypeId>
+				<xr:ValueId>9339e062-820a-49ff-9038-5ed2e76623d2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.игр_КонтрольДоступаККассам" category="RecordManager">
+				<xr:TypeId>479136fc-c427-4a75-ab07-e19c448a94de</xr:TypeId>
+				<xr:ValueId>eb9e4182-114b-457a-92fb-90f31ac00d53</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>игр_КонтрольДоступаККассам</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>50ea7f1c-e9a7-468c-abb5-b2a52a9c8760</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Dimension uuid="18e5a622-1380-481c-8bcf-54afad223e18">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Пользователь</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b92dcbc3-3438-4622-8d95-b77b0d15521b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="6a8121f2-5cf9-433d-84c8-75ffd1ea2077">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Касса</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>00366500-0c99-4ad3-b2a2-110f33865043</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Кассы</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

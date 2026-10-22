@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="Объект" id="1">
+			<DataPath>Запись.Объект</DataPath>
+			<ContextMenu name="ОбъектКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ОбъектРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Владелец" id="4">
+			<DataPath>Запись.Владелец</DataPath>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Адрес" id="7">
+			<DataPath>Запись.Адрес</DataPath>
+			<ContextMenu name="АдресКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="КПП" id="10">
+			<DataPath>Запись.КПП</DataPath>
+			<ContextMenu name="КППКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="КППРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ИНН" id="13">
+			<DataPath>Запись.ИНН</DataPath>
+			<ContextMenu name="ИННКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Ид_ОЭД" id="16">
+			<DataPath>Запись.Ид_ОЭД</DataPath>
+			<ContextMenu name="Ид_ОЭДКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="Ид_ОЭДРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Адр_Город" id="19">
+			<DataPath>Запись.Адр_Город</DataPath>
+			<ContextMenu name="Адр_ГородКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="Адр_ГородРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="Адр_Дом" id="22">
+			<DataPath>Запись.Адр_Дом</DataPath>
+			<ContextMenu name="Адр_ДомКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="Адр_ДомРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="Адр_Индекс" id="25">
+			<DataPath>Запись.Адр_Индекс</DataPath>
+			<ContextMenu name="Адр_ИндексКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="Адр_ИндексРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="Адр_КодРегиона" id="28">
+			<DataPath>Запись.Адр_КодРегиона</DataPath>
+			<ContextMenu name="Адр_КодРегионаКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="Адр_КодРегионаРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="Адр_Улица" id="31">
+			<DataPath>Запись.Адр_Улица</DataPath>
+			<ContextMenu name="Адр_УлицаКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="Адр_УлицаРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="Адр_Район" id="34">
+			<DataPath>Запись.Адр_Район</DataPath>
+			<ContextMenu name="Адр_РайонКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="Адр_РайонРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="Адр_НаселПункт" id="37">
+			<DataPath>Запись.Адр_НаселПункт</DataPath>
+			<ContextMenu name="Адр_НаселПунктКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="Адр_НаселПунктРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="Адр_Корпус" id="40">
+			<DataPath>Запись.Адр_Корпус</DataPath>
+			<ContextMenu name="Адр_КорпусКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="Адр_КорпусРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="Адр_Кварт" id="43">
+			<DataPath>Запись.Адр_Кварт</DataPath>
+			<ContextMenu name="Адр_КвартКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="Адр_КвартРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<InputField name="Адр_Иностранный" id="46">
+			<DataPath>Запись.Адр_Иностранный</DataPath>
+			<ContextMenu name="Адр_ИностранныйКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="Адр_ИностранныйРасширеннаяПодсказка" id="48"/>
+		</InputField>
+		<CheckBoxField name="Адр_ЯвляетсяИностранным" id="49">
+			<DataPath>Запись.Адр_ЯвляетсяИностранным</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Адр_ЯвляетсяИностраннымКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="Адр_ЯвляетсяИностраннымРасширеннаяПодсказка" id="51"/>
+		</CheckBoxField>
+		<InputField name="Наименование" id="52">
+			<DataPath>Запись.Наименование</DataPath>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="54"/>
+		</InputField>
+		<InputField name="Комментарий" id="55">
+			<DataPath>Запись.Комментарий</DataPath>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="57"/>
+		</InputField>
+		<InputField name="GLN" id="58">
+			<DataPath>Запись.GLN</DataPath>
+			<ContextMenu name="GLNКонтекстноеМеню" id="59"/>
+			<ExtendedTooltip name="GLNРасширеннаяПодсказка" id="60"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ЭКОМ_ТочкиДоставки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

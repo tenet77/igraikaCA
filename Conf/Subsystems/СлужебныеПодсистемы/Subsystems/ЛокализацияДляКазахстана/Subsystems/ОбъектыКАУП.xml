@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Subsystem uuid="26b47b87-7a17-4865-8db8-3e17d48d78a1">
+		<Properties>
+			<Name>ОбъектыКАУП</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты КА2, УП2</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Технологическая подсистема.
+Включает в себя объекты, добавленные при локализации и относящиеся только к конфигурациям КА2, УП2.</v8:content>
+				</v8:item>
+			</Explanation>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользуетсяОППВ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСПланомСчетовСерверПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыЗарплатаКадрыДляКазахстанаБазовый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НалогообложениеНачислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УчетХозрасчетныхОрганизацийКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкаТиповНалоговНалоговогоУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДоходыНеПодлежащиеНалогообложениюЧастично</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КлючиАналитикиУчетаВА</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УчетНалоговВзносовОтчислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УчетФиксированныхАктивов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ОтношениеКИнвалидности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОФизическихЛицахУчастникахВОВ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РегламентированнаяОтчетностьРК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ПениПоВзносамИОтчислениям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УчетНалоговВзносовОтчисленийРасширенный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеПеречисленныхВзносовОтчислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ПлательщикОППВЗарплатаКадры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОСтавкахИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УчетНалоговВзносовОтчисленийКлиентРасширенный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыОборотовПоРеализации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РегламентированнаяОтчетностьПереопределяемыйРК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ЗаполнитьВидОперацииРеализации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РегламентированнаяОтчетностьЗарплатаКадры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.УдалитьПодробнееОРасчетеОПВ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыСостоянийФА</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НалоговыйУчетРК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РасчетНалогаНаПрибыльРК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеПеречисленныхВзносовОтчислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.КодыСтрокНалоговыхДеклараций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.УчетнаяПолитикаОрганизацииПриЗаписиУчетОППВ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеНезачисленныхВзносовОтчислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.УчетНДСОбработкаПроведенияДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыЗатратВА</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РасчетСреднегоЗаработкаПодразделений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыНалоговВзносовОтчислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеНезачисленныхВзносовОтчислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ФиксированныеАктивыОбработкаПроведенияДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПрекращениеПредоставленияВычетовИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользуетсяОППВ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.СведенияОНеоблагаемыхДоходахФизическихЛиц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ВестиУчетРабочегоВремениПоУсловиямТруда</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидАктиваНУ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.УчетРабочегоВремениПриРасчетеСреднегоЗаработка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.НДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ГруппыУчетаВоеннообязанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КодыСтрокДекларацииПоНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ПорядокОпределенияСроковПеречисленияВзносовИОтчислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.МетодыПереоценкиВнеоборотныхАктивов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.НДСКВозмещению</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПеняПоВзносамИОтчислениям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыТранспортныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОбъектыНалоговогоУчетаФА</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РегистрНалоговогоУчетаПоИПНиСН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.КатегорииФизическихЛицУчастниковВОВ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РегламентированныйОтчет70101Форма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СобытияФАУчитываемыхОтдельно</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВычетыФизическихЛицИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыФАУчитываемыхОтдельно</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КодыСтрокДекларацииПоНДСКЗачету</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ПричиныУвольненияИзОрганизации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ГруппыИнвалидностиФизическихЛиц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФормыОбученияФизическихЛиц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ПериодыРасчетаВычетовИКорректировокДоходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПроверитьДатуЗапретаИзмененияПередЗаписьюНабораЗаписейУПК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыДоходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыНалогообложенияДоходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыФизическихЛицНалогоплательщиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РазмерыЛьготИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыДвиженияСтоимостиФА</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СведенияОНезачисленныхВзносахОтчислениях</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаявлениеНаПредоставлениеВычетовИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыРеализации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РегламентированныйОтчетСтатистикаФорма11ОС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВедомостьНаПеречислениеВзносовОтчислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СрокиПеречисленияВзносовИОтчислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыПоступления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КатегорииЛицПолучателейЛьготИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыВычетовИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПрочиеВычетыФизическихЛицИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НациональностиНародовМира</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПолныйРегистрацияНабораУПК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВыборСтандартногоНалоговогоПериода</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РегламентированныйОтчет910Форма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.СведенияОбИсчисленииНалоговВзносовОтчислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.УдалитьПодробнееОРасчетеИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОСтавкахНалоговСборовОтчислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РегламентированныйОтчет300Форма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РегламентированныйОтчет200Форма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РегламентированныйОтчет210Форма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РегламентированныйОтчет100Форма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РегламентированныйОтчет701Форма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РасшифровкаРегламентированныхОтчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РегламентированныйОтчетСтатистика1ТКвартальная</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ФиксированныеАктивыУчитываемыеОтдельно</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.МесячныйРасчетныйПоказатель</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОГруппахФиксированныхАктивов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УдалитьПорядокРегистрацииВидовУчетаВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОПенсионномОбеспеченииФизическихЛиц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПрименениеВычетовИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЛьготыФизическихЛицИПН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РегламентированныйОтчет700Форма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиПереносаСальдоНаСчетахБухгалтерскогоУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СтатусФизическихЛицКакНалогоплательщиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.НалогиВзносыОтчисленияПоСотрудникам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.АналитикаУчетаВнеоборотныхАктивов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДоходыПредыдущегоМестаРаботы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РеквизитыУведомленияИФНСНаЗачетАвансовыхПлатежей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СоответствияФизЛицКонтрагентамПоДоговорамГПХ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РасчетСреднегоЗаработкаОрганизаций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РасчетСреднегоЗаработкаСотрудников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КодыСтрокДекларацииПоНалогуНаПрибыль</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.СведенияОДоходахФизическихЛиц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.НалогиВзносыОтчисленияРасчетыСБюджетомИФондами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.НДСЗаНерезидента</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Catalog uuid="e9694500-d832-4bb4-82a8-af8f155bb60e">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.TRP_S_НастройкиМаркетплейса" category="Object">
+				<xr:TypeId>7c82ea4d-ee4c-4196-a0dc-e6cb64053bee</xr:TypeId>
+				<xr:ValueId>d9746f28-5404-472b-a5f9-9a3da10851c3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.TRP_S_НастройкиМаркетплейса" category="Ref">
+				<xr:TypeId>02b247cb-0ccd-4400-b7fb-e8a8135db916</xr:TypeId>
+				<xr:ValueId>267fb83f-7a66-4a1b-a26c-953795fb44a2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.TRP_S_НастройкиМаркетплейса" category="Selection">
+				<xr:TypeId>921e7789-918d-4f74-994d-375d12d017ad</xr:TypeId>
+				<xr:ValueId>8de1c0d7-9101-4481-abc0-f72618fdf49b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.TRP_S_НастройкиМаркетплейса" category="List">
+				<xr:TypeId>3ed0760c-a9ae-47eb-9c0f-e77d2c15261c</xr:TypeId>
+				<xr:ValueId>0f27fc54-6854-4081-9ce7-bf6dedcd9a90</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.TRP_S_НастройкиМаркетплейса" category="Manager">
+				<xr:TypeId>2006eacf-8c65-42eb-bd12-2a841b221de6</xr:TypeId>
+				<xr:ValueId>ed5d6140-2b23-47f3-88ee-1d0e1cb43194</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>TRP_S_НастройкиМаркетплейса</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>7c3d513e-8518-4564-abe2-8654038cf6c9</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="5fddf759-22f7-46a9-a461-179335e5eb47">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>АдресРесурса</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>bdf8d2e3-af31-4df8-a663-9f43cb8cb980</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаЭлемента</Form>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Объект" id="14">
+					<DataPath>Список.Объект</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ОбъектКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ОбъектРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<LabelField name="Владелец" id="17">
+					<DataPath>Список.Владелец</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ВладелецКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<LabelField name="Адрес" id="20">
+					<DataPath>Список.Адрес</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="АдресКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<LabelField name="КПП" id="23">
+					<DataPath>Список.КПП</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="КППКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="КППРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<LabelField name="ИНН" id="26">
+					<DataPath>Список.ИНН</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ИННКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<LabelField name="Ид_ОЭД" id="29">
+					<DataPath>Список.Ид_ОЭД</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Ид_ОЭДКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="Ид_ОЭДРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<LabelField name="Адр_Город" id="32">
+					<DataPath>Список.Адр_Город</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Адр_ГородКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="Адр_ГородРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<LabelField name="Адр_Дом" id="35">
+					<DataPath>Список.Адр_Дом</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Адр_ДомКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="Адр_ДомРасширеннаяПодсказка" id="37"/>
+				</LabelField>
+				<LabelField name="Адр_Индекс" id="38">
+					<DataPath>Список.Адр_Индекс</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Адр_ИндексКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="Адр_ИндексРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<LabelField name="Адр_КодРегиона" id="41">
+					<DataPath>Список.Адр_КодРегиона</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Адр_КодРегионаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="Адр_КодРегионаРасширеннаяПодсказка" id="43"/>
+				</LabelField>
+				<LabelField name="Адр_Улица" id="44">
+					<DataPath>Список.Адр_Улица</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Адр_УлицаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="Адр_УлицаРасширеннаяПодсказка" id="46"/>
+				</LabelField>
+				<LabelField name="Адр_Район" id="47">
+					<DataPath>Список.Адр_Район</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Адр_РайонКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="Адр_РайонРасширеннаяПодсказка" id="49"/>
+				</LabelField>
+				<LabelField name="Адр_НаселПункт" id="50">
+					<DataPath>Список.Адр_НаселПункт</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Адр_НаселПунктКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="Адр_НаселПунктРасширеннаяПодсказка" id="52"/>
+				</LabelField>
+				<LabelField name="Адр_Корпус" id="53">
+					<DataPath>Список.Адр_Корпус</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Адр_КорпусКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="Адр_КорпусРасширеннаяПодсказка" id="55"/>
+				</LabelField>
+				<LabelField name="Адр_Кварт" id="56">
+					<DataPath>Список.Адр_Кварт</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Адр_КвартКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="Адр_КвартРасширеннаяПодсказка" id="58"/>
+				</LabelField>
+				<LabelField name="Адр_Иностранный" id="59">
+					<DataPath>Список.Адр_Иностранный</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Адр_ИностранныйКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="Адр_ИностранныйРасширеннаяПодсказка" id="61"/>
+				</LabelField>
+				<CheckBoxField name="Адр_ЯвляетсяИностранным" id="62">
+					<DataPath>Список.Адр_ЯвляетсяИностранным</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="Адр_ЯвляетсяИностраннымКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="Адр_ЯвляетсяИностраннымРасширеннаяПодсказка" id="64"/>
+				</CheckBoxField>
+				<LabelField name="Наименование" id="65">
+					<DataPath>Список.Наименование</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="67"/>
+				</LabelField>
+				<LabelField name="Комментарий" id="68">
+					<DataPath>Список.Комментарий</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="70"/>
+				</LabelField>
+				<LabelField name="GLN" id="71">
+					<DataPath>Список.GLN</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="GLNКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="GLNРасширеннаяПодсказка" id="73"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ЭКОМ_ТочкиДоставки</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

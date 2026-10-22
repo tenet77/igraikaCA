@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AccumulationRegister uuid="f229ec9c-b2ad-4644-b927-30702e9bce43">
+		<InternalInfo>
+			<xr:GeneratedType name="AccumulationRegisterRecord.ТоварыКОтгрузке" category="Record">
+				<xr:TypeId>4e4310c8-5891-4e19-9e00-8b963185b936</xr:TypeId>
+				<xr:ValueId>5292c56e-92be-4a84-bb09-f7f1799b965f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterManager.ТоварыКОтгрузке" category="Manager">
+				<xr:TypeId>322fe6d6-ccee-44a6-a5cb-5588f23e9584</xr:TypeId>
+				<xr:ValueId>cb69fc47-7ecd-4a6f-aed7-c0af721a1f57</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterSelection.ТоварыКОтгрузке" category="Selection">
+				<xr:TypeId>d4adbd3f-d82e-4d2c-afab-b493a7b8ec76</xr:TypeId>
+				<xr:ValueId>362568ea-2395-4f16-a045-a08a7d74400a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterList.ТоварыКОтгрузке" category="List">
+				<xr:TypeId>f053f1d7-0faf-45d5-8554-839e34f25063</xr:TypeId>
+				<xr:ValueId>2c65d210-9096-4580-8421-322225c71608</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordSet.ТоварыКОтгрузке" category="RecordSet">
+				<xr:TypeId>3151a073-0493-45be-b974-eaf2a375467e</xr:TypeId>
+				<xr:ValueId>6db8f5b9-d616-497a-810f-5a8944450caa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordKey.ТоварыКОтгрузке" category="RecordKey">
+				<xr:TypeId>6649e254-0da2-4b92-b1a9-c96f4635c071</xr:TypeId>
+				<xr:ValueId>694bc404-a3d8-461d-a6af-2aef37524b44</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ТоварыКОтгрузке</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>062899bb-89c1-427e-b3ce-07ca8ee75d60</ExtendedConfigurationObject>
+			<RegisterType>Balance</RegisterType>
+		</Properties>
+		<ChildObjects>
+			<Dimension uuid="1e06e81b-7737-40a3-bcd9-f97e38d77b34">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДокументОтгрузки</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>15e1ecdb-719e-4125-ad2a-23f7faa9d25e</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.РаспоряжениеНаОтгрузку</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</AccumulationRegister>
+</MetaDataObject>

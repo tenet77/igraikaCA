@@ -1,0 +1,1167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="b5ad0a7b-7420-4382-8b3c-2262f3c1f781">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ЭКОМ_ВидыДокументов" category="Ref">
+				<xr:TypeId>2a6c9543-42dc-48f0-b05a-7dbe90ecdc12</xr:TypeId>
+				<xr:ValueId>49c81a39-c488-45cd-a731-79e8cded78ea</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ЭКОМ_ВидыДокументов" category="Manager">
+				<xr:TypeId>002a200f-a56f-480a-bfb6-b4cbd72fa956</xr:TypeId>
+				<xr:ValueId>c0690f08-25b5-4d21-9416-9b17c03bb3b7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ЭКОМ_ВидыДокументов" category="List">
+				<xr:TypeId>78315d60-a1f0-47d2-8b93-b7d3706e904a</xr:TypeId>
+				<xr:ValueId>e529a75a-9c2c-497b-a60d-9b75cb0a1400</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ЭКОМ_ВидыДокументов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Docrobot Виды документов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Order">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="73060626-2fc7-45af-b4b5-53d5de1ba23c">
+				<Properties>
+					<Name>CONDRA_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>CONDRA входящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="38e117b1-1c68-4a2c-b285-d6b4b8e9a25f">
+				<Properties>
+					<Name>CONDRA_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>CONDRA исходящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5aa88c8d-d4f1-4c75-98f6-7c19179d9bb2">
+				<Properties>
+					<Name>DESADV_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DESADV входящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ec851051-4709-4a55-8bcb-e8f76912353c">
+				<Properties>
+					<Name>DESADV_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DESADV исходящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0c651eb3-c29a-4a05-8629-224169fd254b">
+				<Properties>
+					<Name>DESSCC_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DESSCC входящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3f8e6735-804e-41f7-bd44-fd455fe782b8">
+				<Properties>
+					<Name>DESSCC_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DESSCC исходящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9e11aa89-2037-45a2-8712-67e6c349148c">
+				<Properties>
+					<Name>DP_IZVPOL_04</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_IZVPOL - 04 (Дата поступления УПД продавец)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a8b079d7-6d95-4fba-99c5-ee7f45f1b851">
+				<Properties>
+					<Name>DP_IZVPOL_05</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_IZVPOL - 05 (Извещение о подтверждении даты отправки УПД)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d61fe8b2-461c-4773-8341-b67089a4fd1a">
+				<Properties>
+					<Name>DP_IZVPOL_06</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_IZVPOL - 06 (Извещение получения УПД покупатель)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c543bab1-a125-4f89-af2a-19390f2e22ea">
+				<Properties>
+					<Name>DP_IZVPOL_08</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_IZVPOL - 08 (Дата отправки Извещения)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9ba95021-dd35-4403-a1f8-12bfda4ae216">
+				<Properties>
+					<Name>DP_IZVPOL_10</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_IZVPOL - 10 (Извещение об уточнении)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f45c8a36-2ba1-407a-bca1-4ab8875a5dc4">
+				<Properties>
+					<Name>DP_IZVPOL_23</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_IZVPOL - 23 (Подтверждение аннулирования)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="34a0f04b-9364-4a25-b6dc-aae901680d51">
+				<Properties>
+					<Name>DP_OTORG2</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_OTORG2 (ТОРГ-2, Акт об установленном расхождении по количеству)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>ТОРГ-2</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="edea64e0-eaad-43e6-ac20-33b854ac7d3d">
+				<Properties>
+					<Name>DP_PDOTPR_03</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_PDOTPR - 03 (Подтвержение даты отправки УПД)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c4cd5166-491e-437e-b52d-dea11cc4866a">
+				<Properties>
+					<Name>DP_PDOTPR_07</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_PDOTPR - 07 (Подтвержение даты отправки извещения)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a1e64fb9-2ccd-44ec-873f-e17587b4ebdc">
+				<Properties>
+					<Name>DP_PDOTPR_08</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_PDOTPR - 08 (Подтвержение получения извещения DP_IZVPOL_06)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ce185f6c-8758-4666-8fb2-fda7a1e5537b">
+				<Properties>
+					<Name>DP_PDOTPR_13</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_PDOTPR - 13 (Подтвержение получения извещения DP_UVUTOCH_09)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4eea3d25-612e-4545-9699-b803fb2b80fc">
+				<Properties>
+					<Name>DP_PDPOL_02</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_PDPOL - 02 (Подтверждение даты поступления УПД)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="693bf99b-5448-4b80-8b7e-403612511b34">
+				<Properties>
+					<Name>DP_PDPOL_07</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_PDPOL - 07 (Подтвержение отправки извещения DP_IZVPOL_06)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="49183320-f68e-48be-883c-ecc5a45dbce5">
+				<Properties>
+					<Name>DP_PDPOL_12</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_PDPOL - 12 (Подтвержение отправки извещения DP_UVUTOCH_09)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="318d709b-d53b-466f-98aa-51b9ef695fe2">
+				<Properties>
+					<Name>DP_PRANNUL_22</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_PRANNUL - 22 (Аннулирование)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5dc033e1-6861-4ca3-888b-0f74aa6142f5">
+				<Properties>
+					<Name>DP_PTORG1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP PTORG1 (титул продавца)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="48f4660a-cf4b-4cca-9e67-94aec33a5f34">
+				<Properties>
+					<Name>DP_PTORG2</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP PTORG2 (титул продавца)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6649d316-125f-40da-9c14-0e7a0618bfdb">
+				<Properties>
+					<Name>DP_REZRUISP_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_REZRUISP входящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="58ffca8e-2a9b-45ed-aefa-3e7740692a7d">
+				<Properties>
+					<Name>DP_REZRUISP_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_REZRUISP исходящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="398369ea-9426-4f98-8029-754edc50fc2e">
+				<Properties>
+					<Name>DP_REZRUZAK_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_REZRUZAK входящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="75fe8c96-ad85-470d-bdfe-3cade77c1a86">
+				<Properties>
+					<Name>DP_REZRUZAK_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_REZRUZAK исходящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="83af6c47-c789-46ba-8e3a-04e86c6df212">
+				<Properties>
+					<Name>DP_STATUS</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>STATUS - служебный документ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9c15bf58-85d1-46b6-9026-d1557aa2982a">
+				<Properties>
+					<Name>DP_UVUTOCH_09</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_UVUTOCH - 09 (Уточнение)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0804d2d4-4483-4a6d-b7bb-475de8a9bcff">
+				<Properties>
+					<Name>DP_UVUTOCH_24</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_UVUTOCH - 24 (Отклонение аннулирования)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b6f6a628-644e-4f04-bf4f-9ebee40b02be">
+				<Properties>
+					<Name>DPOTORG1_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DPOTORG1 входящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5cd5717f-4d07-41ca-8e51-8464dab83fea">
+				<Properties>
+					<Name>DPOTORG2_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DPOTORG2 входящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c167db92-83d8-4149-ae42-da7c5da3b34d">
+				<Properties>
+					<Name>DRVGOU_03_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DRVGOU 03 входящий (Титул ТК) - КЭП ТК</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="90d88927-0320-48b2-a87a-9efcdb2f49e8">
+				<Properties>
+					<Name>DRVGOU_03_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DRVGOU 03 исходящий (Титул ТК) - КЭП ТК</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8dfe1e33-0e88-4e0a-af39-9549786d946a">
+				<Properties>
+					<Name>DRVGOV_02_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DRVGOV 02 входящий (Сообщение ТК) - ПЭП водителя</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0c711b6d-78d3-4f7e-861c-7543d4230595">
+				<Properties>
+					<Name>DRVGOV_02_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DRVGOV 02 исходящий (Сообщение ТК) - ПЭП водителя</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9f304bfa-0103-4016-894c-33318bb99954">
+				<Properties>
+					<Name>DRVGPU_07_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DRVGPU 07 входящий (Титул ТК) - КЭП ТК</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2e72a205-99ec-4427-ba81-258a6e502ec8">
+				<Properties>
+					<Name>DRVGPU_07_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DRVGPU 07 исходящий (Титул ТК) - КЭП ТК</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6221ef0d-e9c0-4503-8b44-aff4ff7fd843">
+				<Properties>
+					<Name>DRVGPV_06_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DRVGPV 06 входящий (Сообщение ТК) - ПЭП водителя</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9a0f3bfd-d27f-4b97-9301-47405acf49aa">
+				<Properties>
+					<Name>DRVGPV_06_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DRVGPV 06 исходящий (Сообщение ТК) - ПЭП водителя</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e1635eb0-5cc0-48ea-9380-e0fe392c82e2">
+				<Properties>
+					<Name>INSDES_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>INSDES входящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b7bb8182-2d3f-48a2-82c6-2291f05c23ba">
+				<Properties>
+					<Name>INSDES_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>INSDES исходящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="789eba98-e3b6-41a8-9900-ed95178c7a66">
+				<Properties>
+					<Name>INVOICE</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>INVOICE (Счет)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="080954f7-200b-4b61-a3da-0101bcefe26c">
+				<Properties>
+					<Name>ON_KORSCHFDOPPOK_11</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_KORSCHFDOPPOK - 11 (УКД Информация покупателя)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="18ecdefd-213f-4f6f-b0ce-562525b373d7">
+				<Properties>
+					<Name>ON_KORSCHFDOPPR_01</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_KORSCHFDOPPR - 01 (УКД Корректировочная счет-фактура)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="52b59e58-850e-43fa-a128-78b47a1163ee">
+				<Properties>
+					<Name>ON_KORSCHFDOPPR_01_Испр</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_KORSCHFDOPPR - 01 Испр (УКД Корректировочная исправленная счет-фактура)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a12f3959-7066-452e-8083-e628f5e9f19e">
+				<Properties>
+					<Name>ON_NKORSCHFDOPPOK_11</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_NKORSCHFDOPPOK - 11 (УКД Информация покупателя)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="09d21109-50da-42c4-bdeb-3395434ab8f1">
+				<Properties>
+					<Name>ON_NKORSCHFDOPPOKMARK_11</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_NKORSCHFDOPPOKMARK - 11 (УКД Информация покупателя)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0f29ba8f-cd93-4186-bb95-9c373b4f3d19">
+				<Properties>
+					<Name>ON_NKORSCHFDOPPOKPROS_11</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_NKORSCHFDOPPOKPROS - 11 (УКД Информация покупателя)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="271f1e46-9007-4e60-89eb-5d6514081aba">
+				<Properties>
+					<Name>ON_NKORSCHFDOPPR_01</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_NKORSCHFDOPPR - 01 (УКД Корректировочная счет-фактура)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="560ab18c-225a-4584-b2ee-59645990e618">
+				<Properties>
+					<Name>ON_NKORSCHFDOPPR_01_Испр</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_NKORSCHFDOPPR - 01 Испр (УКД Счет-фактура исправленная)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c60111df-b250-41ad-a7ff-c22c0181c3ea">
+				<Properties>
+					<Name>ON_NKORSCHFDOPPRMARK_01</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_NKORSCHFDOPPRMARK - 01 (УКД Корректировочная счет-фактура)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="bccd4a0b-c470-49f0-8d2e-3f1a2a0a84ec">
+				<Properties>
+					<Name>ON_NKORSCHFDOPPRMARK_01_Испр</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_NKORSCHFDOPPRMARK - 01 Испр (УКД Счет-фактура исправленная)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="29c3bf99-b16f-4a84-9506-1801a0587042">
+				<Properties>
+					<Name>ON_NKORSCHFDOPPRPROS_01</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_NKORSCHFDOPPRPROS - 01 (УКД Корректировочная счет-фактура)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="68ceb996-b9ee-4726-b770-7c294b9a547f">
+				<Properties>
+					<Name>ON_NKORSCHFDOPPRPROS_01_Испр</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_NKORSCHFDOPPRPROS - 01 Испр (УКД Счет-фактура исправленная)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="627878f3-75a0-4830-a16c-99c4b7925582">
+				<Properties>
+					<Name>ON_NSCHFDOPPOK_11</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_NSCHFDOPPOK - 11 (УПД Информация покупателя)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b02fa795-6a85-451c-a674-209c230b4cc9">
+				<Properties>
+					<Name>ON_NSCHFDOPPOKMARK_11</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_NSCHFDOPPOKMARK - 11 (Маркировка - УПД Информация покупателя)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ea9edb94-84c7-418e-8e6e-887b58276401">
+				<Properties>
+					<Name>ON_NSCHFDOPPOKPROS_11</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_NSCHFDOPPOKPROS- 11 (Прослеживаемость - УПД Информация покупателя)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="10ddd1b7-58fc-470c-8472-831e8c42ebce">
+				<Properties>
+					<Name>ON_NSCHFDOPPR_01</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_NSCHFDOPPR - 01 (УПД Счет-фактура)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="59d4014c-d735-404f-9ab6-ef05a94410bf">
+				<Properties>
+					<Name>ON_NSCHFDOPPR_01_Испр</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_NSCHFDOPPR - 01 Испр (УПД Счет-фактура исправленная)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4d117cda-e224-41ad-a174-4a905e5f4615">
+				<Properties>
+					<Name>ON_NSCHFDOPPRMARK_01</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_NSCHFDOPPRMARK - 01 (Маркировка - УПД Счет-фактура)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="00a0d4c2-fca7-484c-9392-9b63a1db5ed1">
+				<Properties>
+					<Name>ON_NSCHFDOPPRMARK_01_Испр</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_NSCHFDOPPRMARK - 01 Испр (Маркировка - УПД Счет-фактура исправленная)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="38743676-4653-4ec9-8a29-b665756c96c0">
+				<Properties>
+					<Name>ON_NSCHFDOPPRPROS_01</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_NSCHFDOPPRPROS - 01 (Прослеживаемость - УПД Счет-фактура)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d9669174-1e4c-4753-b89f-f679a6ca18fb">
+				<Properties>
+					<Name>ON_NSCHFDOPPRPROS_01_Испр</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_NSCHFDOPPRPROS - 01 Испр (Прослеживаемость - УПД Счет-фактура исправленная)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="fb1469db-8932-4829-a745-82af97b5b21c">
+				<Properties>
+					<Name>ON_SCHFDOPPOK_11</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_SCHFDOPPOK - 11 (УПД Информация покупателя)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="32364e6f-ba85-4bfd-80d6-59f416b100f0">
+				<Properties>
+					<Name>ON_SCHFDOPPR_01</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_SCHFDOPPR - 01 (УПД Счет-фактура)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3498a8cd-9936-4b42-baaf-750593e1b960">
+				<Properties>
+					<Name>ON_SCHFDOPPR_01_Испр</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ON_SCHFDOPPR - 01 Испр (УПД Счет-фактура исправленная)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="414ca77b-389e-4521-983d-c296055653f4">
+				<Properties>
+					<Name>ORDER_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ORDER входящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f5beef8e-5b97-4a0c-9ffb-a11f47944b7d">
+				<Properties>
+					<Name>ORDER_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ORDER исходящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="48d1a4ca-bd45-4570-bce6-5f0a2ea77be5">
+				<Properties>
+					<Name>ORDRSP_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ORDRSP входящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3246aab3-78b6-460b-b18f-c5350b1dee8c">
+				<Properties>
+					<Name>ORDRSP_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ORDRSP исходящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c98b5a86-7a77-4d8e-acfe-d6774744d111">
+				<Properties>
+					<Name>PRICAT_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>PRICAT входящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="701b182d-fd28-4da4-b0ae-2a388d5dcf80">
+				<Properties>
+					<Name>PRICAT_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>PRICAT исходящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8ff0cd15-75ed-44b6-8e12-44fb94721236">
+				<Properties>
+					<Name>RECADV_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>RECADV входящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="990e1db6-f246-4396-90d2-8344857ceb7e">
+				<Properties>
+					<Name>RECADV_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>RECADV исходящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="03e1c986-cca5-484f-90f6-953f32a81ce0">
+				<Properties>
+					<Name>RETANN_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>RETANN входящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8254d150-6d8a-42cc-b534-972ca451771b">
+				<Properties>
+					<Name>RETANN_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>RETANN исходящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b1781abb-7499-4644-a6bb-ffc5f0d81c79">
+				<Properties>
+					<Name>RETINS_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>RETINS входящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e5538597-8cac-4163-9462-77684542229a">
+				<Properties>
+					<Name>RETINS_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>RETINS исходящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="365e507c-1dc6-49b9-bd31-82c0cae077f2">
+				<Properties>
+					<Name>RETORD_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>RETORD исходящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e10f9488-16a9-4da3-a17a-1e500172ce11">
+				<Properties>
+					<Name>STATUS</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>STATUS - служебный документ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ea9e02db-0e3e-468c-bfd4-7eabbbbadfc6">
+				<Properties>
+					<Name>WHGOU_04_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>WHGOU 04 входящий (Титул ГО) - КЭП ГО</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a9032973-57be-42e6-b41e-e79ebeed3b38">
+				<Properties>
+					<Name>WHGOU_04_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>WHGOU 04 исходящий (Титул ГО) - КЭП ГО</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="82db5995-1144-49b8-abeb-d5899ffadcfd">
+				<Properties>
+					<Name>WHGOV_01_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>WHGOV 01 входящий (Сообщение ГО) - ПЭП Кладовщика</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="379ac674-41b3-4be9-ade9-f950c0a91404">
+				<Properties>
+					<Name>WHGOV_01_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>WHGOV 01 исходящий (Сообщение ГО) - ПЭП Кладовщика</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="309ce708-3cda-4ecb-a5d1-9cc13b3941f1">
+				<Properties>
+					<Name>WHGPU_08_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>WHGPU 08 входящий (Титул ГП) - КЭП ГП</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="434b38ad-f7bc-4800-8348-e73466ac3e40">
+				<Properties>
+					<Name>WHGPU_08_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>WHGPU 08 исходящий (Титул ГП) - КЭП ГП</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a582cfda-564c-4186-949a-8ca6f3bb0c31">
+				<Properties>
+					<Name>WHGPV_05_Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>WHGPV 05 входящий (Сообщение ГП) - ПЭП</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1f213de8-0635-4c83-9ec2-259dcf5d04ea">
+				<Properties>
+					<Name>WHGPV_05_Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>WHGPV 05 исходящий (Сообщение ГП) - ПЭП</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Document uuid="3c39a8a9-35e7-4a91-83ff-99680e3c71d2">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ЗаказНаПеремещение" category="Object">
+				<xr:TypeId>c87d2be1-8baf-4416-a247-88934eb504ca</xr:TypeId>
+				<xr:ValueId>02bc5287-c819-43e0-bd0e-a1020f4d0dc6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ЗаказНаПеремещение" category="Ref">
+				<xr:TypeId>08b676cd-ba86-45c9-8198-ca0c8207de13</xr:TypeId>
+				<xr:ValueId>467033fc-06bc-436b-bf0f-553fa67c9454</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ЗаказНаПеремещение" category="Selection">
+				<xr:TypeId>70661df6-52b8-4766-8e92-c21ee9d208f6</xr:TypeId>
+				<xr:ValueId>339cf6e2-fad3-45c5-8218-c36f611a16c4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ЗаказНаПеремещение" category="List">
+				<xr:TypeId>94403228-f2eb-4d2d-8a84-b3337907a085</xr:TypeId>
+				<xr:ValueId>bd61f115-b014-4502-8975-31168a4a0563</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ЗаказНаПеремещение" category="Manager">
+				<xr:TypeId>0f1ff3e8-ccfd-4f36-9b05-d888783d1868</xr:TypeId>
+				<xr:ValueId>c4bf4632-6d8b-4f20-b560-62057a7af9be</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ЗаказНаПеремещение</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>a0254d97-793a-47e1-8640-7712761e87f0</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="4145ecd0-d746-44f8-b457-e8117a2082a8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Статус</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>32d46505-597c-4279-84b7-7fd6d6f7ff6b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.СтатусыВнутреннихЗаказов</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаДокумента</Form>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

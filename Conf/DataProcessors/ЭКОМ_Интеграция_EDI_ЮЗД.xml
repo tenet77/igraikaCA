@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<DataProcessor uuid="8210dbeb-9a61-41f4-8d00-06c81a00f9fe">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ЭКОМ_Интеграция_EDI_ЮЗД" category="Object">
+				<xr:TypeId>fc7fe428-6beb-430e-a421-4c138172c68d</xr:TypeId>
+				<xr:ValueId>46b8e536-6f2b-42c2-b76a-55de1cb07248</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ЭКОМ_Интеграция_EDI_ЮЗД" category="Manager">
+				<xr:TypeId>1a127937-341c-4acd-b0f6-7c597fd6d650</xr:TypeId>
+				<xr:ValueId>7cada91d-8d40-4668-b09c-6c669e2ade58</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ЭКОМ_Интеграция_EDI_ЮЗД</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Docrobot: Интеграция EDI</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>ВерсияОбработки = "1.21.0"</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.ЭКОМ_Интеграция_EDI_ЮЗД.Form.ОФ_Приветствие</DefaultForm>
+			<AuxiliaryForm>DataProcessor.ЭКОМ_Интеграция_EDI_ЮЗД.Form.УФ_Форма</AuxiliaryForm>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>КонсольЗапросов</Form>
+			<Form>ФормаЭлементаКонтрагенты</Form>
+			<Form>НастройкаСоответствий</Form>
+			<Form>НастройкиСлужебные</Form>
+			<Form>ФормаЭлементаОрганизации</Form>
+			<Form>ФормаЭлементаТочкиДоставки</Form>
+			<Form>ЭДО_Форма</Form>
+			<Form>УФ_Форма</Form>
+			<Form>НастройкиОсновные</Form>
+			<Form>УФ_ФормаНастройкиОсновные</Form>
+			<Form>ФормаDesscc</Form>
+			<Form>УФ_ФормаDesscc</Form>
+			<Form>УФ_ФормаЗаписиНоменклатурыКонтрагента</Form>
+			<Form>УФ_ФормаКонсольЗапросов</Form>
+			<Form>УФ_ФормаКонтрагента</Form>
+			<Form>УФ_ФормаНастройкиСлужебные</Form>
+			<Form>УФ_ФормаНастройкиСоответсвий</Form>
+			<Form>УФ_ФормаОбновления</Form>
+			<Form>УФ_ФормаОрганизации</Form>
+			<Form>УФ_ФормаСвязи</Form>
+			<Form>УФ_ФормаТочкиДоставки</Form>
+			<Form>УФ_ФормаВводаПароля</Form>
+			<Form>ФормаВводаПароля</Form>
+			<Form>ФормаОбновления</Form>
+			<Form>ФормаОтбора</Form>
+			<Form>ФормаОтчета</Form>
+			<Form>ФормаСвязи</Form>
+			<Form>ХодВыполненияОбработкиДанных</Form>
+			<Form>СохранениеНастроек</Form>
+			<Form>УФ_СохранениеНастроек</Form>
+			<Form>УФ_ФормаОтчета</Form>
+			<Form>ОФ_Приветствие</Form>
+			<Form>УФ_Приветствие</Form>
+			<Form>ФормаГибкиеНастройкиОнлайн</Form>
+			<Form>УФ_ГибкиеНастройкиОнлайн</Form>
+			<Form>СинхронизацияКвитанций</Form>
+			<Form>УФ_СинхронизацияКвитанций</Form>
+			<Form>УФ_ФормаОтбора</Form>
+			<Form>ОФ_ФормаНовыйCONDRA</Form>
+			<Form>УФ_ФормаНовыйCONDRA</Form>
+			<Form>ФормаНастройкиПечатиЮЗД</Form>
+			<Form>УФ_ФормаНастройкиПечатиЮЗД</Form>
+			<Form>УФ_ВыборСохраняемыхНастроек</Form>
+			<Form>ВыборСохраняемыхНастроек</Form>
+			<Form>ОФ_Новости</Form>
+			<Form>УФ_Новости</Form>
+			<Form>ДополнительныеНастройки</Form>
+			<Form>УФ_ДополнительныеНастройки</Form>
+			<Form>ЗагрузкаXLSX</Form>
+			<Template>ОтчетПоставщик</Template>
+			<Template>ОтчетПоСетям</Template>
+			<Template>КонсольЗапросовУФ</Template>
+			<Template>КонсольЗапросовОФ</Template>
+			<Template>ОтчетПоНезавершеннымДокументамЮЗД</Template>
+			<Template>ШК_Паллеты</Template>
+			<Template>КомпонентаПечатиШтрихкодов</Template>
+			<Template>ОтчетПоЛогамСобытий</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

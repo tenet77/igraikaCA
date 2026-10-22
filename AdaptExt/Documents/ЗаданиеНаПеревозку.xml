@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Document uuid="53826fb3-e288-4f47-bfaf-c2f21aaf7b69">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ЗаданиеНаПеревозку" category="Object">
+				<xr:TypeId>c7253b21-0403-495c-9418-8c329856e0e8</xr:TypeId>
+				<xr:ValueId>c9d2c859-227f-47ae-9dd0-f75f94bd458c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ЗаданиеНаПеревозку" category="Ref">
+				<xr:TypeId>0293daa6-2b39-4666-8696-cfea8412dfd4</xr:TypeId>
+				<xr:ValueId>70e27e40-7b07-40d2-bb6d-4f13c2c07680</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ЗаданиеНаПеревозку" category="Selection">
+				<xr:TypeId>f4bbf9d8-f5d8-4ba5-b844-0dc5a12f44fa</xr:TypeId>
+				<xr:ValueId>769c68dc-4446-4044-a507-03803a09527c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ЗаданиеНаПеревозку" category="List">
+				<xr:TypeId>354434d4-888b-48be-8c3b-096f406046e6</xr:TypeId>
+				<xr:ValueId>55085fd5-a34d-4191-b221-96092f536194</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ЗаданиеНаПеревозку" category="Manager">
+				<xr:TypeId>e8728d93-340d-48a7-800a-7ab5ea3e68ae</xr:TypeId>
+				<xr:ValueId>83c5d45b-c008-478c-a6ed-23d48af62aa1</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ЗаданиеНаПеревозку</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>d371a3f9-8a6a-4f41-8820-d9a12b2d57af</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Template>ПФ_MXL_МаршрутныйЛистКорректировка</Template>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

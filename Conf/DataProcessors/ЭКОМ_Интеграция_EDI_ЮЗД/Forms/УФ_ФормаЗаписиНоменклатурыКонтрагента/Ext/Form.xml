@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="КомандаРазрешитьРедактирование" id="45">
+				<Type>CommandBarButton</Type>
+				<Enabled>false</Enabled>
+				<CommandName>Form.Command.РазрешитьРедактирование</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="КомандаРазрешитьРедактированиеРасширеннаяПодсказка" id="46"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Контрагент" id="1">
+			<DataPath>Запись.Контрагент</DataPath>
+			<ContextMenu name="КонтрагентКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<UsualGroup name="ГруппаДанныеИБ" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствие номенклатуре</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="ГруппаДанныеИБРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<InputField name="Номенклатура" id="28">
+					<DataPath>Запись.Номенклатура</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НоменклатураКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="30"/>
+				</InputField>
+				<InputField name="НаименованиеНоменклатурыКонтрагента" id="53">
+					<DataPath>Запись.НаименованиеНоменклатурыКонтрагента</DataPath>
+					<ContextMenu name="НаименованиеНоменклатурыКонтрагентаКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="НаименованиеНоменклатурыКонтрагентаРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="ХарактеристикаНоменклатуры" id="31">
+					<DataPath>Запись.ХарактеристикаНоменклатуры</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Характеристика</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ХарактеристикаНоменклатурыКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ХарактеристикаНоменклатурыРасширеннаяПодсказка" id="33"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРеквизиты" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа реквизиты</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРеквизитыРасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<InputField name="ЕдиницаНоменклатурыКонтрагента" id="13">
+					<DataPath>Запись.ЕдиницаНоменклатурыКонтрагента</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ед. изм.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ЕдиницаНоменклатурыКонтрагентаКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ЕдиницаНоменклатурыКонтрагентаРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="КодНоменклатурыКонтрагента" id="47">
+					<DataPath>Запись.КодНоменклатурыКонтрагента</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КодНоменклатурыКонтрагентаКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="КодНоменклатурыКонтрагентаРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="АртикулНоменклатурыКонтрагента" id="16">
+					<DataPath>Запись.АртикулНоменклатурыКонтрагента</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Артикул</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="АртикулНоменклатурыКонтрагентаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="АртикулНоменклатурыКонтрагентаРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="ШтрихКодНоменклатурыКонтрагента" id="19">
+					<DataPath>Запись.ШтрихКодНоменклатурыКонтрагента</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Штрихкод</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ШтрихКодНоменклатурыКонтрагентаКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ШтрихКодНоменклатурыКонтрагентаРасширеннаяПодсказка" id="21"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИдентификаторы" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификаторы</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>None</Representation>
+			<ShowLeftMargin>false</ShowLeftMargin>
+			<ExtendedTooltip name="ГруппаИдентификаторыРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<InputField name="Идентификатор" id="4">
+					<DataPath>Запись.Идентификатор</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уникальный идентификатор номенклатуры контрагента</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<ContextMenu name="ИдентификаторКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ИдентификаторРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ЭКОМ_НоменклатураКонтрагентов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="РазрешитьРедактирование" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить редактирование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить редактирование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Change</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>РазрешитьРедактирование</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

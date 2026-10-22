@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Style xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Item name="FormBackColor">
+		<Color>web:White</Color>
+	</Item>
+	<Item name="FormTextColor">
+		<Color>web:DarkSlateGray</Color>
+	</Item>
+	<Item name="ButtonBackColor">
+		<Color>web:White</Color>
+	</Item>
+	<Item name="ButtonTextColor">
+		<Color>web:DarkSlateGray</Color>
+	</Item>
+	<Item name="FieldBackColor">
+		<Color>web:White</Color>
+	</Item>
+	<Item name="ToolTipBackColor">
+		<Color>web:Azure</Color>
+	</Item>
+	<Item name="BorderColor">
+		<Color>web:SlateGray</Color>
+	</Item>
+	<Item name="ReportHeaderBackColor">
+		<Color>web:AliceBlue</Color>
+	</Item>
+	<Item name="ReportGroup1BackColor">
+		<Color>web:Azure</Color>
+	</Item>
+	<Item name="ReportGroup2BackColor">
+		<Color>web:GhostWhite</Color>
+	</Item>
+	<Item name="ReportLineColor">
+		<Color>web:SlateGray</Color>
+	</Item>
+	<Item name="ButtonBorderColor">
+		<Color>web:SlateGray</Color>
+	</Item>
+	<Item name="TableHeaderBackColor">
+		<Color>web:Azure</Color>
+	</Item>
+	<Item name="TableFooterBackColor">
+		<Color>web:Snow</Color>
+	</Item>
+	<Item name="ActivityColor">
+		<Color>web:SeaShell</Color>
+	</Item>
+	<Item name="NavigationColor">
+		<Color>web:White</Color>
+	</Item>
+	<Item name="AuxiliaryNavigationColor">
+		<Color>web:Azure</Color>
+	</Item>
+	<Item name="ImportantColor">
+		<Color>web:LightCyan</Color>
+	</Item>
+</Style>

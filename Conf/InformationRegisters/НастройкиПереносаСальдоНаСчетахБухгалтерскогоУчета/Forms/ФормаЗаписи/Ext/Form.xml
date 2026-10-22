@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаПериод" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<InputField name="Период" id="18">
+					<DataPath>Запись.Period</DataPath>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="20"/>
+				</InputField>
+				<CheckBoxField name="Используется" id="21">
+					<DataPath>Запись.Используется</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользуетсяКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ИспользуетсяРасширеннаяПодсказка" id="23"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Счет" id="1">
+			<DataPath>Запись.Счет</DataPath>
+			<Width>25</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="СчетКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="СчетРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="OnChange">СчетПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="КорСчет" id="4">
+			<DataPath>Запись.КорСчет</DataPath>
+			<Width>25</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="КорСчетКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="КорСчетРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="OnChange">КорСчетПриИзменении</Event>
+			</Events>
+		</InputField>
+		<CheckBoxField name="ВозвратСальдо" id="15">
+			<DataPath>Запись.ВозвратСальдо</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВозвратСальдоКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="ВозвратСальдоРасширеннаяПодсказка" id="17"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.НастройкиПереносаСальдоНаСчетахБухгалтерскогоУчета</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

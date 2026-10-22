@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="f6b5d11b-ff40-485a-92d5-b7b9e6ed00e4">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СтатусыВнутреннихЗаказов" category="Ref">
+				<xr:TypeId>e00d47ed-e2a7-4aef-90e3-4775ca12de73</xr:TypeId>
+				<xr:ValueId>c424b21d-dcdc-4445-9e1e-09f90d43c64e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СтатусыВнутреннихЗаказов" category="Manager">
+				<xr:TypeId>19af8322-ec73-4334-992a-293c1675f416</xr:TypeId>
+				<xr:ValueId>7ae0a4e4-a6c8-4550-a5a2-a48483623aa7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СтатусыВнутреннихЗаказов" category="List">
+				<xr:TypeId>20528d64-5336-4d35-894a-33e90e5b7724</xr:TypeId>
+				<xr:ValueId>18c8f899-5fd5-4633-bf8f-8ffd0b05d4cc</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СтатусыВнутреннихЗаказов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>73cd2b17-8793-4849-8bd5-f6c79e9ed7f6</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="154201b0-f86b-47c6-8b38-3a0188b002bc">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Закрыт</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f0fcf236-33cd-4808-9726-6ed3befab868</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

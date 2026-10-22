@@ -1,0 +1,161 @@
+<xs:schema xmlns:tns="http://soap.edi.exite.org/"
+		xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		version="1.0"
+		targetNamespace="http://soap.edi.exite.org/">
+	<xs:element name="archiveDoc"
+			type="tns:archiveDoc"/>
+	<xs:element name="archiveDocResponse"
+			type="tns:archiveDocResponse"/>
+	<xs:element name="getDoc"
+			type="tns:getDoc"/>
+	<xs:element name="getDocResponse"
+			type="tns:getDocResponse"/>
+	<xs:element name="getList"
+			type="tns:getList"/>
+	<xs:element name="getListResponse"
+			type="tns:getListResponse"/>
+	<xs:element name="sendDoc"
+			type="tns:sendDoc"/>
+	<xs:element name="sendDocResponse"
+			type="tns:sendDocResponse"/>
+	<xs:element name="uploadDoc"
+			type="tns:uploadDoc"/>
+	<xs:element name="uploadDocResponse"
+			type="tns:uploadDocResponse"/>
+	<xs:complexType name="getDoc">
+		<xs:sequence>
+			<xs:element name="user"
+					type="tns:ediLogin"
+					minOccurs="0"/>
+			<xs:element name="fileName"
+					type="xs:string"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ediLogin">
+		<xs:sequence>
+			<xs:element name="login"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="pass"
+					type="xs:string"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getDocResponse">
+		<xs:sequence>
+			<xs:element name="result"
+					type="tns:ediFile"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ediFile">
+		<xs:complexContent>
+			<xs:extension base="tns:ediResponse">
+				<xs:sequence>
+					<xs:element name="content"
+							type="xs:base64Binary"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ediResponse">
+		<xs:sequence>
+			<xs:element name="errorCode"
+					type="xs:int"/>
+			<xs:element name="errorMessage"
+					type="xs:string"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="uploadDoc">
+		<xs:sequence>
+			<xs:element name="user"
+					type="tns:ediLogin"
+					minOccurs="0"/>
+			<xs:element name="fileName"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="content"
+					type="xs:base64Binary"
+					nillable="true"
+					minOccurs="0"/>
+			<xs:element name="remoteFolder"
+					type="xs:string"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="uploadDocResponse">
+		<xs:sequence>
+			<xs:element name="result"
+					type="tns:ediResponse"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="sendDoc">
+		<xs:sequence>
+			<xs:element name="user"
+					type="tns:ediLogin"
+					minOccurs="0"/>
+			<xs:element name="fileName"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="content"
+					type="xs:base64Binary"
+					nillable="true"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="sendDocResponse">
+		<xs:sequence>
+			<xs:element name="result"
+					type="tns:ediResponse"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="archiveDoc">
+		<xs:sequence>
+			<xs:element name="user"
+					type="tns:ediLogin"
+					minOccurs="0"/>
+			<xs:element name="fileName"
+					type="xs:string"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="archiveDocResponse">
+		<xs:sequence>
+			<xs:element name="result"
+					type="tns:ediResponse"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getList">
+		<xs:sequence>
+			<xs:element name="user"
+					type="tns:ediLogin"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getListResponse">
+		<xs:sequence>
+			<xs:element name="result"
+					type="tns:ediFileList"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ediFileList">
+		<xs:complexContent>
+			<xs:extension base="tns:ediResponse">
+				<xs:sequence>
+					<xs:element name="list"
+							type="xs:string"
+							nillable="true"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,574 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="58">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="59"/>
+			<ChildItems>
+				<UsualGroup name="Группа4" id="70">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="71"/>
+					<ChildItems>
+						<Button name="Команда1" id="1">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Команда1</CommandName>
+							<ExtendedTooltip name="Команда1РасширеннаяПодсказка" id="2"/>
+						</Button>
+						<Button name="УдалитьКатегории" id="53">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УдалитьКатегории</CommandName>
+							<ExtendedTooltip name="УдалитьКатегорииРасширеннаяПодсказка" id="54"/>
+						</Button>
+						<Button name="ОчиститьРегистр" id="51">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОчиститьРегистр</CommandName>
+							<ExtendedTooltip name="ОчиститьРегистрРасширеннаяПодсказка" id="52"/>
+						</Button>
+						<Button name="ЗаолнитьРегистрСвойствКаспи" id="3">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗаолнитьРегистрСвойствКаспи</CommandName>
+							<ExtendedTooltip name="ЗаолнитьРегистрСвойствКаспиРасширеннаяПодсказка" id="4"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа3" id="68">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="69"/>
+					<ChildItems>
+						<Button name="СоздатьМаппингВидНом" id="60">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СоздатьМаппингВидНом</CommandName>
+							<ExtendedTooltip name="СоздатьМаппингВидНомРасширеннаяПодсказка" id="61"/>
+						</Button>
+						<Button name="АйпиПортыСкладыРазмерыЦветы" id="62">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.загрузкаСкладыРазмерыЦветы</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>АйпиПортыСкладыРазмерыЦветы</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="АйпиПортыСкладыРазмерыЦветыРасширеннаяПодсказка" id="63"/>
+						</Button>
+						<Button name="ЗаполнитьТабЧастьХарактеристик" id="66">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗаполнитьТабЧастьХарактеристик</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обновить таб. часть характеристик</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ЗаполнитьТабЧастьХарактеристикРасширеннаяПодсказка" id="67"/>
+						</Button>
+						<Button name="СоздатьJSONДляОтправки" id="64">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СоздатьJSONДляОтправки</CommandName>
+							<ExtendedTooltip name="СоздатьJSONДляОтправкиРасширеннаяПодсказка" id="65"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа5" id="76">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="77"/>
+					<ChildItems>
+						<Button name="ПроверкаСтатусаОтправки" id="72">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПроверкаСтатусаОтправки</CommandName>
+							<ExtendedTooltip name="ПроверкаСтатусаОтправкиРасширеннаяПодсказка" id="73"/>
+						</Button>
+						<Button name="ПрочитатьJSON" id="74">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПрочитатьJSON</CommandName>
+							<ExtendedTooltip name="ПрочитатьJSONРасширеннаяПодсказка" id="75"/>
+						</Button>
+						<Button name="ОтправитьПрайс" id="78">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОтправитьПрайс</CommandName>
+							<ExtendedTooltip name="ОтправитьПрайсРасширеннаяПодсказка" id="79"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа6" id="80">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="81"/>
+					<ChildItems>
+						<Button name="ПолучитьКатегорииКаспиИграйка" id="82">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПолучитьКатегорииКаспиИграйка</CommandName>
+							<ExtendedTooltip name="ПолучитьКатегорииКаспиИграйкаРасширеннаяПодсказка" id="83"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="46">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="47"/>
+			<ChildItems>
+				<Table name="тз" id="5">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>тз</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="тзКонтекстноеМеню" id="6"/>
+					<AutoCommandBar name="тзКоманднаяПанель" id="7"/>
+					<ExtendedTooltip name="тзРасширеннаяПодсказка" id="8"/>
+					<SearchStringAddition name="тзСтрокаПоиска" id="9">
+						<AdditionSource>
+							<Item>тз</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="тзСтрокаПоискаКонтекстноеМеню" id="10"/>
+						<ExtendedTooltip name="тзСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="тзСостояниеПросмотра" id="12">
+						<AdditionSource>
+							<Item>тз</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="тзСостояниеПросмотраКонтекстноеМеню" id="13"/>
+						<ExtendedTooltip name="тзСостояниеПросмотраРасширеннаяПодсказка" id="14"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="тзУправлениеПоиском" id="15">
+						<AdditionSource>
+							<Item>тз</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="тзУправлениеПоискомКонтекстноеМеню" id="16"/>
+						<ExtendedTooltip name="тзУправлениеПоискомРасширеннаяПодсказка" id="17"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="тзкод" id="18">
+							<DataPath>тз.код</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="тзкодКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="тзкодРасширеннаяПодсказка" id="20"/>
+						</InputField>
+						<InputField name="тзназв" id="21">
+							<DataPath>тз.назв</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="тзназвКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="тзназвРасширеннаяПодсказка" id="23"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="тз2" id="24">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>тз2</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="тз2КонтекстноеМеню" id="25"/>
+					<AutoCommandBar name="тз2КоманднаяПанель" id="26"/>
+					<ExtendedTooltip name="тз2РасширеннаяПодсказка" id="27"/>
+					<SearchStringAddition name="тз2СтрокаПоиска" id="28">
+						<AdditionSource>
+							<Item>тз2</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="тз2СтрокаПоискаКонтекстноеМеню" id="29"/>
+						<ExtendedTooltip name="тз2СтрокаПоискаРасширеннаяПодсказка" id="30"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="тз2СостояниеПросмотра" id="31">
+						<AdditionSource>
+							<Item>тз2</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="тз2СостояниеПросмотраКонтекстноеМеню" id="32"/>
+						<ExtendedTooltip name="тз2СостояниеПросмотраРасширеннаяПодсказка" id="33"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="тз2УправлениеПоиском" id="34">
+						<AdditionSource>
+							<Item>тз2</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="тз2УправлениеПоискомКонтекстноеМеню" id="35"/>
+						<ExtendedTooltip name="тз2УправлениеПоискомРасширеннаяПодсказка" id="36"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="тз2колонка1" id="37">
+							<DataPath>тз2.колонка1</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="тз2колонка1КонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="тз2колонка1РасширеннаяПодсказка" id="39"/>
+						</InputField>
+						<InputField name="тз2колонка2" id="40">
+							<DataPath>тз2.колонка2</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="тз2колонка2КонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="тз2колонка2РасширеннаяПодсказка" id="42"/>
+						</InputField>
+						<InputField name="тз2колонка22" id="48">
+							<DataPath>тз2.колонка22</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="тз2колонка22КонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="тз2колонка22РасширеннаяПодсказка" id="50"/>
+						</InputField>
+						<InputField name="тз2колонка3" id="43">
+							<DataPath>тз2.колонка3</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="тз2колонка3КонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="тз2колонка3РасширеннаяПодсказка" id="45"/>
+						</InputField>
+						<InputField name="тз2колонка4" id="55">
+							<DataPath>тз2.колонка4</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="тз2колонка4КонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="тз2колонка4РасширеннаяПодсказка" id="57"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.СервиснаяОбработкаКаспи</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="тз" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тз</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="код" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="назв" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Назв</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="тз2" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тз2</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="колонка1" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="колонка2" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка2</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="колонка3" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка3</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="колонка22" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка22</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="колонка4" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка4</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="колонка1" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Колонка1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Команда1" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать категории Каспи</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Команда1</Action>
+		</Command>
+		<Command name="ЗаолнитьРегистрСвойствКаспи" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заолнить регистр свойств каспи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заолнить регистр свойств каспи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаолнитьРегистрСвойствКаспи</Action>
+		</Command>
+		<Command name="ОчиститьРегистр" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить регистр</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить регистр</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьРегистр</Action>
+		</Command>
+		<Command name="УдалитьКатегории" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить категории</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить категории</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Команда2</Action>
+		</Command>
+		<Command name="СоздатьМаппингВидНом" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать маппинг вид ном</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать маппинг вид ном</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьМаппингВидНом</Action>
+		</Command>
+		<Command name="загрузкаСкладыРазмерыЦветы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка склады размеры цветы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка склады размеры цветы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>загрузкаСкладыРазмерыЦветы</Action>
+		</Command>
+		<Command name="СоздатьJSONДляОтправки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать JSONДля отправки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать JSONДля отправки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьJSONДляОтправки</Action>
+		</Command>
+		<Command name="ЗаполнитьТабЧастьХарактеристик" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить таб часть характеристик всей номенкл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить таб часть характеристик</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьТабЧастьХарактеристик</Action>
+		</Command>
+		<Command name="ПроверкаСтатусаОтправки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка статуса отправки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка статуса отправки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверкаСтатусаОтправки</Action>
+		</Command>
+		<Command name="ПрочитатьJSON" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать JSON</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать JSON</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрочитатьJSON1</Action>
+		</Command>
+		<Command name="ОтправитьПрайс" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить прайс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить прайс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьПрайс</Action>
+		</Command>
+		<Command name="ПолучитьКатегорииКаспиИграйка" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить категории каспи играйка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить категории каспи играйка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьКатегорииКаспиИграйка</Action>
+		</Command>
+	</Commands>
+</Form>

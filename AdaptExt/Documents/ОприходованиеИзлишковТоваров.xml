@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Document uuid="0474b9ec-86b0-437a-9936-f5647122e01a">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ОприходованиеИзлишковТоваров" category="Object">
+				<xr:TypeId>9622f173-251a-4416-af5a-8d811d852d3f</xr:TypeId>
+				<xr:ValueId>040b25e8-0875-4bb8-b871-545cd50fadae</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ОприходованиеИзлишковТоваров" category="Ref">
+				<xr:TypeId>bcc47c89-dd1e-426c-a3b1-25eafdbf500b</xr:TypeId>
+				<xr:ValueId>190293d3-05f0-4c09-97a4-d65b9d447786</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ОприходованиеИзлишковТоваров" category="Selection">
+				<xr:TypeId>20aae5db-385e-4ac9-80bf-f6bf846b9cc6</xr:TypeId>
+				<xr:ValueId>718277bd-07a8-483c-8e37-193a39cd25f0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ОприходованиеИзлишковТоваров" category="List">
+				<xr:TypeId>2b65a11d-b89e-43e0-a0da-468ad311eccb</xr:TypeId>
+				<xr:ValueId>57f81b33-5d48-4ee6-a415-f837809a9ab2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ОприходованиеИзлишковТоваров" category="Manager">
+				<xr:TypeId>bc65326b-06f6-4743-a7f4-71c0803208ba</xr:TypeId>
+				<xr:ValueId>b4a7686a-9e1c-45ea-81da-d6b466f4c01e</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ОприходованиеИзлишковТоваров</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>318716f3-e4be-4c34-873a-a9fafa785399</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="77dedcfb-d1c8-471a-8448-62ba673d9e82">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Склад</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>89d5fec7-dc5b-480d-9b2c-4e7ea7f75727</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e5a0b204-6c89-452f-8ff1-9b3e28469c32">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Валюта</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b702872a-ff55-42de-874e-18cc7a282867</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="db427f78-fd23-41ed-9a5e-cfb0670ba5f1">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВидЦены</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>7979a9da-f3d2-4518-8d03-58afa0b89456</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыЦен</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="f7e226bc-93ff-4ca2-81e5-7faeadecc67c">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ОприходованиеИзлишковТоваров.Товары" category="TabularSection">
+						<xr:TypeId>a29c3f6f-651e-4137-b133-b66a57699df5</xr:TypeId>
+						<xr:ValueId>dea3e245-2df2-4e6b-8292-9789b6dcbf1c</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ОприходованиеИзлишковТоваров.Товары" category="TabularSectionRow">
+						<xr:TypeId>f8fbb379-3587-49a6-b5cf-c412020f6f0b</xr:TypeId>
+						<xr:ValueId>dabb69eb-7c70-4369-837f-96543ac4b211</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Товары</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>12b88ea5-2c03-48ae-ada5-e748306e4b3d</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects/>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

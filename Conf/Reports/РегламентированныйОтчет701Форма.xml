@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Report uuid="6f764519-5b68-4d99-96d2-28cf49bacdde">
+		<InternalInfo>
+			<xr:GeneratedType name="ReportObject.РегламентированныйОтчет701Форма" category="Object">
+				<xr:TypeId>882a6334-233d-422c-b1ec-1e2488c94e09</xr:TypeId>
+				<xr:ValueId>d0ca375a-63e2-4523-acc4-a1cd722605e7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ReportManager.РегламентированныйОтчет701Форма" category="Manager">
+				<xr:TypeId>837b2d26-e036-4e54-a483-ba0754babab0</xr:TypeId>
+				<xr:ValueId>fc60645b-fd8f-4583-ba4a-e9d251c5cb55</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>РегламентированныйОтчет701Форма</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регламентированный отчет 701 форма</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>Report.РегламентированныйОтчет701Форма.Form.ОсновнаяФорма</DefaultForm>
+			<AuxiliaryForm/>
+			<MainDataCompositionSchema/>
+			<DefaultSettingsForm/>
+			<AuxiliarySettingsForm/>
+			<DefaultVariantForm/>
+			<VariantsStorage/>
+			<SettingsStorage/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ОсновнаяФорма</Form>
+			<Form>ФормаОтчета7012016Кв1</Form>
+			<Form>ФормаОтчета7012017Кв1</Form>
+			<Form>ФормаОтчета7012018Кв1</Form>
+			<Form>ФормаОтчета7012019Кв1</Form>
+			<Form>ФормаОтчета7012020Кв1</Form>
+			<Form>ФормаОтчета7012020Кв2</Form>
+			<Template>ФормаОтчета7012016Кв1_Форма701Страница1</Template>
+			<Template>ВыгрузкаВXML</Template>
+			<Template>Показатели</Template>
+			<Template>ФормаОтчета7012017Кв1_Форма701Страница1</Template>
+			<Template>Расшифровка</Template>
+			<Template>ФормаОтчета7012018Кв1_Форма701Страница1</Template>
+			<Template>ФормаОтчета7012018Кв1_Форма70100_001Страница1</Template>
+			<Template>ФормаОтчета7012019Кв1_Форма701Страница1</Template>
+			<Template>ФормаОтчета7012019Кв1_Форма70100_001Страница1</Template>
+			<Template>ФормаОтчета7012020Кв1_Форма701Страница1</Template>
+			<Template>ФормаОтчета7012020Кв1_Форма70100_001Страница1</Template>
+			<Template>ФормаОтчета7012020Кв2_Форма701Страница1</Template>
+			<Template>ФормаОтчета7012020Кв2_Форма70100_001Страница1</Template>
+		</ChildObjects>
+	</Report>
+</MetaDataObject>

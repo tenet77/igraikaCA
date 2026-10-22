@@ -1,0 +1,27 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://igraika.kz/items">
+	<valueType name="ТипСумма" base="xs:decimal" totalDigits="15" fractionDigits="2"/>
+	<valueType name="ТипКоличество" base="xs:decimal" totalDigits="15" fractionDigits="3"/>
+	<objectType name="Объекты">
+		<property xmlns:d3p1="http://igraika.kz/items" name="Строка" type="d3p1:Номенклатура" upperBound="-1"/>
+	</objectType>
+	<objectType name="Номенклатура" open="true" sequenced="true">
+		<property name="ID" type="xs:string"/>
+		<property name="Артикул" type="xs:string" lowerBound="0"/>
+		<property name="Наименование" type="xs:string" lowerBound="0"/>
+		<property name="Категория" type="xs:string" lowerBound="0"/>
+		<property name="ШтрихкодКаспи" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://igraika.kz/items" name="Штрихкоды" type="d3p1:Штрихкоды" upperBound="-1"/>
+		<property xmlns:d3p1="http://igraika.kz/items" name="ЦенаПродажи" type="d3p1:ТипСумма" lowerBound="0"/>
+		<property xmlns:d3p1="http://igraika.kz/items" name="Себестоимость" type="d3p1:ТипСумма" lowerBound="0"/>
+		<property xmlns:d3p1="http://igraika.kz/items" name="Вес" type="d3p1:ТипКоличество" lowerBound="0"/>
+		<property xmlns:d3p1="http://igraika.kz/items" name="Остатки" type="d3p1:Остатки" lowerBound="1" upperBound="-1"/>
+	</objectType>
+	<objectType name="Штрихкоды" open="true" sequenced="true">
+		<property name="Штрихкод" type="xs:string"/>
+	</objectType>
+	<objectType name="Остатки" open="true" sequenced="true">
+		<property xmlns:d3p1="http://igraika.kz/items" name="Остаток" type="d3p1:ТипКоличество" lowerBound="0"/>
+		<property name="Склад" type="xs:string"/>
+		<property name="IDСклада" type="xs:string"/>
+	</objectType>
+</package>

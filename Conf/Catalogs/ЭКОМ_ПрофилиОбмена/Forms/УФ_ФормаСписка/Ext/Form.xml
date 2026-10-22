@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Наименование" id="14">
+					<DataPath>Список.Description</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<LabelField name="Код" id="17">
+					<DataPath>Список.Code</DataPath>
+					<ContextMenu name="КодКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<CheckBoxField name="Активный" id="20">
+					<DataPath>Список.Активный</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="АктивныйКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="АктивныйРасширеннаяПодсказка" id="22"/>
+				</CheckBoxField>
+				<LabelField name="СерверFTP" id="23">
+					<DataPath>Список.СерверFTP</DataPath>
+					<ContextMenu name="СерверFTPКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СерверFTPРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<LabelField name="ИмяПользователяFTP" id="26">
+					<DataPath>Список.ИмяПользователяFTP</DataPath>
+					<ContextMenu name="ИмяПользователяFTPКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ИмяПользователяFTPРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<LabelField name="ВходящийПутьFTP" id="29">
+					<DataPath>Список.ВходящийПутьFTP</DataPath>
+					<ContextMenu name="ВходящийПутьFTPКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ВходящийПутьFTPРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<LabelField name="ИсходящийПутьFTP" id="32">
+					<DataPath>Список.ИсходящийПутьFTP</DataPath>
+					<ContextMenu name="ИсходящийПутьFTPКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ИсходящийПутьFTPРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<CheckBoxField name="ОбменПоSOAP" id="35">
+					<DataPath>Список.ОбменПоSOAP</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОбменПоSOAPКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ОбменПоSOAPРасширеннаяПодсказка" id="37"/>
+				</CheckBoxField>
+				<LabelField name="Порт" id="38">
+					<DataPath>Список.Порт</DataPath>
+					<ContextMenu name="ПортКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ПортРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<LabelField name="СерверAPI" id="41">
+					<DataPath>Список.СерверAPI</DataPath>
+					<ContextMenu name="СерверAPIКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="СерверAPIРасширеннаяПодсказка" id="43"/>
+				</LabelField>
+				<CheckBoxField name="ПроверятьФайлыЛокально" id="44">
+					<DataPath>Список.ПроверятьФайлыЛокально</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПроверятьФайлыЛокальноКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ПроверятьФайлыЛокальноРасширеннаяПодсказка" id="46"/>
+				</CheckBoxField>
+				<CheckBoxField name="ОставитьФайлыНаПлатформеПослеЗагрузки" id="47">
+					<DataPath>Список.ОставитьФайлыНаПлатформеПослеЗагрузки</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОставитьФайлыНаПлатформеПослеЗагрузкиКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ОставитьФайлыНаПлатформеПослеЗагрузкиРасширеннаяПодсказка" id="49"/>
+				</CheckBoxField>
+				<LabelField name="ЭТРН_Сервер" id="50">
+					<DataPath>Список.ЭТРН_Сервер</DataPath>
+					<ContextMenu name="ЭТРН_СерверКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ЭТРН_СерверРасширеннаяПодсказка" id="52"/>
+				</LabelField>
+				<LabelField name="ЭТРН_ИмяПользователя" id="53">
+					<DataPath>Список.ЭТРН_ИмяПользователя</DataPath>
+					<ContextMenu name="ЭТРН_ИмяПользователяКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ЭТРН_ИмяПользователяРасширеннаяПодсказка" id="55"/>
+				</LabelField>
+				<CheckBoxField name="ЭТРН_ОбменПоSOAP" id="56">
+					<DataPath>Список.ЭТРН_ОбменПоSOAP</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЭТРН_ОбменПоSOAPКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ЭТРН_ОбменПоSOAPРасширеннаяПодсказка" id="58"/>
+				</CheckBoxField>
+				<LabelField name="Страна" id="59">
+					<DataPath>Список.Страна</DataPath>
+					<ContextMenu name="СтранаКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="СтранаРасширеннаяПодсказка" id="61"/>
+				</LabelField>
+				<LabelField name="КоличествоФайловВПакете" id="62">
+					<DataPath>Список.КоличествоФайловВПакете</DataPath>
+					<ContextMenu name="КоличествоФайловВПакетеКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="КоличествоФайловВПакетеРасширеннаяПодсказка" id="64"/>
+				</LabelField>
+				<CheckBoxField name="ОбменREST" id="65">
+					<DataPath>Список.ОбменREST</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОбменRESTКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ОбменRESTРасширеннаяПодсказка" id="67"/>
+				</CheckBoxField>
+				<LabelField name="СерверREST" id="68">
+					<DataPath>Список.СерверREST</DataPath>
+					<ContextMenu name="СерверRESTКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="СерверRESTРасширеннаяПодсказка" id="70"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.ЭКОМ_ПрофилиОбмена</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

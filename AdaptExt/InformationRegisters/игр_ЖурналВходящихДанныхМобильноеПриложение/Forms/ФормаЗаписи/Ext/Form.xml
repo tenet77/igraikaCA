@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПоказатьДанные" id="22">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПоказатьДанные</CommandName>
+				<ExtendedTooltip name="ФормаПоказатьДанныеРасширеннаяПодсказка" id="23"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<Pages name="Страницы" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<Page name="Основной" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основной</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основной</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОсновнойРасширеннаяПодсказка" id="19"/>
+					<ChildItems>
+						<LabelField name="Идентификатор" id="1">
+							<DataPath>Запись.Идентификатор</DataPath>
+							<ContextMenu name="ИдентификаторКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ИдентификаторРасширеннаяПодсказка" id="3"/>
+						</LabelField>
+						<InputField name="ДатаПолучения" id="7">
+							<DataPath>Запись.ДатаПолучения</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ДатаПолученияКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ДатаПолученияРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="Описание" id="4">
+							<DataPath>Запись.Описание</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>Left</TitleLocation>
+							<Height>2</Height>
+							<ContextMenu name="ОписаниеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="ОписаниеОтправителя" id="10">
+							<DataPath>Запись.ОписаниеОтправителя</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>Left</TitleLocation>
+							<Height>2</Height>
+							<ContextMenu name="ОписаниеОтправителяКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ОписаниеОтправителяРасширеннаяПодсказка" id="12"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Данные" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ДанныеРасширеннаяПодсказка" id="21"/>
+					<ChildItems>
+						<TextDocumentField name="ТекстДанных" id="13">
+							<DataPath>ТекстДанных</DataPath>
+							<Visible>false</Visible>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ТекстДанныхКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ТекстДанныхРасширеннаяПодсказка" id="15"/>
+						</TextDocumentField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.игр_ЖурналВходящихДанныхМобильноеПриложение</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ТекстДанных" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПоказатьДанные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьДанные</Action>
+		</Command>
+	</Commands>
+</Form>

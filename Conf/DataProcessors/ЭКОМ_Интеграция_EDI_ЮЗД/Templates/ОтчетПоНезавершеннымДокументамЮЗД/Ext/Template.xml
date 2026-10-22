@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СЧФДата</dataPath>
+			<field>СЧФДата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СЧФНомер</dataPath>
+			<field>СЧФНомер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументЭКОМ</dataPath>
+			<field>ДокументЭКОМ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ ЭКОМ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Идентификатор</dataPath>
+			<field>Идентификатор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТекстОшибки</dataPath>
+			<field>ТекстОшибки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление</dataPath>
+			<field>Поступление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступление</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СчетФактураПолученный</dataPath>
+			<field>СчетФактураПолученный</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Счет фактура полученный</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Комментарий</dataPath>
+			<field>Комментарий</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЭКОМ_Объекты_СобытияУточнения.ВидДокумента КАК ПроверкаНаУточнение,
+	ЭКОМ_Объекты_СобытияПодпись.ВидДокумента КАК ПроверкаНаПодпись,
+	ЭКОМ_Документы.Ссылка КАК ДокументЭКОМ,
+	ЭКОМ_Документы.СЧФНомер КАК СЧФНомер,
+	ЭКОМ_Документы.СЧФДата КАК СЧФДата,
+	ЭКОМ_Документы.Организация КАК Организация,
+	ЭКОМ_Документы.Контрагент КАК Контрагент,
+	ЭКОМ_Объекты_СобытияЮЗД.ТекстОшибки КАК ТекстОшибки,
+	ВЫРАЗИТЬ(ЭКОМ_Документы.Документ1С КАК Документ.СчетФактураПолученный).ДокументОснование КАК Поступление,
+	ЭКОМ_Объекты_СобытияЮЗД.Идентификатор КАК Идентификатор,
+	ЭКОМ_Документы.Документ1С КАК СчетФактураПолученный,
+	ЭКОМ_Документы.Комментарий
+ПОМЕСТИТЬ ВТ
+ИЗ
+	РегистрСведений.ЭКОМ_Объекты_События КАК ЭКОМ_Объекты_СобытияЮЗД
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.ЭКОМ_Документы КАК ЭКОМ_Документы
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭКОМ_Объекты_События КАК ЭКОМ_Объекты_СобытияУточнения
+			ПО ЭКОМ_Документы.Ссылка = ЭКОМ_Объекты_СобытияУточнения.Документ_Основание
+				И (ЭКОМ_Объекты_СобытияУточнения.ВидДокумента = ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.DP_UVUTOCH_09))
+				И (ЭКОМ_Объекты_СобытияУточнения.НаправлениеОбмена = ЗНАЧЕНИЕ(Перечисление.ЭКОМ_НаправлениеОбмена.Исходящий))
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭКОМ_Объекты_События КАК ЭКОМ_Объекты_СобытияПодпись
+			ПО ЭКОМ_Документы.Ссылка = ЭКОМ_Объекты_СобытияПодпись.Документ_Основание
+				И (ЭКОМ_Объекты_СобытияПодпись.ВидДокумента В (ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPOK_11), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_KORSCHFDOPPOK_11), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_SCHFDOPPOK_11)))
+				И (ЭКОМ_Объекты_СобытияПодпись.НаправлениеОбмена = ЗНАЧЕНИЕ(Перечисление.ЭКОМ_НаправлениеОбмена.Исходящий))
+		ПО ЭКОМ_Объекты_СобытияЮЗД.ВидДокумента = ЭКОМ_Документы.ВидДокумента
+			И ((ВЫРАЗИТЬ(ЭКОМ_Объекты_СобытияЮЗД.Документ_Основание КАК Документ.ЭКОМ_Документы)) = ЭКОМ_Документы.Ссылка)
+ГДЕ
+	ЭКОМ_Объекты_СобытияЮЗД.НаправлениеОбмена = ЗНАЧЕНИЕ(Перечисление.ЭКОМ_НаправлениеОбмена.Входящий)
+	И ЭКОМ_Объекты_СобытияЮЗД.ВидДокумента В (ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPR_01), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPR_01_Испр), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NKORSCHFDOPPR_01), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NKORSCHFDOPPR_01_Испр))
+	И ЭКОМ_Документы.СЧФДата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ.СЧФДата КАК СЧФДата,
+	ВТ.СЧФНомер КАК СЧФНомер,
+	ВТ.ДокументЭКОМ КАК ДокументЭКОМ,
+	ВТ.Организация КАК Организация,
+	ВТ.Контрагент КАК Контрагент,
+	ВТ.ТекстОшибки КАК ТекстОшибки,
+	ВТ.Поступление КАК Поступление,
+	ВТ.Идентификатор КАК Идентификатор,
+	ВТ.СчетФактураПолученный КАК СчетФактураПолученный,
+	ВТ.Комментарий
+ИЗ
+	ВТ КАК ВТ
+ГДЕ
+	(ВТ.ПроверкаНаПодпись ЕСТЬ NULL
+			ИЛИ ВТ.ПроверкаНаПодпись = НЕОПРЕДЕЛЕНО
+			ИЛИ ВТ.ПроверкаНаПодпись = "")
+	И (ВТ.ПроверкаНаУточнение ЕСТЬ NULL
+			ИЛИ ВТ.ПроверкаНаУточнение = НЕОПРЕДЕЛЕНО
+			ИЛИ ВТ.ПроверкаНаУточнение = "")</query>
+	</dataSet>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СЧФНомер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СЧФДата</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Контрагент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Организация</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТекстОшибки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДокументЭКОМ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СчетФактураПолученный</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Поступление</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Комментарий</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Идентификатор</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

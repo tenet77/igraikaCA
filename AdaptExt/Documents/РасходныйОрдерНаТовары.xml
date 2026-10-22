@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Document uuid="1c2bfdea-d7f5-42b5-94b1-a033b31361db">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.РасходныйОрдерНаТовары" category="Object">
+				<xr:TypeId>992b6686-a9fb-4e0e-8a20-05e326a5fe48</xr:TypeId>
+				<xr:ValueId>d004cb69-7298-4321-9573-0bddf8a7363e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.РасходныйОрдерНаТовары" category="Ref">
+				<xr:TypeId>6b9f2bd3-7ce0-4e6a-8fce-36dd74115b5e</xr:TypeId>
+				<xr:ValueId>bba6fcaa-6557-459a-9c43-a1649ffd0d48</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.РасходныйОрдерНаТовары" category="Selection">
+				<xr:TypeId>2173c2bf-9816-4da0-b6d4-c217443f1031</xr:TypeId>
+				<xr:ValueId>3e6b6133-8740-416a-bca1-370a916a387a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.РасходныйОрдерНаТовары" category="List">
+				<xr:TypeId>00b6c5a6-36fc-4b93-8214-5869d3572f8d</xr:TypeId>
+				<xr:ValueId>13f9b1a7-d4a3-4258-ac3f-c0321872657e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.РасходныйОрдерНаТовары" category="Manager">
+				<xr:TypeId>b9fc0511-4e92-4846-b55e-e46d0066423c</xr:TypeId>
+				<xr:ValueId>3ad52cec-f0cf-4919-9c3c-08bb23e47fbd</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>РасходныйОрдерНаТовары</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>e5b57481-c7d7-459c-8f38-003976928dcf</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="dc1f982f-e0ce-4b88-8ed7-d5f54163c83b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Склад</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b4c013e1-f51f-4900-840f-f755e500fa76</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаДокумента</Form>
+			<TabularSection uuid="79d1b51f-303c-4c87-8368-c82383532885">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.РасходныйОрдерНаТовары.ТоварыПоРаспоряжениям" category="TabularSection">
+						<xr:TypeId>1542ca1a-b95c-4ab9-99ca-71a25d9b9ee9</xr:TypeId>
+						<xr:ValueId>c26e25a3-6d20-4205-a5da-cb626a792b11</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.РасходныйОрдерНаТовары.ТоварыПоРаспоряжениям" category="TabularSectionRow">
+						<xr:TypeId>ca092318-1a8d-418e-b034-23e80f94780e</xr:TypeId>
+						<xr:ValueId>878ddc0b-cdbd-4a3d-9944-fad734c59788</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ТоварыПоРаспоряжениям</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f93cbc89-602b-4c37-a90c-1bceda80afe7</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="27b413f9-e3e2-4bf7-bf33-7f7c695edab3">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Распоряжение</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>07df2cb8-3a48-4671-b17f-d2bf82e412f8</ExtendedConfigurationObject>
+							<Type>
+								<v8:TypeSet>cfg:DefinedType.РаспоряжениеНаОтгрузку</v8:TypeSet>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="9128081f-ce36-4456-81f3-7abf9513f3ef">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.РасходныйОрдерНаТовары.ДополнительныеРеквизиты" category="TabularSection">
+						<xr:TypeId>54339633-612a-4300-b41b-ac651f87d9e0</xr:TypeId>
+						<xr:ValueId>d828de6f-b190-49b1-89ba-dc9328ec2bd4</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.РасходныйОрдерНаТовары.ДополнительныеРеквизиты" category="TabularSectionRow">
+						<xr:TypeId>766c6d6d-dd88-4b03-a100-e4a641a7d8b1</xr:TypeId>
+						<xr:ValueId>f295b080-01fe-49a8-86d1-60adbc196ae3</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДополнительныеРеквизиты</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>fab546f7-7009-4420-880e-e2018d49f757</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="89287a89-cec8-4a5b-a311-633a350f0565">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Свойство</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>d083b504-85ea-4a71-8c3e-38d9547475a5</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="9505b074-a197-4795-9196-101a32f5b761">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Значение</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>41b8536a-4b3d-48ff-833e-784a73c86377</ExtendedConfigurationObject>
+							<Type>
+								<v8:TypeSet>cfg:Characteristic.ДополнительныеРеквизитыИСведения</v8:TypeSet>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<Template>игр_ПФ_MXL_РасходныйОрдерНаТовары</Template>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

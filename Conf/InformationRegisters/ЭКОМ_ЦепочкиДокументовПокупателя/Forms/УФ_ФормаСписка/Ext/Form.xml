@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаПользовательскихНастроек" id="209">
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПользовательскихНастроекРасширеннаяПодсказка" id="210"/>
+		</UsualGroup>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>ГруппаПользовательскихНастроек</UserSettingsGroup>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ORDERDATE" id="14">
+					<DataPath>Список.ORDERDATE</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ORDERDATEКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ORDERDATEРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<LabelField name="Организация" id="17">
+					<DataPath>Список.Организация</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<LabelField name="Контрагент" id="20">
+					<DataPath>Список.Контрагент</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="КонтрагентКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<LabelField name="ТочкаДоставки" id="23">
+					<DataPath>Список.ТочкаДоставки</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ТочкаДоставкиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТочкаДоставкиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<LabelField name="ORDERNUMBER" id="26">
+					<DataPath>Список.ORDERNUMBER</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ORDERNUMBERКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ORDERNUMBERРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<LabelField name="Заказ" id="29">
+					<DataPath>Список.Заказ</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ЗаказКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ЗаказРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<LabelField name="ORDRSP" id="32">
+					<DataPath>Список.ORDRSP</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ORDRSPКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ORDRSPРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<LabelField name="DESADV" id="35">
+					<DataPath>Список.DESADV</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="DESADVКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="DESADVРасширеннаяПодсказка" id="37"/>
+				</LabelField>
+				<LabelField name="ЮЗД" id="38">
+					<DataPath>Список.ЮЗД</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ЮЗДКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ЮЗДРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<LabelField name="ЮЗД_Основание" id="41">
+					<DataPath>Список.ЮЗД_Основание</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ЮЗД_ОснованиеКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ЮЗД_ОснованиеРасширеннаяПодсказка" id="43"/>
+				</LabelField>
+				<LabelField name="Накладная" id="44">
+					<DataPath>Список.Накладная</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НакладнаяКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="НакладнаяРасширеннаяПодсказка" id="46"/>
+				</LabelField>
+				<LabelField name="СЧФ" id="47">
+					<DataPath>Список.СЧФ</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="СЧФКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="СЧФРасширеннаяПодсказка" id="49"/>
+				</LabelField>
+				<LabelField name="INVOICE" id="50">
+					<DataPath>Список.INVOICE</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="INVOICEКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="INVOICEРасширеннаяПодсказка" id="52"/>
+				</LabelField>
+				<LabelField name="ВозвратнаяНакладная" id="53">
+					<DataPath>Список.ВозвратнаяНакладная</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ВозвратнаяНакладнаяКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ВозвратнаяНакладнаяРасширеннаяПодсказка" id="55"/>
+				</LabelField>
+				<LabelField name="RETINS" id="56">
+					<DataPath>Список.RETINS</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="RETINSКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="RETINSРасширеннаяПодсказка" id="58"/>
+				</LabelField>
+				<LabelField name="xmlКонтрагент" id="59">
+					<DataPath>Список.xmlКонтрагент</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="xmlКонтрагентКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="xmlКонтрагентРасширеннаяПодсказка" id="61"/>
+				</LabelField>
+				<LabelField name="xmlОрганизация" id="62">
+					<DataPath>Список.xmlОрганизация</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="xmlОрганизацияКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="xmlОрганизацияРасширеннаяПодсказка" id="64"/>
+				</LabelField>
+				<LabelField name="xmlТочкаДоставки" id="65">
+					<DataPath>Список.xmlТочкаДоставки</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="xmlТочкаДоставкиКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="xmlТочкаДоставкиРасширеннаяПодсказка" id="67"/>
+				</LabelField>
+				<LabelField name="ДатаЗаписи" id="68">
+					<DataPath>Список.ДатаЗаписи</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ДатаЗаписиКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="ДатаЗаписиРасширеннаяПодсказка" id="70"/>
+				</LabelField>
+				<LabelField name="ДатаПоставки" id="71">
+					<DataPath>Список.ДатаПоставки</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ДатаПоставкиКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ДатаПоставкиРасширеннаяПодсказка" id="73"/>
+				</LabelField>
+				<LabelField name="ИдентификаторСчФ" id="74">
+					<DataPath>Список.ИдентификаторСчФ</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ИдентификаторСчФКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="ИдентификаторСчФРасширеннаяПодсказка" id="76"/>
+				</LabelField>
+				<LabelField name="ИдентификаторСчФ_Основание" id="77">
+					<DataPath>Список.ИдентификаторСчФ_Основание</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ИдентификаторСчФ_ОснованиеКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="ИдентификаторСчФ_ОснованиеРасширеннаяПодсказка" id="79"/>
+				</LabelField>
+				<LabelField name="КоличествоDESADV" id="80">
+					<DataPath>Список.КоличествоDESADV</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="КоличествоDESADVКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="КоличествоDESADVРасширеннаяПодсказка" id="82"/>
+				</LabelField>
+				<LabelField name="КоличествоORDRSP" id="83">
+					<DataPath>Список.КоличествоORDRSP</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="КоличествоORDRSPКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="КоличествоORDRSPРасширеннаяПодсказка" id="85"/>
+				</LabelField>
+				<LabelField name="КоличествоRETINS" id="86">
+					<DataPath>Список.КоличествоRETINS</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="КоличествоRETINSКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="КоличествоRETINSРасширеннаяПодсказка" id="88"/>
+				</LabelField>
+				<LabelField name="КоличествоВозврат" id="89">
+					<DataPath>Список.КоличествоВозврат</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="КоличествоВозвратКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="КоличествоВозвратРасширеннаяПодсказка" id="91"/>
+				</LabelField>
+				<LabelField name="КоличествоЗаказ" id="92">
+					<DataPath>Список.КоличествоЗаказ</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="КоличествоЗаказКонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="КоличествоЗаказРасширеннаяПодсказка" id="94"/>
+				</LabelField>
+				<LabelField name="КоличествоКвитанций" id="95">
+					<DataPath>Список.КоличествоКвитанций</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="КоличествоКвитанцийКонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="КоличествоКвитанцийРасширеннаяПодсказка" id="97"/>
+				</LabelField>
+				<LabelField name="КоличествоНакладная" id="98">
+					<DataPath>Список.КоличествоНакладная</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="КоличествоНакладнаяКонтекстноеМеню" id="99"/>
+					<ExtendedTooltip name="КоличествоНакладнаяРасширеннаяПодсказка" id="100"/>
+				</LabelField>
+				<LabelField name="НомерИсправления" id="101">
+					<DataPath>Список.НомерИсправления</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НомерИсправленияКонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="НомерИсправленияРасширеннаяПодсказка" id="103"/>
+				</LabelField>
+				<LabelField name="Статус_DESADV" id="104">
+					<DataPath>Список.Статус_DESADV</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Статус_DESADVКонтекстноеМеню" id="105"/>
+					<ExtendedTooltip name="Статус_DESADVРасширеннаяПодсказка" id="106"/>
+				</LabelField>
+				<LabelField name="Статус_DESSCC" id="107">
+					<DataPath>Список.Статус_DESSCC</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Статус_DESSCCКонтекстноеМеню" id="108"/>
+					<ExtendedTooltip name="Статус_DESSCCРасширеннаяПодсказка" id="109"/>
+				</LabelField>
+				<CheckBoxField name="Статус_DP_IZVPOL_05" id="110">
+					<DataPath>Список.Статус_DP_IZVPOL_05</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="Статус_DP_IZVPOL_05КонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="Статус_DP_IZVPOL_05РасширеннаяПодсказка" id="112"/>
+				</CheckBoxField>
+				<CheckBoxField name="Статус_DP_IZVPOL_06" id="113">
+					<DataPath>Список.Статус_DP_IZVPOL_06</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="Статус_DP_IZVPOL_06КонтекстноеМеню" id="114"/>
+					<ExtendedTooltip name="Статус_DP_IZVPOL_06РасширеннаяПодсказка" id="115"/>
+				</CheckBoxField>
+				<CheckBoxField name="Статус_DP_IZVPOL_08" id="116">
+					<DataPath>Список.Статус_DP_IZVPOL_08</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="Статус_DP_IZVPOL_08КонтекстноеМеню" id="117"/>
+					<ExtendedTooltip name="Статус_DP_IZVPOL_08РасширеннаяПодсказка" id="118"/>
+				</CheckBoxField>
+				<CheckBoxField name="Статус_DP_IZVPOL_10" id="119">
+					<DataPath>Список.Статус_DP_IZVPOL_10</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="Статус_DP_IZVPOL_10КонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="Статус_DP_IZVPOL_10РасширеннаяПодсказка" id="121"/>
+				</CheckBoxField>
+				<CheckBoxField name="Статус_DP_IZVPOL_23" id="122">
+					<DataPath>Список.Статус_DP_IZVPOL_23</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="Статус_DP_IZVPOL_23КонтекстноеМеню" id="123"/>
+					<ExtendedTooltip name="Статус_DP_IZVPOL_23РасширеннаяПодсказка" id="124"/>
+				</CheckBoxField>
+				<CheckBoxField name="Статус_DP_PDOTPR_03" id="125">
+					<DataPath>Список.Статус_DP_PDOTPR_03</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="Статус_DP_PDOTPR_03КонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="Статус_DP_PDOTPR_03РасширеннаяПодсказка" id="127"/>
+				</CheckBoxField>
+				<CheckBoxField name="Статус_DP_PDOTPR_07" id="128">
+					<DataPath>Список.Статус_DP_PDOTPR_07</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="Статус_DP_PDOTPR_07КонтекстноеМеню" id="129"/>
+					<ExtendedTooltip name="Статус_DP_PDOTPR_07РасширеннаяПодсказка" id="130"/>
+				</CheckBoxField>
+				<CheckBoxField name="Статус_DP_UVUTOCH_09" id="131">
+					<DataPath>Список.Статус_DP_UVUTOCH_09</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="Статус_DP_UVUTOCH_09КонтекстноеМеню" id="132"/>
+					<ExtendedTooltip name="Статус_DP_UVUTOCH_09РасширеннаяПодсказка" id="133"/>
+				</CheckBoxField>
+				<CheckBoxField name="Статус_DP_UVUTOCH_24" id="134">
+					<DataPath>Список.Статус_DP_UVUTOCH_24</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="Статус_DP_UVUTOCH_24КонтекстноеМеню" id="135"/>
+					<ExtendedTooltip name="Статус_DP_UVUTOCH_24РасширеннаяПодсказка" id="136"/>
+				</CheckBoxField>
+				<CheckBoxField name="Статус_INVOICE" id="137">
+					<DataPath>Список.Статус_INVOICE</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="Статус_INVOICEКонтекстноеМеню" id="138"/>
+					<ExtendedTooltip name="Статус_INVOICEРасширеннаяПодсказка" id="139"/>
+				</CheckBoxField>
+				<LabelField name="Статус_ORDER" id="140">
+					<DataPath>Список.Статус_ORDER</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Статус_ORDERКонтекстноеМеню" id="141"/>
+					<ExtendedTooltip name="Статус_ORDERРасширеннаяПодсказка" id="142"/>
+				</LabelField>
+				<LabelField name="Статус_ORDRSP" id="143">
+					<DataPath>Список.Статус_ORDRSP</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Статус_ORDRSPКонтекстноеМеню" id="144"/>
+					<ExtendedTooltip name="Статус_ORDRSPРасширеннаяПодсказка" id="145"/>
+				</LabelField>
+				<LabelField name="Статус_RECADV" id="146">
+					<DataPath>Список.Статус_RECADV</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Статус_RECADVКонтекстноеМеню" id="147"/>
+					<ExtendedTooltip name="Статус_RECADVРасширеннаяПодсказка" id="148"/>
+				</LabelField>
+				<LabelField name="Статус_RETANN" id="149">
+					<DataPath>Список.Статус_RETANN</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Статус_RETANNКонтекстноеМеню" id="150"/>
+					<ExtendedTooltip name="Статус_RETANNРасширеннаяПодсказка" id="151"/>
+				</LabelField>
+				<LabelField name="Статус_RETINS" id="152">
+					<DataPath>Список.Статус_RETINS</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Статус_RETINSКонтекстноеМеню" id="153"/>
+					<ExtendedTooltip name="Статус_RETINSРасширеннаяПодсказка" id="154"/>
+				</LabelField>
+				<LabelField name="Статус_STATUS" id="155">
+					<DataPath>Список.Статус_STATUS</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="Статус_STATUSКонтекстноеМеню" id="156"/>
+					<ExtendedTooltip name="Статус_STATUSРасширеннаяПодсказка" id="157"/>
+				</LabelField>
+				<CheckBoxField name="Статус_Палеты" id="158">
+					<DataPath>Список.Статус_Палеты</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="Статус_ПалетыКонтекстноеМеню" id="159"/>
+					<ExtendedTooltip name="Статус_ПалетыРасширеннаяПодсказка" id="160"/>
+				</CheckBoxField>
+				<CheckBoxField name="Статус_Подпись_11" id="161">
+					<DataPath>Список.Статус_Подпись_11</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="Статус_Подпись_11КонтекстноеМеню" id="162"/>
+					<ExtendedTooltip name="Статус_Подпись_11РасширеннаяПодсказка" id="163"/>
+				</CheckBoxField>
+				<CheckBoxField name="Статус_Транспорт" id="164">
+					<DataPath>Список.Статус_Транспорт</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="Статус_ТранспортКонтекстноеМеню" id="165"/>
+					<ExtendedTooltip name="Статус_ТранспортРасширеннаяПодсказка" id="166"/>
+				</CheckBoxField>
+				<CheckBoxField name="Статус_ЮЗД_01" id="167">
+					<DataPath>Список.Статус_ЮЗД_01</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="Статус_ЮЗД_01КонтекстноеМеню" id="168"/>
+					<ExtendedTooltip name="Статус_ЮЗД_01РасширеннаяПодсказка" id="169"/>
+				</CheckBoxField>
+				<LabelField name="СтатусНаправление_DP_PRANNUL_22" id="170">
+					<DataPath>Список.СтатусНаправление_DP_PRANNUL_22</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="СтатусНаправление_DP_PRANNUL_22КонтекстноеМеню" id="171"/>
+					<ExtendedTooltip name="СтатусНаправление_DP_PRANNUL_22РасширеннаяПодсказка" id="172"/>
+				</LabelField>
+				<LabelField name="СтатусЮЗД" id="173">
+					<DataPath>Список.СтатусЮЗД</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="СтатусЮЗДКонтекстноеМеню" id="174"/>
+					<ExtendedTooltip name="СтатусЮЗДРасширеннаяПодсказка" id="175"/>
+				</LabelField>
+				<LabelField name="СуммаDESADV" id="176">
+					<DataPath>Список.СуммаDESADV</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="СуммаDESADVКонтекстноеМеню" id="177"/>
+					<ExtendedTooltip name="СуммаDESADVРасширеннаяПодсказка" id="178"/>
+				</LabelField>
+				<LabelField name="СуммаORDRSP" id="179">
+					<DataPath>Список.СуммаORDRSP</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="СуммаORDRSPКонтекстноеМеню" id="180"/>
+					<ExtendedTooltip name="СуммаORDRSPРасширеннаяПодсказка" id="181"/>
+				</LabelField>
+				<LabelField name="СуммаRETINS" id="182">
+					<DataPath>Список.СуммаRETINS</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="СуммаRETINSКонтекстноеМеню" id="183"/>
+					<ExtendedTooltip name="СуммаRETINSРасширеннаяПодсказка" id="184"/>
+				</LabelField>
+				<LabelField name="СуммаВозврат" id="185">
+					<DataPath>Список.СуммаВозврат</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="СуммаВозвратКонтекстноеМеню" id="186"/>
+					<ExtendedTooltip name="СуммаВозвратРасширеннаяПодсказка" id="187"/>
+				</LabelField>
+				<LabelField name="СуммаЗаказ" id="188">
+					<DataPath>Список.СуммаЗаказ</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="СуммаЗаказКонтекстноеМеню" id="189"/>
+					<ExtendedTooltip name="СуммаЗаказРасширеннаяПодсказка" id="190"/>
+				</LabelField>
+				<LabelField name="СуммаНакладная" id="191">
+					<DataPath>Список.СуммаНакладная</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="СуммаНакладнаяКонтекстноеМеню" id="192"/>
+					<ExtendedTooltip name="СуммаНакладнаяРасширеннаяПодсказка" id="193"/>
+				</LabelField>
+				<LabelField name="СуммаНДСНакладная" id="194">
+					<DataPath>Список.СуммаНДСНакладная</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="СуммаНДСНакладнаяКонтекстноеМеню" id="195"/>
+					<ExtendedTooltip name="СуммаНДСНакладнаяРасширеннаяПодсказка" id="196"/>
+				</LabelField>
+				<LabelField name="СуммаСЧФ" id="197">
+					<DataPath>Список.СуммаСЧФ</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="СуммаСЧФКонтекстноеМеню" id="198"/>
+					<ExtendedTooltip name="СуммаСЧФРасширеннаяПодсказка" id="199"/>
+				</LabelField>
+				<LabelField name="ТекстОтклоненияАннулирования" id="200">
+					<DataPath>Список.ТекстОтклоненияАннулирования</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ТекстОтклоненияАннулированияКонтекстноеМеню" id="201"/>
+					<ExtendedTooltip name="ТекстОтклоненияАннулированияРасширеннаяПодсказка" id="202"/>
+				</LabelField>
+				<LabelField name="ТекстОшибки" id="203">
+					<DataPath>Список.ТекстОшибки</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ТекстОшибкиКонтекстноеМеню" id="204"/>
+					<ExtendedTooltip name="ТекстОшибкиРасширеннаяПодсказка" id="205"/>
+				</LabelField>
+				<LabelField name="ТекстПричиныАннулирования" id="206">
+					<DataPath>Список.ТекстПричиныАннулирования</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ТекстПричиныАннулированияКонтекстноеМеню" id="207"/>
+					<ExtendedTooltip name="ТекстПричиныАннулированияРасширеннаяПодсказка" id="208"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ЭКОМ_ЦепочкиДокументовПокупателя</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

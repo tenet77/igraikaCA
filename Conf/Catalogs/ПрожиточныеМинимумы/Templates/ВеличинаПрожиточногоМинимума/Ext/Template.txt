@@ -1,0 +1,16 @@
+﻿<Items Description="Величина прожиточного минимума" Columns="LivingWage,Size,Date">
+<Item LivingWage="Прожиточный минимум" Size="14952" Date="20100101"/>
+<Item LivingWage="Прожиточный минимум" Size="15999" Date="20110101"/>
+<Item LivingWage="Прожиточный минимум" Size="17439" Date="20120101"/>
+<Item LivingWage="Прожиточный минимум" Size="18660" Date="20130101"/>
+<Item LivingWage="Прожиточный минимум" Size="19966" Date="20140101"/>
+<Item LivingWage="Прожиточный минимум" Size="21364" Date="20150101"/>
+<Item LivingWage="Прожиточный минимум" Size="22859" Date="20160101"/>
+<Item LivingWage="Прожиточный минимум" Size="24459" Date="20170101"/>
+<Item LivingWage="Прожиточный минимум" Size="28284" Date="20180101"/>
+<Item LivingWage="Прожиточный минимум" Size="29698" Date="20190101"/>
+<Item LivingWage="Прожиточный минимум" Size="31183" Date="20200101"/>
+<Item LivingWage="Прожиточный минимум" Size="32668" Date="20200401"/>
+<Item LivingWage="Прожиточный минимум" Size="34302" Date="20210101"/>
+<Item LivingWage="Прожиточный минимум" Size="36018" Date="20220101"/>
+</Items>

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Document uuid="94bb8132-dcc4-46b6-ab2b-e04af3aeebab">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.СписаниеНедостачТоваров" category="Object">
+				<xr:TypeId>8909925b-8f49-4629-b4bc-b2aec8ff4e7a</xr:TypeId>
+				<xr:ValueId>7ff1faef-c5d9-44f2-a5a7-6a596544a6d0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.СписаниеНедостачТоваров" category="Ref">
+				<xr:TypeId>b14f8aad-bd0c-4c94-b6c7-8464d2712e48</xr:TypeId>
+				<xr:ValueId>46335304-fbd1-43a3-99a3-d0d1078a9bd5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.СписаниеНедостачТоваров" category="Selection">
+				<xr:TypeId>11c7da14-d211-444e-8fe2-fa13828d40bb</xr:TypeId>
+				<xr:ValueId>b3c54bb2-1a40-406c-a3f4-ee03c5af3c3e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.СписаниеНедостачТоваров" category="List">
+				<xr:TypeId>634ff540-608a-4e47-b202-1fe11df38d65</xr:TypeId>
+				<xr:ValueId>d5723cba-3074-4fee-aff8-d0f027ae9dfc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.СписаниеНедостачТоваров" category="Manager">
+				<xr:TypeId>411ef576-8a51-4719-ade4-514a64a25bcf</xr:TypeId>
+				<xr:ValueId>688dbba8-f16b-41d1-bb9b-4c240b029bda</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СписаниеНедостачТоваров</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>80b2615f-3dc2-46a9-9c09-c3a3cfccf414</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="542af145-a314-492a-a4a5-ebd20aa23653">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Склад</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>24ff1ee9-e2dd-4d56-9563-fa785f664ea0</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="7f718fe3-06d1-48c9-9d3f-137550479fb9">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СтатьяРасходов</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>90e054be-7282-4532-bb58-379ff7162802</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="393be618-3151-423c-b41e-dc14fd955b17">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Организация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e35b233d-2405-40fc-8c4b-4358aa9f42d4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="a06a539d-f6fe-48cc-a442-4de163a03b6f">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Подразделение</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9a2dc4b3-25b2-4b34-bb9b-4323b415d5a5</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="57f5e471-12dc-4350-9e57-314e47bfb9ff">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Комментарий</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>93b4bb87-0701-42c8-85e0-92fd0368e4b7</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="c5cba626-aa69-4774-9738-4bac56bda2c5">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.СписаниеНедостачТоваров.Товары" category="TabularSection">
+						<xr:TypeId>619d3f02-e918-4d2c-8d83-c5e368f36634</xr:TypeId>
+						<xr:ValueId>1e808e64-2358-4ad4-9d03-61d1a85ed4cf</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.СписаниеНедостачТоваров.Товары" category="TabularSectionRow">
+						<xr:TypeId>b4add0f7-a943-4e43-aaea-2ad14cc10fc5</xr:TypeId>
+						<xr:ValueId>9f996f40-0f9f-46eb-8173-904df3aab9c1</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Товары</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b593f23a-9bc6-4f25-9452-c377b38ef4fc</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects/>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

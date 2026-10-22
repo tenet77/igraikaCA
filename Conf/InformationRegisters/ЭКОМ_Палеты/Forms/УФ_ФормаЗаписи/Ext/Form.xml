@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Документ" id="1">
+			<DataPath>Запись.Документ</DataPath>
+			<ContextMenu name="ДокументКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ДокументРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Номенклатура" id="4">
+			<DataPath>Запись.Номенклатура</DataPath>
+			<ContextMenu name="НоменклатураКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="НомерПалета" id="7">
+			<DataPath>Запись.НомерПалета</DataPath>
+			<ContextMenu name="НомерПалетаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="НомерПалетаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="SSCC" id="10">
+			<DataPath>Запись.SSCC</DataPath>
+			<ContextMenu name="SSCCКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="SSCCРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ВесБрутто" id="13">
+			<DataPath>Запись.ВесБрутто</DataPath>
+			<ContextMenu name="ВесБруттоКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ВесБруттоРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ВесНетто" id="16">
+			<DataPath>Запись.ВесНетто</DataPath>
+			<ContextMenu name="ВесНеттоКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ВесНеттоРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Высота" id="19">
+			<DataPath>Запись.Высота</DataPath>
+			<ContextMenu name="ВысотаКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ВысотаРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<CheckBoxField name="Европаллета" id="22">
+			<DataPath>Запись.Европаллета</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЕвропаллетаКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ЕвропаллетаРасширеннаяПодсказка" id="24"/>
+		</CheckBoxField>
+		<InputField name="Единица_Измерения" id="25">
+			<DataPath>Запись.Единица_Измерения</DataPath>
+			<ContextMenu name="Единица_ИзмеренияКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="Единица_ИзмеренияРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="Ключ_Строки" id="28">
+			<DataPath>Запись.Ключ_Строки</DataPath>
+			<ContextMenu name="Ключ_СтрокиКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="Ключ_СтрокиРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="Количество" id="31">
+			<DataPath>Запись.Количество</DataPath>
+			<ContextMenu name="КоличествоКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="КоличествоРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="МестоДоставкиУпаковки" id="34">
+			<DataPath>Запись.МестоДоставкиУпаковки</DataPath>
+			<ContextMenu name="МестоДоставкиУпаковкиКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="МестоДоставкиУпаковкиРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="Объем" id="37">
+			<DataPath>Запись.Объем</DataPath>
+			<ContextMenu name="ОбъемКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ОбъемРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="ТемператураХранения" id="40">
+			<DataPath>Запись.ТемператураХранения</DataPath>
+			<ContextMenu name="ТемператураХраненияКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ТемператураХраненияРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="СрокХраненияВДнях" id="43">
+			<DataPath>Запись.СрокХраненияВДнях</DataPath>
+			<ContextMenu name="СрокХраненияВДняхКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="СрокХраненияВДняхРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<InputField name="ЗаводПроизводитель" id="46">
+			<DataPath>Запись.ЗаводПроизводитель</DataPath>
+			<ContextMenu name="ЗаводПроизводительКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="ЗаводПроизводительРасширеннаяПодсказка" id="48"/>
+		</InputField>
+		<InputField name="ДатаПроизводства" id="49">
+			<DataPath>Запись.ДатаПроизводства</DataPath>
+			<ContextMenu name="ДатаПроизводстваКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="ДатаПроизводстваРасширеннаяПодсказка" id="51"/>
+		</InputField>
+		<InputField name="ДатаОкончанияСрокаГодности" id="52">
+			<DataPath>Запись.ДатаОкончанияСрокаГодности</DataPath>
+			<ContextMenu name="ДатаОкончанияСрокаГодностиКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="ДатаОкончанияСрокаГодностиРасширеннаяПодсказка" id="54"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ЭКОМ_Палеты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

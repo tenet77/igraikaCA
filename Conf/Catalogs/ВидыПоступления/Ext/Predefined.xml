@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.18">
+	<Item id="0c50115e-ceb9-402c-8d78-da524f0c8e09">
+		<Name>ВозвратТМЗ</Name>
+		<Code>000000002</Code>
+		<Description>Возврат ТМЗ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b6ac23bb-041b-48ec-8bb6-8e307325dbdb">
+		<Name>ИзменениеУсловийСделки</Name>
+		<Code>000000006</Code>
+		<Description>Изменение условий сделки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="32a729fb-f8ba-4f99-a5d1-84c4fd9497b0">
+		<Name>ИмпортТМЗМетодомЗачета</Name>
+		<Code>000000005</Code>
+		<Description>Импорт товаров, по которым НДС уплачивается методом зачета</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7480366a-ab48-4680-b7da-a461e9c4c6d1">
+		<Name>ИсправлениеОшибок</Name>
+		<Code>000000008</Code>
+		<Description>Исправление ошибок</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="82d9598d-de50-4178-bc87-ff134f76989a">
+		<Name>КомиссияБанка</Name>
+		<Code>000000004</Code>
+		<Description>Комиссия банка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6369d52d-ba06-4626-9951-75f0272136f0">
+		<Name>КорректировкаЗачетаНДСОблагаемогоОборота</Name>
+		<Code>000000014</Code>
+		<Description>КорректировкаЗачетаНДСОблагаемогоОборота</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="960041c0-96a3-4211-8c4e-a59730e3715c">
+		<Name>НДСЗаНерезидента</Name>
+		<Code>000000011</Code>
+		<Description>НДС за нерезидента</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7827af10-864e-4854-9eea-462b5a4f7181">
+		<Name>НДСПриИмпортеИзТаможенногоСоюза</Name>
+		<Code>000000012</Code>
+		<Description>НДС при импорте из таможенного союза</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="815fbf3c-c8ff-4d08-903e-e262cf7760b8">
+		<Name>СписаниеТМЗ</Name>
+		<Code>000000003</Code>
+		<Description>Порча, утрата товаров</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a44d0f34-d217-43ee-9c36-3ed1467d9d7d">
+		<Name>ПрочийОблагаемыйИмпорт</Name>
+		<Code>000000013</Code>
+		<Description>Прочий облагаемый импорт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="821af466-a1d5-45c8-8e0e-f2cd79241428">
+		<Name>ПриобретениеТМЗБезНДС</Name>
+		<Code>000000010</Code>
+		<Description>Товары, приобретенные без НДС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="360a727e-2773-457d-a749-41447c321fcc">
+		<Name>ПриобретениеТМЗпоНулевойСтавке</Name>
+		<Code>000000009</Code>
+		<Description>Товары, приобретенные по 0% ставке НДС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="26034782-40e5-4266-96e7-b586d599fe69">
+		<Name>ПриобретениеТМЗ</Name>
+		<Code>000000001</Code>
+		<Description>Товары, приобретенные с НДС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9104ec7e-f4e9-47ab-a9a8-a1a2a659611b">
+		<Name>УслугиПоКомиссионнойТорговле</Name>
+		<Code>000000007</Code>
+		<Description>Услуги по комиссионной торговле</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

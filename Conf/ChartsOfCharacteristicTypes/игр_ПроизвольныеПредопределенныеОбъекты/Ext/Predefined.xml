@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PlanOfCharacteristicKindPredefinedItems" version="2.18">
+	<Item id="a4b9afe7-2d4e-4f32-89f3-4285791968e2">
+		<Name>ДатаНачалаСписанияПодарочных</Name>
+		<Code>000000004</Code>
+		<Description>Дата начала списания подарочных сертификатов</Description>
+		<Type>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6c628e77-af1f-47b4-a78e-884f03e5c57b">
+		<Name>НоменклатураПодарочныхСертификатов</Name>
+		<Code>000000005</Code>
+		<Description>Номенклатура подарочных сертификатов</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Номенклатура</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c741ea95-1460-4ff9-a157-1f7f80038a8b">
+		<Name>СтатьиДДСПКО</Name>
+		<Code>000000001</Code>
+		<Description>Статьи ДДС для ПКО из Розицицы</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СтатьиДвиженияДенежныхСредств</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d924cac5-69b7-4d7c-bebd-acbd782598e3">
+		<Name>СтатьиДДСРКО</Name>
+		<Code>000000002</Code>
+		<Description>Статьи ДДС РКО из Розницы</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СтатьиДвиженияДенежныхСредств</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7c0245df-1fe8-4a31-9fbe-0dc126506c64">
+		<Name>СтатьяСписанияПодарочных</Name>
+		<Code>000000003</Code>
+		<Description>Статья списания подарочных сертификатов</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.СтатьиРасходов</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<DataProcessor uuid="e827a8cc-a784-46ea-a2fa-ecad8ee0f08f">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.игр_ФормированиеЗаказовПоставщику" category="Object">
+				<xr:TypeId>9edb3aa1-22c1-4788-88c2-9b0aa36be2e5</xr:TypeId>
+				<xr:ValueId>5167642e-403c-4416-8080-d80490310581</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.игр_ФормированиеЗаказовПоставщику" category="Manager">
+				<xr:TypeId>3acd34dc-067b-4ee4-aa2c-4ade11244ea6</xr:TypeId>
+				<xr:ValueId>0388cca9-b789-4444-b2eb-93c21bd06b48</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>игр_ФормированиеЗаказовПоставщику</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формирование заказов поставщику</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.игр_ФормированиеЗаказовПоставщику.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Form>ФормаДобавитьНоменклатуру</Form>
+			<Template>СхемаПолученияОстатков</Template>
+			<Template>СхемаПолученияДанных</Template>
+			<Template>Вывод</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

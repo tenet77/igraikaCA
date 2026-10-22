@@ -1,0 +1,150 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="ORDRSP">
+	<property xmlns:d2p1="ORDRSP" name="ORDRSP" type="d2p1:ORDRSP"/>
+	<objectType name="HEAD">
+		<property name="BUYER">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic">
+				<pattern>[0-9]{13}</pattern>
+			</typeDef>
+		</property>
+		<property name="SUPPLIER">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic">
+				<pattern>[0-9]{13}</pattern>
+			</typeDef>
+		</property>
+		<property name="DELIVERYPLACE">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic">
+				<pattern>[0-9]{13}</pattern>
+			</typeDef>
+		</property>
+		<property name="SENDER">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic">
+				<pattern>[0-9]{13}</pattern>
+			</typeDef>
+		</property>
+		<property name="RECIPIENT">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic">
+				<pattern>[0-9]{13}</pattern>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="ORDRSP" name="POSITION" type="d3p1:POSITION" upperBound="-1"/>
+	</objectType>
+	<objectType name="ORDRSP">
+		<property name="NUMBER">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="16"/>
+		</property>
+		<property name="DATE">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" length="10">
+				<pattern>[1-2][0-9]{3}-([0][1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])</pattern>
+			</typeDef>
+		</property>
+		<property name="TIME" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" length="5">
+				<pattern>([0-1]{1}[0-9]{1}|[2]{1}[0-4]{1}):[0-5]{1}[0-9]{1}</pattern>
+			</typeDef>
+		</property>
+		<property name="ORDERNUMBER">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="16"/>
+		</property>
+		<property name="ORDERDATE">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" length="10">
+				<pattern>[1-2][0-9]{3}-([0][1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])</pattern>
+			</typeDef>
+		</property>
+		<property name="DELIVERYDATE" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" length="10">
+				<pattern>[1-2][0-9]{3}-([0][1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])</pattern>
+			</typeDef>
+		</property>
+		<property name="DELIVERYTIME" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" length="5">
+				<pattern>([0-1]{1}[0-9]{1}|[2]{1}[0-4]{1}):[0-5]{1}[0-9]{1}</pattern>
+			</typeDef>
+		</property>
+		<property name="REASONDECREACEQUANTITYALL" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="4"/>
+		</property>
+		<property name="CAMPAIGNNUMBER" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="70"/>
+		</property>
+		<property name="DOCTYPE" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" length="1">
+				<enumeration>O</enumeration>
+				<enumeration>R</enumeration>
+				<enumeration>D</enumeration>
+			</typeDef>
+		</property>
+		<property name="CURRENCY" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" length="3"/>
+		</property>
+		<property name="VAT" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic">
+				<enumeration>0</enumeration>
+				<enumeration>10</enumeration>
+				<enumeration>18</enumeration>
+				<enumeration>20</enumeration>
+			</typeDef>
+		</property>
+		<property name="ACTION" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic">
+				<enumeration>4</enumeration>
+				<enumeration>5</enumeration>
+				<enumeration>27</enumeration>
+				<enumeration>29</enumeration>
+			</typeDef>
+		</property>
+		<property name="INFO" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="70"/>
+		</property>
+		<property xmlns:d3p1="ORDRSP" name="HEAD" type="d3p1:HEAD"/>
+	</objectType>
+	<objectType name="POSITION">
+		<property name="POSITIONNUMBER">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic">
+				<pattern>[1-9][0-9]{0,}</pattern>
+			</typeDef>
+		</property>
+		<property name="PRODUCT">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="14">
+				<pattern>[0-9]{1,}</pattern>
+			</typeDef>
+		</property>
+		<property name="DESCRIPTION">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="70"/>
+		</property>
+		<property name="PRODUCTTYPE">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic">
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+				<enumeration>3</enumeration>
+			</typeDef>
+		</property>
+		<property name="ORDEREDQUANTITY">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic">
+				<pattern>[0-9][0-9]{0,}|[1-9][0-9]{0,}.[0-9]{0,3}</pattern>
+			</typeDef>
+		</property>
+		<property name="ACCEPTEDQUANTITY">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic">
+				<pattern>[0-9][0-9]{0,}|[1-9][0-9]{0,}.[0-9]{0,3}</pattern>
+			</typeDef>
+		</property>
+		<property name="REASONDECREACEQUANTITY" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="4"/>
+		</property>
+		<property name="PACKINGQUANTITY">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic">
+				<pattern>([0-9]{1,}|[0-9]{0,}.[0-9]{0,})</pattern>
+			</typeDef>
+		</property>
+		<property name="PACKINGUNIT" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic">
+				<pattern>[A-Z]{2,3}</pattern>
+			</typeDef>
+		</property>
+		<property name="ORDRSPUNIT" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic">
+				<pattern>[A-Z]{2,3}</pattern>
+			</typeDef>
+		</property>
+	</objectType>
+</package>

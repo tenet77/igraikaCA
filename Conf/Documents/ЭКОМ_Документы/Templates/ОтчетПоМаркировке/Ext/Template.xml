@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сумма</dataPath>
+			<field>Сумма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерСтрокиXML</dataPath>
+			<field>НомерСтрокиXML</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВУпаковке</dataPath>
+			<field>КоличествоВУпаковке</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоЗаказанное</dataPath>
+			<field>КоличествоЗаказанное</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Цена</dataPath>
+			<field>Цена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураИз1С</dataPath>
+			<field>НоменклатураИз1С</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоИз1С</dataPath>
+			<field>КоличествоИз1С</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТочкаДоставки</dataPath>
+			<field>ТочкаДоставки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПоставляемое</dataPath>
+			<field>КоличествоПоставляемое</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПринятое</dataPath>
+			<field>КоличествоПринятое</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаСНДС</dataPath>
+			<field>ЦенаСНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КИЗ</dataPath>
+			<field>КИЗ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПричинаОтказаТЧ</dataPath>
+			<field>ПричинаОтказаТЧ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сумма_с_НДС</dataPath>
+			<field>Сумма_с_НДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаНДС</dataPath>
+			<field>СуммаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтавкаНДС</dataPath>
+			<field>СтавкаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерПродукта</dataPath>
+			<field>НомерПродукта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерПродуктаПоставщика</dataPath>
+			<field>НомерПродуктаПоставщика</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерПродуктаПокупателя</dataPath>
+			<field>НомерПродуктаПокупателя</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактеристикиНоменклатуры</dataPath>
+			<field>ХарактеристикиНоменклатуры</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕдиницаИзмерения</dataPath>
+			<field>ЕдиницаИзмерения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОписаниеПродукта</dataPath>
+			<field>ОписаниеПродукта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерГТД</dataPath>
+			<field>НомерГТД</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>xmlЕдиницаИзмерения</dataPath>
+			<field>xmlЕдиницаИзмерения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтранаПроизводитель</dataPath>
+			<field>СтранаПроизводитель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УточнениеОПоставке</dataPath>
+			<field>УточнениеОПоставке</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>xmlТочкаДоставки</dataPath>
+			<field>xmlТочкаДоставки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомУпак</dataPath>
+			<field>НомУпак</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИдентТрансУпак</dataPath>
+			<field>ИдентТрансУпак</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЭКОМ_Документы.Ссылка,
+	ЭКОМ_ДокументыТЧ_Товары.НомерСтрокиXML,
+	ЭКОМ_ДокументыТЧ_Товары.Номенклатура,
+	ЭКОМ_ДокументыТЧ_Товары.НоменклатураИз1С,
+	ЭКОМ_ДокументыТЧ_Товары.КоличествоИз1С,
+	ЭКОМ_ДокументыТЧ_Товары.КоличествоПринятое,
+	ЭКОМ_ДокументыТЧ_Товары.КоличествоЗаказанное,
+	ЭКОМ_ДокументыТЧ_Товары.КоличествоПоставляемое,
+	ЭКОМ_ДокументыТЧ_Товары.Цена,
+	ЭКОМ_ДокументыТЧ_Товары.ЦенаСНДС,
+	ЭКОМ_ДокументыТЧ_Товары.Сумма,
+	ЭКОМ_ДокументыТЧ_Товары.Сумма_с_НДС,
+	ЭКОМ_ДокументыТЧ_Товары.СуммаНДС,
+	ЭКОМ_ДокументыТЧ_Товары.СтавкаНДС,
+	ЭКОМ_ДокументыТЧ_Товары.НомерПродукта,
+	ЭКОМ_ДокументыТЧ_Товары.НомерПродуктаПоставщика,
+	ЭКОМ_ДокументыТЧ_Товары.НомерПродуктаПокупателя,
+	ЭКОМ_ДокументыТЧ_Товары.ХарактеристикиНоменклатуры,
+	ЭКОМ_ДокументыТЧ_Товары.ЕдиницаИзмерения,
+	ЭКОМ_ДокументыТЧ_Товары.ОписаниеПродукта,
+	ЭКОМ_ДокументыТЧ_Товары.НомерГТД,
+	ЭКОМ_ДокументыТЧ_Товары.СтранаПроизводитель,
+	ЭКОМ_ДокументыТЧ_Товары.УточнениеОПоставке,
+	ЭКОМ_ДокументыТЧ_Товары.xmlЕдиницаИзмерения,
+	ЭКОМ_ДокументыТЧ_Товары.xmlТочкаДоставки,
+	ЭКОМ_ДокументыТЧ_Товары.ТочкаДоставки,
+	ЭКОМ_ДокументыТЧ_Товары.КоличествоВУпаковке,
+	ЭКОМ_ДокументыТЧ_Товары.ПричинаОтказаТЧ,
+	ЭКОМ_ДокументыТЧ_Маркировка.КИЗ,
+	ЭКОМ_ДокументыТЧ_Маркировка.НомУпак,
+	ЭКОМ_ДокументыТЧ_Маркировка.ИдентТрансУпак
+ИЗ
+	Документ.ЭКОМ_Документы КАК ЭКОМ_Документы
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЭКОМ_Документы.ТЧ_Товары КАК ЭКОМ_ДокументыТЧ_Товары
+			ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЭКОМ_Документы.ТЧ_Маркировка КАК ЭКОМ_ДокументыТЧ_Маркировка
+			ПО ЭКОМ_ДокументыТЧ_Товары.НомерСтрокиXML = ЭКОМ_ДокументыТЧ_Маркировка.НомерСтрокиXML
+				И ЭКОМ_ДокументыТЧ_Товары.Ссылка = ЭКОМ_ДокументыТЧ_Маркировка.Ссылка
+		ПО ЭКОМ_Документы.Ссылка = ЭКОМ_ДокументыТЧ_Товары.Ссылка
+ГДЕ
+	ЭКОМ_Документы.Ссылка = &amp;Ссылка</query>
+	</dataSet>
+	<parameter>
+		<name>Ссылка</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ссылка</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ЭКОМ_Документы</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОписаниеПродукта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>xmlТочкаДоставки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>xmlЕдиницаИзмерения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИдентТрансУпак</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КИЗ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомУпак</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕдиницаИзмерения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоВУпаковке</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоЗаказанное</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоИз1С</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоПоставляемое</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоПринятое</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НоменклатураИз1С</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерПродукта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерПродуктаПокупателя</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерПродуктаПоставщика</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерСтрокиXML</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерГТД</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПричинаОтказаТЧ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ссылка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СтавкаНДС</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СтранаПроизводитель</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сумма</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сумма_с_НДС</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаНДС</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТочкаДоставки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>УточнениеОПоставке</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ХарактеристикиНоменклатуры</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Цена</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЦенаСНДС</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Ссылка</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

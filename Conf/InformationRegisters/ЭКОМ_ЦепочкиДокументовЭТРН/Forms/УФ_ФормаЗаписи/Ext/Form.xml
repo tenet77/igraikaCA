@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="Накладная" id="1">
+			<DataPath>Запись.Накладная</DataPath>
+			<ContextMenu name="НакладнаяКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НакладнаяРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ДокументЭКОМ" id="4">
+			<DataPath>Запись.ДокументЭКОМ</DataPath>
+			<ContextMenu name="ДокументЭКОМКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДокументЭКОМРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ДатаЗаписи" id="7">
+			<DataPath>Запись.ДатаЗаписи</DataPath>
+			<ContextMenu name="ДатаЗаписиКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ДатаЗаписиРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ДатаЭТРН" id="10">
+			<DataPath>Запись.ДатаЭТРН</DataPath>
+			<ContextMenu name="ДатаЭТРНКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ДатаЭТРНРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="НомерЭТРН" id="13">
+			<DataPath>Запись.НомерЭТРН</DataPath>
+			<ContextMenu name="НомерЭТРНКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="НомерЭТРНРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Организация" id="16">
+			<DataPath>Запись.Организация</DataPath>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Контрагент" id="19">
+			<DataPath>Запись.Контрагент</DataPath>
+			<ContextMenu name="КонтрагентКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="Перевозчик" id="22">
+			<DataPath>Запись.Перевозчик</DataPath>
+			<ContextMenu name="ПеревозчикКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ПеревозчикРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<CheckBoxField name="Статус_WHGOV_01" id="25">
+			<DataPath>Запись.Статус_WHGOV_01</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_WHGOV_01КонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="Статус_WHGOV_01РасширеннаяПодсказка" id="27"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_DRVGOV_02" id="28">
+			<DataPath>Запись.Статус_DRVGOV_02</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_DRVGOV_02КонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="Статус_DRVGOV_02РасширеннаяПодсказка" id="30"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_DRVGOU_03" id="31">
+			<DataPath>Запись.Статус_DRVGOU_03</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_DRVGOU_03КонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="Статус_DRVGOU_03РасширеннаяПодсказка" id="33"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_WHGOU_04" id="34">
+			<DataPath>Запись.Статус_WHGOU_04</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_WHGOU_04КонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="Статус_WHGOU_04РасширеннаяПодсказка" id="36"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_WHGPV_05" id="37">
+			<DataPath>Запись.Статус_WHGPV_05</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_WHGPV_05КонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="Статус_WHGPV_05РасширеннаяПодсказка" id="39"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_DRVGPV_06" id="40">
+			<DataPath>Запись.Статус_DRVGPV_06</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_DRVGPV_06КонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="Статус_DRVGPV_06РасширеннаяПодсказка" id="42"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_DRVGPU_07" id="43">
+			<DataPath>Запись.Статус_DRVGPU_07</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_DRVGPU_07КонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="Статус_DRVGPU_07РасширеннаяПодсказка" id="45"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_WHGPU_08" id="46">
+			<DataPath>Запись.Статус_WHGPU_08</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_WHGPU_08КонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="Статус_WHGPU_08РасширеннаяПодсказка" id="48"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_Транспорт" id="49">
+			<DataPath>Запись.Статус_Транспорт</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_ТранспортКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="Статус_ТранспортРасширеннаяПодсказка" id="51"/>
+		</CheckBoxField>
+		<CheckBoxField name="Статус_Палеты" id="52">
+			<DataPath>Запись.Статус_Палеты</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Статус_ПалетыКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="Статус_ПалетыРасширеннаяПодсказка" id="54"/>
+		</CheckBoxField>
+		<InputField name="ТекстОшибки" id="55">
+			<DataPath>Запись.ТекстОшибки</DataPath>
+			<ContextMenu name="ТекстОшибкиКонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="ТекстОшибкиРасширеннаяПодсказка" id="57"/>
+		</InputField>
+		<InputField name="Комментарий" id="58">
+			<DataPath>Запись.Комментарий</DataPath>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="59"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="60"/>
+		</InputField>
+		<InputField name="КоличествоГрузовыхМест" id="61">
+			<DataPath>Запись.КоличествоГрузовыхМест</DataPath>
+			<ContextMenu name="КоличествоГрузовыхМестКонтекстноеМеню" id="62"/>
+			<ExtendedTooltip name="КоличествоГрузовыхМестРасширеннаяПодсказка" id="63"/>
+		</InputField>
+		<InputField name="СчетФактура" id="64">
+			<DataPath>Запись.СчетФактура</DataPath>
+			<ContextMenu name="СчетФактураКонтекстноеМеню" id="65"/>
+			<ExtendedTooltip name="СчетФактураРасширеннаяПодсказка" id="66"/>
+		</InputField>
+		<InputField name="Заказ" id="67">
+			<DataPath>Запись.Заказ</DataPath>
+			<ContextMenu name="ЗаказКонтекстноеМеню" id="68"/>
+			<ExtendedTooltip name="ЗаказРасширеннаяПодсказка" id="69"/>
+		</InputField>
+		<InputField name="ИдФайлПервичн" id="70">
+			<DataPath>Запись.ИдФайлПервичн</DataPath>
+			<ContextMenu name="ИдФайлПервичнКонтекстноеМеню" id="71"/>
+			<ExtendedTooltip name="ИдФайлПервичнРасширеннаяПодсказка" id="72"/>
+		</InputField>
+		<InputField name="СостояниеОбмена" id="73">
+			<DataPath>Запись.СостояниеОбмена</DataPath>
+			<ContextMenu name="СостояниеОбменаКонтекстноеМеню" id="74"/>
+			<ExtendedTooltip name="СостояниеОбменаРасширеннаяПодсказка" id="75"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ЭКОМ_ЦепочкиДокументовЭТРН</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

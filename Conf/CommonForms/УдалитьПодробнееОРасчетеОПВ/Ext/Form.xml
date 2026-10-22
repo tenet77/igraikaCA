@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<ChildItems>
+			<ButtonGroup name="ГруппаКнопокПросмотр" id="3">
+				<EnableContentChange>true</EnableContentChange>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа кнопок просмотр</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа кнопок просмотр</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ГруппаКнопокПросмотрРасширеннаяПодсказка" id="4"/>
+				<ChildItems>
+					<Button name="ФормаЗакрыть" id="11">
+						<Type>CommandBarButton</Type>
+						<Representation>Text</Representation>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.StandardCommand.Close</CommandName>
+						<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="12"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="390d5e4b-e732-4c88-8748-9e211a416984">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщаяГруппа" id="21">
+			<EnableContentChange>true</EnableContentChange>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ChildItemsWidth>LeftWide</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяГруппаРасширеннаяПодсказка" id="22"/>
+			<ChildItems>
+				<Table name="НалогиВзносыОтчисления" id="60">
+					<Representation>List</Representation>
+					<ReadOnly>true</ReadOnly>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>НалогиВзносыОтчисления</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+					</CommandSet>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="НалогиВзносыОтчисленияКонтекстноеМеню" id="61"/>
+					<AutoCommandBar name="НалогиВзносыОтчисленияКоманднаяПанель" id="62"/>
+					<ExtendedTooltip name="НалогиВзносыОтчисленияРасширеннаяПодсказка" id="63"/>
+					<SearchStringAddition name="НалогиВзносыОтчисленияСтрокаПоиска" id="64">
+						<AdditionSource>
+							<Item>НалогиВзносыОтчисления</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="НалогиВзносыОтчисленияСтрокаПоискаКонтекстноеМеню" id="65"/>
+						<ExtendedTooltip name="НалогиВзносыОтчисленияСтрокаПоискаРасширеннаяПодсказка" id="66"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="НалогиВзносыОтчисленияСостояниеПросмотра" id="67">
+						<AdditionSource>
+							<Item>НалогиВзносыОтчисления</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="НалогиВзносыОтчисленияСостояниеПросмотраКонтекстноеМеню" id="68"/>
+						<ExtendedTooltip name="НалогиВзносыОтчисленияСостояниеПросмотраРасширеннаяПодсказка" id="69"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="НалогиВзносыОтчисленияУправлениеПоиском" id="70">
+						<AdditionSource>
+							<Item>НалогиВзносыОтчисления</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="НалогиВзносыОтчисленияУправлениеПоискомКонтекстноеМеню" id="71"/>
+						<ExtendedTooltip name="НалогиВзносыОтчисленияУправлениеПоискомРасширеннаяПодсказка" id="72"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="НалогиВзносыОтчисленияФизическоеЛицо" id="73">
+							<DataPath>НалогиВзносыОтчисления.ФизическоеЛицо</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НалогиВзносыОтчисленияФизическоеЛицоКонтекстноеМеню" id="74"/>
+							<ExtendedTooltip name="НалогиВзносыОтчисленияФизическоеЛицоРасширеннаяПодсказка" id="75"/>
+						</InputField>
+						<InputField name="НалогиВзносыОтчисленияВидДохода" id="82">
+							<DataPath>НалогиВзносыОтчисления.ВидДохода</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НалогиВзносыОтчисленияВидДоходаКонтекстноеМеню" id="83"/>
+							<ExtendedTooltip name="НалогиВзносыОтчисленияВидДоходаРасширеннаяПодсказка" id="84"/>
+						</InputField>
+						<InputField name="НалогиВзносыОтчисленияНалогВзнос" id="94">
+							<DataPath>НалогиВзносыОтчисления.НалогВзнос</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НалогиВзносыОтчисленияНалогВзносКонтекстноеМеню" id="95"/>
+							<ExtendedTooltip name="НалогиВзносыОтчисленияНалогВзносРасширеннаяПодсказка" id="96"/>
+						</InputField>
+						<InputField name="НалогиВзносыОтчисленияОблагаемыйДоход" id="88">
+							<DataPath>НалогиВзносыОтчисления.ОблагаемыйДоход</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НалогиВзносыОтчисленияОблагаемыйДоходКонтекстноеМеню" id="89"/>
+							<ExtendedTooltip name="НалогиВзносыОтчисленияОблагаемыйДоходРасширеннаяПодсказка" id="90"/>
+						</InputField>
+						<InputField name="НалогиВзносыОтчисленияНеоблагаемыйДоход" id="91">
+							<DataPath>НалогиВзносыОтчисления.НеоблагаемыйДоход</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НалогиВзносыОтчисленияНеоблагаемыйДоходКонтекстноеМеню" id="92"/>
+							<ExtendedTooltip name="НалогиВзносыОтчисленияНеоблагаемыйДоходРасширеннаяПодсказка" id="93"/>
+						</InputField>
+						<InputField name="НалогиВзносыОтчисленияОбъектИсчисления" id="97">
+							<DataPath>НалогиВзносыОтчисления.ОбъектИсчисления</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НалогиВзносыОтчисленияОбъектИсчисленияКонтекстноеМеню" id="98"/>
+							<ExtendedTooltip name="НалогиВзносыОтчисленияОбъектИсчисленияРасширеннаяПодсказка" id="99"/>
+						</InputField>
+						<InputField name="НалогиВзносыОтчисленияМесяцНалоговогоПериода" id="79">
+							<DataPath>НалогиВзносыОтчисления.МесяцНалоговогоПериода</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ='ММММ гггг'</v8:content>
+								</v8:item>
+							</Format>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ='ММММ гггг'</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="НалогиВзносыОтчисленияМесяцНалоговогоПериодаКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="НалогиВзносыОтчисленияМесяцНалоговогоПериодаРасширеннаяПодсказка" id="81"/>
+						</InputField>
+						<InputField name="НалогиВзносыОтчисленияПодразделение" id="76">
+							<DataPath>НалогиВзносыОтчисления.Подразделение</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НалогиВзносыОтчисленияПодразделениеКонтекстноеМеню" id="77"/>
+							<ExtendedTooltip name="НалогиВзносыОтчисленияПодразделениеРасширеннаяПодсказка" id="78"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЕдинственныйСотрудник" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Единственный сотрудник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОписаниеДокумента" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="УчитываемыеСотрудники" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учитываемые сотрудники</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="Организация" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="МесяцНачисления" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Месяц начисления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресРаспределенияРезультатовВХранилище" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес распределения результатов в хранилище</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НалогиВзносыОтчисления" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Налоги взносы отчисления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="ФизическоеЛицо" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Физическое лицо</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Подразделение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПодразделенияОрганизаций</v8:Type>
+					</Type>
+				</Column>
+				<Column name="МесяцНалоговогоПериода" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата получения дохода</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидДохода" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид дохода</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыДоходов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВидНалогаВзносаОтчисления" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид налога, взноса, отчисления</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВидыНалоговВзносовОтчислений</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ОблагаемыйДоход" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Облагаемый доход</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НеоблагаемыйДоход" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Необлагаемый доход</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НалогВзнос" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОПВ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбъектИсчисления" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект исчисления</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="РазрешенныйВычет" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разрешенный вычет ИПН</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПримененныйВычет" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Примененный вычет ИПН</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПримененнаяЛьгота" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Примененная льгота ИПН</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПрочиеВычеты" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие вычеты</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФиксСтрока" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фикс строка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ФиксРасчет" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фиксирован расчет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+</Form>

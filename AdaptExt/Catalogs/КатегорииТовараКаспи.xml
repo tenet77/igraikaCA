@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Catalog uuid="87d9f203-fe1e-4e88-9d50-b0fb6726e8ad">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.КатегорииТовараКаспи" category="Object">
+				<xr:TypeId>a0d06512-58a4-4c0f-9df1-dda5a831204d</xr:TypeId>
+				<xr:ValueId>6028a7ef-dc51-4ca0-921e-7ab674321f62</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.КатегорииТовараКаспи" category="Ref">
+				<xr:TypeId>bb6cd96d-6342-48c4-94a5-a529ea2b9841</xr:TypeId>
+				<xr:ValueId>57491878-2653-475c-b93e-d82fd2a86bc3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.КатегорииТовараКаспи" category="Selection">
+				<xr:TypeId>b93024a2-bcaa-44b5-8169-29654a8ffe20</xr:TypeId>
+				<xr:ValueId>acfd87d2-2f60-4d56-8cfd-b546507fca22</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.КатегорииТовараКаспи" category="List">
+				<xr:TypeId>ff747abd-843b-4fa7-b383-f9758be02948</xr:TypeId>
+				<xr:ValueId>abfa8b58-7344-423e-9f4a-518e88e83071</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.КатегорииТовараКаспи" category="Manager">
+				<xr:TypeId>0d125f0a-dce8-41fc-aaf3-e4886714a2f0</xr:TypeId>
+				<xr:ValueId>fcedbe66-64b0-422d-8d1c-ff83798d3d40</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>КатегорииТовараКаспи</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>1d633142-1914-4f3c-8c95-8841faec7d6a</ExtendedConfigurationObject>
+			<DefaultObjectForm>Catalog.КатегорииТовараКаспи.Form.ФормаЭлемента</DefaultObjectForm>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="eaf81415-2d9c-456a-9bc3-587d556d0514">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>НаименованиеКаспи</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3c169c15-3284-45e5-83a2-50b6e5a14db8</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="cb597e0d-aca5-456f-b5cc-b11156a89547">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВидНоменклатуры</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>6210c5df-446d-43af-b8e7-4432acdeed46</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыНоменклатуры</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

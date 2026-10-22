@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Точки доставки: форма элемента</v8:content>
+		</v8:item>
+	</Title>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="Сохранить" id="77">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Сохранить</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.ExecuteTask</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="СохранитьРасширеннаяПодсказка" id="78"/>
+			</Button>
+			<Button name="ЗаполнитьИзВебПлатформы" id="70">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаполнитьИзВебПлатформы</CommandName>
+				<ExtendedTooltip name="ЗаполнитьИзВебПлатформыРасширеннаяПодсказка" id="71"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ТочкаДоставки" id="42">
+			<DataPath>ТочкаДоставки</DataPath>
+			<OpenButton>true</OpenButton>
+			<ContextMenu name="ТочкаДоставкиКонтекстноеМеню" id="43"/>
+			<ExtendedTooltip name="ТочкаДоставкиРасширеннаяПодсказка" id="44"/>
+		</InputField>
+		<UsualGroup name="ГруппаШапка" id="48">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="49"/>
+			<ChildItems>
+				<InputField name="Наименование" id="50">
+					<DataPath>Наименование</DataPath>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="GLN" id="45">
+					<DataPath>GLN</DataPath>
+					<Mask>9999999999999</Mask>
+					<ContextMenu name="GLNКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="GLNРасширеннаяПодсказка" id="47"/>
+					<Events>
+						<Event name="TextEditEnd">GLNОкончаниеВводаТекста</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКППИНН" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа КППИНН</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа КППИНН</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКППИННРасширеннаяПодсказка" id="57"/>
+			<ChildItems>
+				<InputField name="КПП" id="58">
+					<DataPath>КПП</DataPath>
+					<ContextMenu name="КППКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="КППРасширеннаяПодсказка" id="60"/>
+				</InputField>
+				<InputField name="ИНН" id="61">
+					<DataPath>ИНН</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>25</MaxWidth>
+					<ContextMenu name="ИННКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="63"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Владелец" id="64">
+			<DataPath>Владелец</DataPath>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="65"/>
+			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="66"/>
+		</InputField>
+		<InputField name="Комментарий" id="67">
+			<DataPath>Комментарий</DataPath>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="68"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="69"/>
+		</InputField>
+		<UsualGroup name="ГруппаАдрес" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>web:OrangeRed</TitleTextColor>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа адрес</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Collapsible</Behavior>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаАдресРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="Адрес" id="53">
+					<DataPath>Адрес</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="АдресКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<UsualGroup name="ГруппаАдресПервыйБлок" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа адрес первый блок</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа адрес первый блок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаАдресПервыйБлокРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<InputField name="АдресКодРегиона" id="5">
+							<DataPath>АдресКодРегиона</DataPath>
+							<ContextMenu name="АдресКодРегионаКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="АдресКодРегионаРасширеннаяПодсказка" id="7"/>
+							<Events>
+								<Event name="OnChange">ЭлементАдресаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="АдресИндекс" id="8">
+							<DataPath>АдресИндекс</DataPath>
+							<ContextMenu name="АдресИндексКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="АдресИндексРасширеннаяПодсказка" id="10"/>
+							<Events>
+								<Event name="OnChange">ЭлементАдресаПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="АдресГород" id="11">
+					<DataPath>АдресГород</DataPath>
+					<ContextMenu name="АдресГородКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="АдресГородРасширеннаяПодсказка" id="13"/>
+					<Events>
+						<Event name="OnChange">ЭлементАдресаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="АдресНаселенныйПункт" id="79">
+					<DataPath>АдресНаселенныйПункт</DataPath>
+					<ContextMenu name="АдресНаселенныйПунктКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="АдресНаселенныйПунктРасширеннаяПодсказка" id="81"/>
+					<Events>
+						<Event name="OnChange">ЭлементАдресаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="АдресРайон" id="82">
+					<DataPath>АдресРайон</DataPath>
+					<ContextMenu name="АдресРайонКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="АдресРайонРасширеннаяПодсказка" id="84"/>
+					<Events>
+						<Event name="OnChange">ЭлементАдресаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="АдресУлица" id="20">
+					<DataPath>АдресУлица</DataPath>
+					<ContextMenu name="АдресУлицаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="АдресУлицаРасширеннаяПодсказка" id="22"/>
+					<Events>
+						<Event name="OnChange">ЭлементАдресаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<UsualGroup name="ГруппаАдресВторойБлок" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа адрес второй блок</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа адрес второй блок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаАдресВторойБлокРасширеннаяПодсказка" id="24"/>
+					<ChildItems>
+						<InputField name="АдресДом" id="25">
+							<DataPath>АдресДом</DataPath>
+							<ContextMenu name="АдресДомКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="АдресДомРасширеннаяПодсказка" id="27"/>
+							<Events>
+								<Event name="OnChange">ЭлементАдресаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="АдресКорпус" id="28">
+							<DataPath>АдресКорпус</DataPath>
+							<ContextMenu name="АдресКорпусКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="АдресКорпусРасширеннаяПодсказка" id="30"/>
+							<Events>
+								<Event name="OnChange">ЭлементАдресаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="АдресКвартира" id="31">
+							<DataPath>АдресКвартира</DataPath>
+							<ContextMenu name="АдресКвартираКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="АдресКвартираРасширеннаяПодсказка" id="33"/>
+							<Events>
+								<Event name="OnChange">ЭлементАдресаПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаАдресТретийБлок" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа адрес третий блок</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа адрес первый блок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаАдресТретийБлокРасширеннаяПодсказка" id="35"/>
+					<ChildItems>
+						<InputField name="АдресИностранный" id="39">
+							<DataPath>АдресИностранный</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Иностранный адрес</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="АдресИностранныйКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="АдресИностранныйРасширеннаяПодсказка" id="41"/>
+						</InputField>
+						<CheckBoxField name="АдресЕстьИностранный" id="36">
+							<DataPath>АдресЕстьИностранный</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес является иностранным</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="АдресЕстьИностранныйКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="АдресЕстьИностранныйРасширеннаяПодсказка" id="38"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЭКОМ_Интеграция_EDI_ЮЗД</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="АдресГород" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Город</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресДом" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дом</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресЕстьИностранный" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес иностранный</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресИндекс" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Индекс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресИностранный" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес иностранный</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>250</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресКвартира" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Квартира</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресКодРегиона" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код региона</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>3</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресКорпус" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корпус</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресУлица" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Улица</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="GLN" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>GLN</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТочкаДоставки" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Точка доставки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="Наименование" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Адрес" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес для ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>250</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КПП" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>КПП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>9</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИНН" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ИНН</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>15</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Владелец" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация/Контрагент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Комментарий" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Копирование" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Копирование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресНаселенныйПункт" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Населенный пункт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресРайон" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Район</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьИзВебПлатформы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить из веб платформы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить из веб платформы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьИзВебПлатформы</Action>
+		</Command>
+		<Command name="Сохранить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сохранить</Action>
+		</Command>
+	</Commands>
+</Form>

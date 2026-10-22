@@ -1,0 +1,2613 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Синхронизация квитанций с платформой</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата счет-фактуры</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>web:DodgerBlue</TitleTextColor>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="55"/>
+			<ChildItems>
+				<InputField name="ДатаНачала" id="51">
+					<DataPath>ДатаНачала</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>с</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="53"/>
+					<Events>
+						<Event name="OnChange">ДатаНачалаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ДатаКонец" id="48">
+					<DataPath>ДатаКонец</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>по</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДатаКонецКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ДатаКонецРасширеннаяПодсказка" id="50"/>
+					<Events>
+						<Event name="OnChange">ДатаКонецПриИзменении</Event>
+					</Events>
+				</InputField>
+				<Button name="КомандаВыбратьПериод" id="588">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.КомандаВыбратьПериод</CommandName>
+					<ExtendedTooltip name="КомандаВыбратьПериодРасширеннаяПодсказка" id="589"/>
+				</Button>
+				<InputField name="ПрофильОбменаНаФорме" id="590">
+					<DataPath>ПрофильОбменаНаФорме</DataPath>
+					<ContextMenu name="ПрофильОбменаНаФормеКонтекстноеМеню" id="591"/>
+					<ExtendedTooltip name="ПрофильОбменаНаФормеРасширеннаяПодсказка" id="592"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницы" id="203">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="204"/>
+			<Events>
+				<Event name="OnCurrentPageChange">ГруппаСтраницыПриСменеСтраницы</Event>
+			</Events>
+			<ChildItems>
+				<Page name="ГруппаКвитанции" id="325">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Квитанции по которым не найден документ основания</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа квитанции</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаКвитанцииРасширеннаяПодсказка" id="326"/>
+					<ChildItems>
+						<Table name="ТаблицаОшибочныеКвитанции" id="327">
+							<Representation>List</Representation>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаОшибочныеКвитанции</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаОшибочныеКвитанцииКонтекстноеМеню" id="328"/>
+							<AutoCommandBar name="ТаблицаОшибочныеКвитанцииКоманднаяПанель" id="329">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ТаблицаОшибочныеКвитанцииВыделитьВсе" id="559">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.ТаблицаОшибочныеКвитанции.StandardCommand.SelectAll</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.ЭКОМ_ОтметитьВсе</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+										<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииВыделитьВсеРасширеннаяПодсказка" id="560"/>
+									</Button>
+									<Button name="ТаблицаОшибочныеКвитанцииОткрытьОтбор" id="542">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОткрытьОтбор</CommandName>
+										<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииОткрытьОтборРасширеннаяПодсказка" id="543"/>
+									</Button>
+									<Button name="ТаблицаОшибочныеКвитанцииОтключитьОтбор" id="567">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОтключитьОтбор</CommandName>
+										<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииОтключитьОтборРасширеннаяПодсказка" id="568"/>
+									</Button>
+									<Button name="ТаблицаОшибочныеКвитанцииЗаполнитьКвитанции" id="372">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Заполнить</CommandName>
+										<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииЗаполнитьКвитанцииРасширеннаяПодсказка" id="373"/>
+									</Button>
+									<Button name="ТаблицаОшибочныеКвитанцииПоказатьМножественноеВыделение" id="561">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ТаблицаОшибочныеКвитанции.StandardCommand.ShowMultipleSelection</CommandName>
+										<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииПоказатьМножественноеВыделениеРасширеннаяПодсказка" id="562"/>
+									</Button>
+									<Button name="ТаблицаОшибочныеКвитанцииПроверкаКвитанцииНаПлатформе" id="572">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПроверкаКвитанцииНаПлатформе</CommandName>
+										<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииПроверкаКвитанцииНаПлатформеРасширеннаяПодсказка" id="573"/>
+									</Button>
+									<Button name="ТаблицаОшибочныеКвитанцииНайтиПовторноДокументОснования" id="574">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.НайтиПовторноДокументОснования</CommandName>
+										<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииНайтиПовторноДокументОснованияРасширеннаяПодсказка" id="575"/>
+									</Button>
+									<Button name="ТаблицаОшибочныеКвитанцииСортироватьСписокПоУбыванию" id="578">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.ТаблицаОшибочныеКвитанции.StandardCommand.SortListDesc</CommandName>
+										<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+										<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="579"/>
+									</Button>
+									<Button name="ТаблицаОшибочныеКвитанцииСортироватьСписокПоВозрастанию" id="576">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.ТаблицаОшибочныеКвитанции.StandardCommand.SortListAsc</CommandName>
+										<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+										<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="577"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииРасширеннаяПодсказка" id="330"/>
+							<SearchStringAddition name="ТаблицаОшибочныеКвитанцииСтрокаПоиска" id="331">
+								<AdditionSource>
+									<Item>ТаблицаОшибочныеКвитанции</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаОшибочныеКвитанцииСтрокаПоискаКонтекстноеМеню" id="332"/>
+								<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииСтрокаПоискаРасширеннаяПодсказка" id="333"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаОшибочныеКвитанцииСостояниеПросмотра" id="334">
+								<AdditionSource>
+									<Item>ТаблицаОшибочныеКвитанции</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаОшибочныеКвитанцииСостояниеПросмотраКонтекстноеМеню" id="335"/>
+								<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииСостояниеПросмотраРасширеннаяПодсказка" id="336"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаОшибочныеКвитанцииУправлениеПоиском" id="337">
+								<AdditionSource>
+									<Item>ТаблицаОшибочныеКвитанции</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаОшибочныеКвитанцииУправлениеПоискомКонтекстноеМеню" id="338"/>
+								<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииУправлениеПоискомРасширеннаяПодсказка" id="339"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ТаблицаОшибочныеКвитанцииВыбор</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ТаблицаОшибочныеКвитанцииДатаЗаписи" id="383">
+									<DataPath>ТаблицаОшибочныеКвитанции.ДатаЗаписи</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОшибочныеКвитанцииДатаЗаписиКонтекстноеМеню" id="384"/>
+									<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииДатаЗаписиРасширеннаяПодсказка" id="385"/>
+								</InputField>
+								<InputField name="ТаблицаОшибочныеКвитанцииВидДокумента" id="380">
+									<DataPath>ТаблицаОшибочныеКвитанции.ВидДокумента</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОшибочныеКвитанцииВидДокументаКонтекстноеМеню" id="381"/>
+									<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииВидДокументаРасширеннаяПодсказка" id="382"/>
+								</InputField>
+								<InputField name="ТаблицаОшибочныеКвитанцииИдентификатор" id="386">
+									<DataPath>ТаблицаОшибочныеКвитанции.Идентификатор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОшибочныеКвитанцииИдентификаторКонтекстноеМеню" id="387"/>
+									<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииИдентификаторРасширеннаяПодсказка" id="388"/>
+								</InputField>
+								<InputField name="ТаблицаОшибочныеКвитанцииИдентификаторОснования" id="389">
+									<DataPath>ТаблицаОшибочныеКвитанции.ИдентификаторОснования</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОшибочныеКвитанцииИдентификаторОснованияКонтекстноеМеню" id="390"/>
+									<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииИдентификаторОснованияРасширеннаяПодсказка" id="391"/>
+								</InputField>
+								<InputField name="ТаблицаОшибочныеКвитанцииТекстОшибки" id="398">
+									<DataPath>ТаблицаОшибочныеКвитанции.ТекстОшибки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОшибочныеКвитанцииТекстОшибкиКонтекстноеМеню" id="399"/>
+									<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииТекстОшибкиРасширеннаяПодсказка" id="400"/>
+								</InputField>
+								<InputField name="ТаблицаОшибочныеКвитанцииЛогСобытий" id="392">
+									<DataPath>ТаблицаОшибочныеКвитанции.ЛогСобытий</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОшибочныеКвитанцииЛогСобытийКонтекстноеМеню" id="393"/>
+									<ExtendedTooltip name="ТаблицаОшибочныеКвитанцииЛогСобытийРасширеннаяПодсказка" id="394"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПокупатель" id="205">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Покупатель</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа покупатель</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаПокупательРасширеннаяПодсказка" id="206"/>
+					<ChildItems>
+						<Table name="ТаблицаКвитанцийСеть" id="1">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаКвитанцийСеть</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаКвитанцийСетьКонтекстноеМеню" id="2"/>
+							<AutoCommandBar name="ТаблицаКвитанцийСетьКоманднаяПанель" id="3">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ВыделитьВсе" id="551">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.ТаблицаКвитанцийСеть.StandardCommand.SelectAll</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.ЭКОМ_ОтметитьВсе</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+										<ExtendedTooltip name="ВыделитьВсеРасширеннаяПодсказка" id="552"/>
+									</Button>
+									<Button name="ТаблицаКвитанцийСетьОткрытьОтбор" id="544">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОткрытьОтбор</CommandName>
+										<ExtendedTooltip name="ТаблицаКвитанцийСетьОткрытьОтборРасширеннаяПодсказка" id="545"/>
+									</Button>
+									<Button name="ОтключитьОтбор" id="563">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОтключитьОтбор</CommandName>
+										<ExtendedTooltip name="ОтключитьОтборРасширеннаяПодсказка" id="564"/>
+									</Button>
+									<Button name="ТаблицаКвитанцийПоставщикЗаполнитьСеть" id="370">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Заполнить</CommandName>
+										<ExtendedTooltip name="ТаблицаКвитанцийПоставщикЗаполнитьСетьРасширеннаяПодсказка" id="371"/>
+									</Button>
+									<Popup name="ФормаГруппаОбмен" id="151" DisplayImportance="VeryHigh">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Обмен</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Форма группа обмен</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Picture>
+											<xr:Ref>CommonPicture.ЭКОМ_Обновление</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<Representation>PictureAndText</Representation>
+										<ExtendedTooltip name="ФормаГруппаОбменРасширеннаяПодсказка" id="152"/>
+										<ChildItems>
+											<Button name="ФормаОбменКвитанциямиDP_PDOTPR_03" id="153">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОбменКвитанциямиDP_PDOTPR_03</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ФормаОбменКвитанциямиDP_PDOTPR_03РасширеннаяПодсказка" id="154"/>
+											</Button>
+											<Button name="ФормаОбменКвитанциямиDP_IZVPOL_05" id="155">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОбменКвитанциямиDP_IZVPOL_05</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ФормаОбменКвитанциямиDP_IZVPOL_05РасширеннаяПодсказка" id="156"/>
+											</Button>
+											<Button name="ФормаОбменКвитанциямиDP_IZVPOL_06" id="159">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОбменКвитанциямиDP_IZVPOL_06</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ФормаОбменКвитанциямиDP_IZVPOL_06РасширеннаяПодсказка" id="160"/>
+											</Button>
+											<Button name="ФормаОбменКвитанциямиDP_PDOTPR_07" id="157">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОбменКвитанциямиDP_PDOTPR_07</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ФормаОбменКвитанциямиDP_PDOTPR_07РасширеннаяПодсказка" id="158"/>
+											</Button>
+											<Button name="ФормаОбменКвитанциямиDP_IZVPOL_08" id="161">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОбменКвитанциямиDP_IZVPOL_08</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ФормаОбменКвитанциямиDP_IZVPOL_08РасширеннаяПодсказка" id="162"/>
+											</Button>
+											<Button name="ФормаОбменКвитанциямиDP_UVUTOCH_09" id="163">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОбменКвитанциямиDP_UVUTOCH_09</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ФормаОбменКвитанциямиDP_UVUTOCH_09РасширеннаяПодсказка" id="164"/>
+											</Button>
+											<Button name="ФормаОбменКвитанциямиDP_IZVPOL_10" id="165">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОбменКвитанциямиDP_IZVPOL_10</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ФормаОбменКвитанциямиDP_IZVPOL_10РасширеннаяПодсказка" id="166"/>
+											</Button>
+											<Button name="ФормаОбменКвитанциямиПодпись" id="167">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОбменКвитанциямиПодпись</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ФормаОбменКвитанциямиПодписьРасширеннаяПодсказка" id="168"/>
+											</Button>
+											<Button name="ФормаПолучитьНеобработанныеСобытия" id="118">
+												<Type>CommandBarButton</Type>
+												<Enabled>false</Enabled>
+												<CommandName>Form.Command.ПолучитьНеобработанныеСобытия</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ФормаПолучитьНеобработанныеСобытияРасширеннаяПодсказка" id="119"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+									<Button name="ТаблицаКвитанцийПоставщикОбновитьСтатусыСеть" id="368">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОбновитьСтатусы</CommandName>
+										<ExtendedTooltip name="ТаблицаКвитанцийПоставщикОбновитьСтатусыСетьРасширеннаяПодсказка" id="369"/>
+									</Button>
+									<Button name="ТаблицаКвитанцийСетьПоказатьМножественноеВыделение" id="557">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ТаблицаКвитанцийСеть.StandardCommand.ShowMultipleSelection</CommandName>
+										<ExtendedTooltip name="ТаблицаКвитанцийСетьПоказатьМножественноеВыделениеРасширеннаяПодсказка" id="558"/>
+									</Button>
+									<Button name="ТаблицаКвитанцийСетьСортироватьСписокПоУбыванию" id="582">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.ТаблицаКвитанцийСеть.StandardCommand.SortListDesc</CommandName>
+										<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+										<ExtendedTooltip name="ТаблицаКвитанцийСетьСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="583"/>
+									</Button>
+									<Button name="ТаблицаКвитанцийСетьСортироватьСписокПоВозрастанию" id="580">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.ТаблицаКвитанцийСеть.StandardCommand.SortListAsc</CommandName>
+										<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+										<ExtendedTooltip name="ТаблицаКвитанцийСетьСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="581"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаКвитанцийСетьРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="ТаблицаКвитанцийСетьСтрокаПоиска" id="5" DisplayImportance="VeryHigh">
+								<AdditionSource>
+									<Item>ТаблицаКвитанцийСеть</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаКвитанцийСетьСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="ТаблицаКвитанцийСетьСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаКвитанцийСетьСостояниеПросмотра" id="8" DisplayImportance="VeryHigh">
+								<AdditionSource>
+									<Item>ТаблицаКвитанцийСеть</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаКвитанцийСетьСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ТаблицаКвитанцийСетьСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаКвитанцийСетьУправлениеПоиском" id="11" DisplayImportance="VeryHigh">
+								<AdditionSource>
+									<Item>ТаблицаКвитанцийСеть</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаКвитанцийСетьУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ТаблицаКвитанцийСетьУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ТаблицаКвитанцийСетьВыбор</Event>
+							</Events>
+							<ChildItems>
+								<ColumnGroup name="ТаблицаКвитанцийСетьГруппаОбщая" id="172">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа общая</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа общая</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийСетьГруппаОбщаяРасширеннаяПодсказка" id="173"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийСетьОрганизация" id="446">
+											<DataPath>ТаблицаКвитанцийСеть.Организация</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьОрганизацияКонтекстноеМеню" id="447"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьОрганизацияРасширеннаяПодсказка" id="448"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийСетьКонтрагенты" id="470">
+											<DataPath>ТаблицаКвитанцийСеть.Контрагенты</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьКонтрагентыКонтекстноеМеню" id="471"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьКонтрагентыРасширеннаяПодсказка" id="472"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийСетьСтатусУПД" id="467">
+											<DataPath>ТаблицаКвитанцийСеть.СтатусУПД</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьСтатусУПДКонтекстноеМеню" id="468"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьСтатусУПДРасширеннаяПодсказка" id="469"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаКвитанцийСетьГруппаДок" id="195">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа док</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа док</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийСетьГруппаДокРасширеннаяПодсказка" id="196"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийСетьЭКОМ_Документ" id="416">
+											<DataPath>ТаблицаКвитанцийСеть.ЭКОМ_Документ</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьЭКОМ_ДокументКонтекстноеМеню" id="417"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьЭКОМ_ДокументРасширеннаяПодсказка" id="418"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийСетьСЧФНомер" id="473">
+											<DataPath>ТаблицаКвитанцийСеть.СЧФНомер</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьСЧФНомерКонтекстноеМеню" id="474"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьСЧФНомерРасширеннаяПодсказка" id="475"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийСетьСЧФДата" id="476">
+											<DataPath>ТаблицаКвитанцийСеть.СЧФДата</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьСЧФДатаКонтекстноеМеню" id="477"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьСЧФДатаРасширеннаяПодсказка" id="478"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаКвитанцийСетьГруппаПервичныйЮЗД" id="114">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа первичный ЮЗД</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа первичный ЮЗД</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийСетьГруппаПервичныйЮЗДРасширеннаяПодсказка" id="115"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийСетьПервичныйЮЗД" id="410">
+											<DataPath>ТаблицаКвитанцийСеть.ПервичныйЮЗД</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьПервичныйЮЗДКонтекстноеМеню" id="411"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьПервичныйЮЗДРасширеннаяПодсказка" id="412"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийСетьСтатусПервичныйЮЗД" id="428">
+											<DataPath>ТаблицаКвитанцийСеть.СтатусПервичныйЮЗД</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Статус первичного ЮЗД</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьСтатусПервичныйЮЗДКонтекстноеМеню" id="429"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьСтатусПервичныйЮЗДРасширеннаяПодсказка" id="430"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаКвитанцийСетьГруппаDP_PDOTPR_03" id="127">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа d p PDOTPR 03</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа d p PDOTPR 03</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийСетьГруппаDP_PDOTPR_03РасширеннаяПодсказка" id="128"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийСетьDP_PDOTPR_03" id="449">
+											<DataPath>ТаблицаКвитанцийСеть.DP_PDOTPR_03</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>DP_PDOTPR_03</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьDP_PDOTPR_03КонтекстноеМеню" id="450"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьDP_PDOTPR_03РасширеннаяПодсказка" id="451"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийСетьСтатусDP_PDOTPR_03" id="452">
+											<DataPath>ТаблицаКвитанцийСеть.СтатусDP_PDOTPR_03</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Статус DP_PDOTPR_03</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьСтатусDP_PDOTPR_03КонтекстноеМеню" id="453"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьСтатусDP_PDOTPR_03РасширеннаяПодсказка" id="454"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаКвитанцийСетьГруппаDP_IZVPOL_05" id="108">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа d p IZVPOL 05</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа d p IZVPOL 05</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийСетьГруппаDP_IZVPOL_05РасширеннаяПодсказка" id="109"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийСетьDP_IZVPOL_05" id="404">
+											<DataPath>ТаблицаКвитанцийСеть.DP_IZVPOL_05</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьDP_IZVPOL_05КонтекстноеМеню" id="405"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьDP_IZVPOL_05РасширеннаяПодсказка" id="406"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийСетьСтатусDP_IZVPOL_05" id="422">
+											<DataPath>ТаблицаКвитанцийСеть.СтатусDP_IZVPOL_05</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Статус DP_IZVPOL_05</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьСтатусDP_IZVPOL_05КонтекстноеМеню" id="423"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьСтатусDP_IZVPOL_05РасширеннаяПодсказка" id="424"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаКвитанцийСетьГруппаDP_IZVPOL_06" id="106">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа d p IZVPOL 06</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа d p IZVPOL 06</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийСетьГруппаDP_IZVPOL_06РасширеннаяПодсказка" id="107"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийСетьDP_IZVPOL_06" id="401">
+											<DataPath>ТаблицаКвитанцийСеть.DP_IZVPOL_06</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьDP_IZVPOL_06КонтекстноеМеню" id="402"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьDP_IZVPOL_06РасширеннаяПодсказка" id="403"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийСетьСтатусDP_IZVPOL_06" id="419">
+											<DataPath>ТаблицаКвитанцийСеть.СтатусDP_IZVPOL_06</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Статус DP_IZVPOL_06</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьСтатусDP_IZVPOL_06КонтекстноеМеню" id="420"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьСтатусDP_IZVPOL_06РасширеннаяПодсказка" id="421"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаКвитанцийСетьГруппаDP_PDOTPR_07" id="112">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа d p PDOTPR 07</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа d p PDOTPR 07</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийСетьГруппаDP_PDOTPR_07РасширеннаяПодсказка" id="113"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийСетьDP_PDOTPR_07" id="437">
+											<DataPath>ТаблицаКвитанцийСеть.DP_PDOTPR_07</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьDP_PDOTPR_07КонтекстноеМеню" id="438"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьDP_PDOTPR_07РасширеннаяПодсказка" id="439"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийСетьСтатусDP_PDOTPR_07" id="443">
+											<DataPath>ТаблицаКвитанцийСеть.СтатусDP_PDOTPR_07</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Статус DP_PDOTPR_07</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьСтатусDP_PDOTPR_07КонтекстноеМеню" id="444"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьСтатусDP_PDOTPR_07РасширеннаяПодсказка" id="445"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаКвитанцийСетьГруппаDP_IZVPOL_08" id="110">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа d p IZVPOL 08</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа d p IZVPOL 08</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийСетьГруппаDP_IZVPOL_08РасширеннаяПодсказка" id="111"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийСетьDP_IZVPOL_08" id="407">
+											<DataPath>ТаблицаКвитанцийСеть.DP_IZVPOL_08</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>DP_IZVPOL_08</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьDP_IZVPOL_08КонтекстноеМеню" id="408"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьDP_IZVPOL_08РасширеннаяПодсказка" id="409"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийСетьСтатусDP_IZVPOL_08" id="425">
+											<DataPath>ТаблицаКвитанцийСеть.СтатусDP_IZVPOL_08</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Статус DP_IZVPOL_08</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьСтатусDP_IZVPOL_08КонтекстноеМеню" id="426"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьСтатусDP_IZVPOL_08РасширеннаяПодсказка" id="427"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаКвитанцийСетьГруппаDP_UVUTOCH_09" id="143">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа d p UVUTOCH 09</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа d p UVUTOCH 09</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийСетьГруппаDP_UVUTOCH_09РасширеннаяПодсказка" id="144"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийСетьDP_UVUTOCH_09" id="455">
+											<DataPath>ТаблицаКвитанцийСеть.DP_UVUTOCH_09</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьDP_UVUTOCH_09КонтекстноеМеню" id="456"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьDP_UVUTOCH_09РасширеннаяПодсказка" id="457"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийСетьСтатусDP_UVUTOCH_09" id="458">
+											<DataPath>ТаблицаКвитанцийСеть.СтатусDP_UVUTOCH_09</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьСтатусDP_UVUTOCH_09КонтекстноеМеню" id="459"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьСтатусDP_UVUTOCH_09РасширеннаяПодсказка" id="460"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаКвитанцийСетьГруппаDP_IZVPOL_10" id="135">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа d p IZVPOL 10</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа d p IZVPOL 10</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийСетьГруппаDP_IZVPOL_10РасширеннаяПодсказка" id="136"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийСетьDP_IZVPOL_10" id="461">
+											<DataPath>ТаблицаКвитанцийСеть.DP_IZVPOL_10</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьDP_IZVPOL_10КонтекстноеМеню" id="462"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьDP_IZVPOL_10РасширеннаяПодсказка" id="463"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийСетьСтатусDP_IZVPOL_10" id="464">
+											<DataPath>ТаблицаКвитанцийСеть.СтатусDP_IZVPOL_10</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьСтатусDP_IZVPOL_10КонтекстноеМеню" id="465"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьСтатусDP_IZVPOL_10РасширеннаяПодсказка" id="466"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаКвитанцийСетьГруппаПодпись" id="116">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа подпись</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций сеть группа подпись</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийСетьГруппаПодписьРасширеннаяПодсказка" id="117"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийСетьПодпись" id="413">
+											<DataPath>ТаблицаКвитанцийСеть.Подпись</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьПодписьКонтекстноеМеню" id="414"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьПодписьРасширеннаяПодсказка" id="415"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийСетьСтатусПодпись" id="431">
+											<DataPath>ТаблицаКвитанцийСеть.СтатусПодпись</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийСетьСтатусПодписьКонтекстноеМеню" id="432"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийСетьСтатусПодписьРасширеннаяПодсказка" id="433"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ТаблицаКвитанцийСетьТекстОшибки" id="434">
+									<DataPath>ТаблицаКвитанцийСеть.ТекстОшибки</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаКвитанцийСетьТекстОшибкиКонтекстноеМеню" id="435"/>
+									<ExtendedTooltip name="ТаблицаКвитанцийСетьТекстОшибкиРасширеннаяПодсказка" id="436"/>
+								</InputField>
+								<InputField name="ТаблицаКвитанцийСетьЛогСобытий" id="548">
+									<DataPath>ТаблицаКвитанцийСеть.ЛогСобытий</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаКвитанцийСетьЛогСобытийКонтекстноеМеню" id="549"/>
+									<ExtendedTooltip name="ТаблицаКвитанцийСетьЛогСобытийРасширеннаяПодсказка" id="550"/>
+								</InputField>
+								<InputField name="ТаблицаКвитанцийСетьПрофильОбмена" id="593">
+									<DataPath>ТаблицаКвитанцийСеть.ПрофильОбмена</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаКвитанцийСетьПрофильОбменаКонтекстноеМеню" id="594"/>
+									<ExtendedTooltip name="ТаблицаКвитанцийСетьПрофильОбменаРасширеннаяПодсказка" id="595"/>
+								</InputField>
+								<InputField name="ТаблицаКвитанцийСетьСертификат" id="602">
+									<DataPath>ТаблицаКвитанцийСеть.Сертификат</DataPath>
+									<ContextMenu name="ТаблицаКвитанцийСетьСертификатКонтекстноеМеню" id="603"/>
+									<ExtendedTooltip name="ТаблицаКвитанцийСетьСертификатРасширеннаяПодсказка" id="604"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПоставщик" id="207">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поставщик</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа поставщик</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаПоставщикРасширеннаяПодсказка" id="208"/>
+					<ChildItems>
+						<Table name="ТаблицаКвитанцийПоставщик" id="209">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаКвитанцийПоставщик</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаКвитанцийПоставщикКонтекстноеМеню" id="210"/>
+							<AutoCommandBar name="ТаблицаКвитанцийПоставщикКоманднаяПанель" id="211">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ТаблицаКвитанцийПоставщикВыделитьВсе" id="553">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.ТаблицаКвитанцийПоставщик.StandardCommand.SelectAll</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.ЭКОМ_ОтметитьВсе</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+										<ExtendedTooltip name="ТаблицаКвитанцийПоставщикВыделитьВсеРасширеннаяПодсказка" id="554"/>
+									</Button>
+									<Button name="ТаблицаКвитанцийПоставщикОткрытьОтбор" id="546">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОткрытьОтбор</CommandName>
+										<ExtendedTooltip name="ТаблицаКвитанцийПоставщикОткрытьОтборРасширеннаяПодсказка" id="547"/>
+									</Button>
+									<Button name="ТаблицаКвитанцийПоставщикОтключитьОтбор" id="565">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОтключитьОтбор</CommandName>
+										<ExtendedTooltip name="ТаблицаКвитанцийПоставщикОтключитьОтборРасширеннаяПодсказка" id="566"/>
+									</Button>
+									<Button name="ТаблицаКвитанцийПоставщикЗаполнить" id="366">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Заполнить</CommandName>
+										<ExtendedTooltip name="ТаблицаКвитанцийПоставщикЗаполнитьРасширеннаяПодсказка" id="367"/>
+									</Button>
+									<Popup name="ТаблицаКвитанцийПоставщикГруппаОбмен" id="300">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Обмен</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Таблица квитанций поставщик группа обмен</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Picture>
+											<xr:Ref>CommonPicture.ЭКОМ_Обновление</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ТаблицаКвитанцийПоставщикГруппаОбменРасширеннаяПодсказка" id="301"/>
+										<ChildItems>
+											<Button name="ТаблицаКвитанцийПоставщикОбменКвитанциямиDP_PDPOL_02" id="307">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОбменКвитанциямиDP_PDPOL_02</CommandName>
+												<ExtendedTooltip name="ТаблицаКвитанцийПоставщикОбменКвитанциямиDP_PDPOL_02РасширеннаяПодсказка" id="308"/>
+											</Button>
+											<Button name="ТаблицаКвитанцийПоставщикОбменКвитанциямиDP_IZVPOL_04" id="305">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОбменКвитанциямиDP_IZVPOL_04</CommandName>
+												<ExtendedTooltip name="ТаблицаКвитанцийПоставщикОбменКвитанциямиDP_IZVPOL_04РасширеннаяПодсказка" id="306"/>
+											</Button>
+											<Button name="ТаблицаКвитанцийПоставщикОбменКвитанциямиDP_IZVPOL_06_Поставщик" id="309">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОбменКвитанциямиDP_IZVPOL_06_Поставщик</CommandName>
+												<ExtendedTooltip name="ТаблицаКвитанцийПоставщикОбменКвитанциямиDP_IZVPOL_06_ПоставщикРасширеннаяПодсказка" id="310"/>
+											</Button>
+											<Button name="ТаблицаКвитанцийПоставщикОбменКвитанциямиDP_UVUTOCH_09_Поставщик" id="311">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОбменКвитанциямиDP_UVUTOCH_09_Поставщик</CommandName>
+												<ExtendedTooltip name="ТаблицаКвитанцийПоставщикОбменКвитанциямиDP_UVUTOCH_09_ПоставщикРасширеннаяПодсказка" id="312"/>
+											</Button>
+											<Button name="ТаблицаКвитанцийПоставщикОбменКвитанциямиDP_IZVPOL_10_Поставщик" id="313">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОбменКвитанциямиDP_IZVPOL_10_Поставщик</CommandName>
+												<ExtendedTooltip name="ТаблицаКвитанцийПоставщикОбменКвитанциямиDP_IZVPOL_10_ПоставщикРасширеннаяПодсказка" id="314"/>
+											</Button>
+											<Button name="ТаблицаКвитанцийПоставщикОбменКвитанциямиПодпись_Поставщик" id="315">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОбменКвитанциямиПодпись_Поставщик</CommandName>
+												<ExtendedTooltip name="ТаблицаКвитанцийПоставщикОбменКвитанциямиПодпись_ПоставщикРасширеннаяПодсказка" id="316"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+									<Button name="ТаблицаКвитанцийПоставщикОбновитьСтатусы" id="364">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОбновитьСтатусы</CommandName>
+										<ExtendedTooltip name="ТаблицаКвитанцийПоставщикОбновитьСтатусыРасширеннаяПодсказка" id="365"/>
+									</Button>
+									<Button name="ТаблицаКвитанцийПоставщикПоказатьМножественноеВыделение" id="555">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ТаблицаКвитанцийПоставщик.StandardCommand.ShowMultipleSelection</CommandName>
+										<ExtendedTooltip name="ТаблицаКвитанцийПоставщикПоказатьМножественноеВыделениеРасширеннаяПодсказка" id="556"/>
+									</Button>
+									<Button name="ТаблицаКвитанцийПоставщикСортироватьСписокПоВозрастанию" id="584">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.ТаблицаКвитанцийПоставщик.StandardCommand.SortListAsc</CommandName>
+										<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+										<ExtendedTooltip name="ТаблицаКвитанцийПоставщикСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="585"/>
+									</Button>
+									<Button name="ТаблицаКвитанцийПоставщикСортироватьСписокПоУбыванию" id="586">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.ТаблицаКвитанцийПоставщик.StandardCommand.SortListDesc</CommandName>
+										<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+										<ExtendedTooltip name="ТаблицаКвитанцийПоставщикСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="587"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаКвитанцийПоставщикРасширеннаяПодсказка" id="212"/>
+							<SearchStringAddition name="ТаблицаКвитанцийПоставщикСтрокаПоиска" id="213">
+								<AdditionSource>
+									<Item>ТаблицаКвитанцийПоставщик</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаКвитанцийПоставщикСтрокаПоискаКонтекстноеМеню" id="214"/>
+								<ExtendedTooltip name="ТаблицаКвитанцийПоставщикСтрокаПоискаРасширеннаяПодсказка" id="215"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаКвитанцийПоставщикСостояниеПросмотра" id="216">
+								<AdditionSource>
+									<Item>ТаблицаКвитанцийПоставщик</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаКвитанцийПоставщикСостояниеПросмотраКонтекстноеМеню" id="217"/>
+								<ExtendedTooltip name="ТаблицаКвитанцийПоставщикСостояниеПросмотраРасширеннаяПодсказка" id="218"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаКвитанцийПоставщикУправлениеПоиском" id="219">
+								<AdditionSource>
+									<Item>ТаблицаКвитанцийПоставщик</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаКвитанцийПоставщикУправлениеПоискомКонтекстноеМеню" id="220"/>
+								<ExtendedTooltip name="ТаблицаКвитанцийПоставщикУправлениеПоискомРасширеннаяПодсказка" id="221"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ТаблицаКвитанцийПоставщикВыбор</Event>
+								<Event name="97365900-eadf-4dfd-a9aa-fbb9ecabd079">ТаблицаКвитанцийПоставщикПриПолученииДанныхНаСервере</Event>
+							</Events>
+							<ChildItems>
+								<ColumnGroup name="ТаблицаКвитанцийПоставщикГруппаОбщая" id="264">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций поставщик группа общая</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций поставщик группа общая</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийПоставщикГруппаОбщаяРасширеннаяПодсказка" id="265"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийПоставщикОрганизация" id="515">
+											<DataPath>ТаблицаКвитанцийПоставщик.Организация</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикОрганизацияКонтекстноеМеню" id="516"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикОрганизацияРасширеннаяПодсказка" id="517"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийПоставщикКонтрагенты" id="506">
+											<DataPath>ТаблицаКвитанцийПоставщик.Контрагенты</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикКонтрагентыКонтекстноеМеню" id="507"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикКонтрагентыРасширеннаяПодсказка" id="508"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийПоставщикСтатусУПД" id="503">
+											<DataPath>ТаблицаКвитанцийПоставщик.СтатусУПД</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикСтатусУПДКонтекстноеМеню" id="504"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикСтатусУПДРасширеннаяПодсказка" id="505"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаКвитанцийПоставщикГруппаДок" id="266">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций поставщик группа док</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций поставщик группа док</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийПоставщикГруппаДокРасширеннаяПодсказка" id="267"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийПоставщикДокументСЧФ" id="518">
+											<DataPath>ТаблицаКвитанцийПоставщик.ДокументСЧФ</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикДокументСЧФКонтекстноеМеню" id="519"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикДокументСЧФРасширеннаяПодсказка" id="520"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийПоставщикСЧФНомер" id="509">
+											<DataPath>ТаблицаКвитанцийПоставщик.СЧФНомер</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикСЧФНомерКонтекстноеМеню" id="510"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикСЧФНомерРасширеннаяПодсказка" id="511"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийПоставщикСЧФДата" id="512">
+											<DataPath>ТаблицаКвитанцийПоставщик.СЧФДата</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикСЧФДатаКонтекстноеМеню" id="513"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикСЧФДатаРасширеннаяПодсказка" id="514"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаКвитанцийПоставщикГруппаПервичныйЮЗД" id="268">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций поставщик группа первичный ЮЗД</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций поставщик группа первичный ЮЗД</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийПоставщикГруппаПервичныйЮЗДРасширеннаяПодсказка" id="269"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийПоставщикПервичныйЮЗД" id="482">
+											<DataPath>ТаблицаКвитанцийПоставщик.ПервичныйЮЗД</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикПервичныйЮЗДКонтекстноеМеню" id="483"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикПервичныйЮЗДРасширеннаяПодсказка" id="484"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийПоставщикСтатусПервичныйЮЗД" id="521">
+											<DataPath>ТаблицаКвитанцийПоставщик.СтатусПервичныйЮЗД</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикСтатусПервичныйЮЗДКонтекстноеМеню" id="522"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикСтатусПервичныйЮЗДРасширеннаяПодсказка" id="523"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаКвитанцийПоставщикГруппаDP_PDPOL_02" id="283">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций поставщик группа d p PDPOL 02</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций поставщик группа d p PDPOL 02</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийПоставщикГруппаDP_PDPOL_02РасширеннаяПодсказка" id="284"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийПоставщикDP_PDPOL_02" id="530">
+											<DataPath>ТаблицаКвитанцийПоставщик.DP_PDPOL_02</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикDP_PDPOL_02КонтекстноеМеню" id="531"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикDP_PDPOL_02РасширеннаяПодсказка" id="532"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийПоставщикСтатусDP_PDPOL_02" id="533">
+											<DataPath>ТаблицаКвитанцийПоставщик.СтатусDP_PDPOL_02</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикСтатусDP_PDPOL_02КонтекстноеМеню" id="534"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикСтатусDP_PDPOL_02РасширеннаяПодсказка" id="535"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаКвитанцийПоставщикГруппаDP_IZVPOL_04" id="289">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций поставщик группа d p IZVPOL 04</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций поставщик группа d p IZVPOL 04</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийПоставщикГруппаDP_IZVPOL_04РасширеннаяПодсказка" id="290"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийПоставщикDP_IZVPOL_04" id="479">
+											<DataPath>ТаблицаКвитанцийПоставщик.DP_IZVPOL_04</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикDP_IZVPOL_04КонтекстноеМеню" id="480"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикDP_IZVPOL_04РасширеннаяПодсказка" id="481"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийПоставщикСтатусDP_IZVPOL_04" id="536">
+											<DataPath>ТаблицаКвитанцийПоставщик.СтатусDP_IZVPOL_04</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикСтатусDP_IZVPOL_04КонтекстноеМеню" id="537"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикСтатусDP_IZVPOL_04РасширеннаяПодсказка" id="538"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаКвитанцийПоставщикГруппаDP_IZVPOL_06" id="278">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций поставщик группа d p IZVPOL 06</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций поставщик группа d p IZVPOL 06</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийПоставщикГруппаDP_IZVPOL_06РасширеннаяПодсказка" id="279"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийПоставщикDP_IZVPOL_06" id="488">
+											<DataPath>ТаблицаКвитанцийПоставщик.DP_IZVPOL_06</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикDP_IZVPOL_06КонтекстноеМеню" id="489"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикDP_IZVPOL_06РасширеннаяПодсказка" id="490"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийПоставщикСтатусDP_IZVPOL_06" id="527">
+											<DataPath>ТаблицаКвитанцийПоставщик.СтатусDP_IZVPOL_06</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикСтатусDP_IZVPOL_06КонтекстноеМеню" id="528"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикСтатусDP_IZVPOL_06РасширеннаяПодсказка" id="529"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаКвитанцийПоставщикГруппаDP_UVUTOCH_09" id="285">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций поставщик группа d p UVUTOCH 09</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций поставщик группа d p UVUTOCH 09</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийПоставщикГруппаDP_UVUTOCH_09РасширеннаяПодсказка" id="286"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийПоставщикDP_UVUTOCH_09" id="497">
+											<DataPath>ТаблицаКвитанцийПоставщик.DP_UVUTOCH_09</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикDP_UVUTOCH_09КонтекстноеМеню" id="498"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикDP_UVUTOCH_09РасширеннаяПодсказка" id="499"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийПоставщикСтатусDP_UVUTOCH_09" id="500">
+											<DataPath>ТаблицаКвитанцийПоставщик.СтатусDP_UVUTOCH_09</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикСтатусDP_UVUTOCH_09КонтекстноеМеню" id="501"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикСтатусDP_UVUTOCH_09РасширеннаяПодсказка" id="502"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаКвитанцийПоставщикГруппаDP_IZVPOL_10" id="287">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций поставщик группа d p IZVPOL 10</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций поставщик группа d p IZVPOL 10</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийПоставщикГруппаDP_IZVPOL_10РасширеннаяПодсказка" id="288"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийПоставщикDP_IZVPOL_10" id="491">
+											<DataPath>ТаблицаКвитанцийПоставщик.DP_IZVPOL_10</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикDP_IZVPOL_10КонтекстноеМеню" id="492"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикDP_IZVPOL_10РасширеннаяПодсказка" id="493"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийПоставщикСтатусDP_IZVPOL_10" id="494">
+											<DataPath>ТаблицаКвитанцийПоставщик.СтатусDP_IZVPOL_10</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикСтатусDP_IZVPOL_10КонтекстноеМеню" id="495"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикСтатусDP_IZVPOL_10РасширеннаяПодсказка" id="496"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТаблицаКвитанцийПоставщикГруппаПодпись" id="273">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций поставщик группа подпись</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица квитанций поставщик группа подпись</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ТаблицаКвитанцийПоставщикГруппаПодписьРасширеннаяПодсказка" id="274"/>
+									<ChildItems>
+										<InputField name="ТаблицаКвитанцийПоставщикПодпись" id="485">
+											<DataPath>ТаблицаКвитанцийПоставщик.Подпись</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикПодписьКонтекстноеМеню" id="486"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикПодписьРасширеннаяПодсказка" id="487"/>
+										</InputField>
+										<InputField name="ТаблицаКвитанцийПоставщикСтатусПодпись" id="524">
+											<DataPath>ТаблицаКвитанцийПоставщик.СтатусПодпись</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТаблицаКвитанцийПоставщикСтатусПодписьКонтекстноеМеню" id="525"/>
+											<ExtendedTooltip name="ТаблицаКвитанцийПоставщикСтатусПодписьРасширеннаяПодсказка" id="526"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ТаблицаКвитанцийПоставщикТекстОшибки" id="539">
+									<DataPath>ТаблицаКвитанцийПоставщик.ТекстОшибки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаКвитанцийПоставщикТекстОшибкиКонтекстноеМеню" id="540"/>
+									<ExtendedTooltip name="ТаблицаКвитанцийПоставщикТекстОшибкиРасширеннаяПодсказка" id="541"/>
+								</InputField>
+								<InputField name="ТаблицаКвитанцийПоставщикЛогСобытий" id="569">
+									<DataPath>ТаблицаКвитанцийПоставщик.ЛогСобытий</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаКвитанцийПоставщикЛогСобытийКонтекстноеМеню" id="570"/>
+									<ExtendedTooltip name="ТаблицаКвитанцийПоставщикЛогСобытийРасширеннаяПодсказка" id="571"/>
+								</InputField>
+								<InputField name="ТаблицаКвитанцийПоставщикПрофильОбмена" id="596">
+									<DataPath>ТаблицаКвитанцийПоставщик.ПрофильОбмена</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаКвитанцийПоставщикПрофильОбменаКонтекстноеМеню" id="597"/>
+									<ExtendedTooltip name="ТаблицаКвитанцийПоставщикПрофильОбменаРасширеннаяПодсказка" id="598"/>
+								</InputField>
+								<InputField name="ТаблицаКвитанцийПоставщикСертификат" id="599">
+									<DataPath>ТаблицаКвитанцийПоставщик.Сертификат</DataPath>
+									<ContextMenu name="ТаблицаКвитанцийПоставщикСертификатКонтекстноеМеню" id="600"/>
+									<ExtendedTooltip name="ТаблицаКвитанцийПоставщикСертификатРасширеннаяПодсказка" id="601"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЭКОМ_Интеграция_EDI_ЮЗД</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ДатаНачала" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата начала</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Save>
+				<Field>ДатаНачала</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ДатаКонец" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата конец</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Save>
+				<Field>ДатаКонец</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТаблицаКвитанцийПоставщик" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЗ Квитанций поставщик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="DP_IZVPOL_04" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_IZVPOL_04</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПервичныйЮЗД" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Первичный ЮЗД_01</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Подпись" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подпись_11</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="DP_IZVPOL_06" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_IZVPOL_06</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="DP_IZVPOL_10" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_IZVPOL_10</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусDP_IZVPOL_10" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус DP_IZVPOL_10</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="DP_UVUTOCH_09" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_UVUTOCH_09</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусDP_UVUTOCH_09" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус DP_UVUTOCH_09</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусУПД" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус УПД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ЭКОМ_Статусы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Контрагенты" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагенты</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СЧФНомер" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СЧФНомер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СЧФДата" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СЧФДата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Организация" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДокументСЧФ" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ СЧФ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="СтатусПервичныйЮЗД" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус первичный ЮЗД_01</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусПодпись" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус подпись_11</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусDP_IZVPOL_06" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус DP_IZVPOL_06</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="DP_PDPOL_02" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_PDPOL_02</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусDP_PDPOL_02" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус DP_PDPOL_02</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусDP_IZVPOL_04" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус DP_IZVPOL_04</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТекстОшибки" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЛогСобытий" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лог событий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПрофильОбмена" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Профиль обмена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ЭКОМ_ПрофилиОбмена</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Сертификат" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сертификат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ЭКОМ_Сертификаты</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаКвитанцийСеть" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЗ квитанций сеть</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="DP_IZVPOL_06" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_IZVPOL_06</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="DP_IZVPOL_05" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_IZVPOL_05</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="DP_IZVPOL_08" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_IZVPOL_08</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПервичныйЮЗД" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Первичный ЮЗД_01</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Подпись" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подпись_11</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭКОМ_Документ" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЭКОМ документ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЭКОМ_Документы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СтатусDP_IZVPOL_06" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус IZVPOL 06</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусDP_IZVPOL_05" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус IZVPOL 05</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусDP_IZVPOL_08" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус DP_IZVPOL_08</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусПервичныйЮЗД" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус первичный ЮЗД_01</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусПодпись" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус подпись_11</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТекстОшибки" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="DP_PDOTPR_07" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_PDOTPR_07</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусDP_PDOTPR_07" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус DP_PDOTPR_07</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Организация" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="DP_PDOTPR_03" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_PDOTPR_03</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусDP_PDOTPR_03" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус DP_PDOTPR_03</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="DP_UVUTOCH_09" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_UVUTOCH_09</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусDP_UVUTOCH_09" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус DP_UVUTOCH_09</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="DP_IZVPOL_10" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DP_IZVPOL_10</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусDP_IZVPOL_10" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус DP_IZVPOL_10</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатусУПД" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус УПД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ЭКОМ_Статусы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Контрагенты" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагенты</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СЧФНомер" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СЧФНомер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СЧФДата" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СЧФДата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЛогСобытий" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лог событий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПрофильОбмена" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Профиль обмена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ЭКОМ_ПрофилиОбмена</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Сертификат" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сертификат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ЭКОМ_Сертификаты</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаОшибочныеКвитанции" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЗ ошибочные квитанции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ВидДокумента" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ЭКОМ_ВидыДокументов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаписи" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата записи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Идентификатор" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторОснования" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор основания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЛогСобытий" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лог событий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТекстОшибки" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПолноеИмяОбработки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полное имя обработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборНаФорме" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор на форме</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПрофильОбменаНаФорме" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Профиль обмена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ЭКОМ_ПрофилиОбмена</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Заполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЭКОМ_Обновить</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Заполнить</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ОбновитьСтатусы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить статусы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить статусы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЭКОМ_РегламентныйОбмен</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьСтатусы</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПолучитьНеобработанныеСобытия" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить необработанные события</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить необработанные события</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьНеобработанныеСобытияКлиент</Action>
+		</Command>
+		<Command name="ОбменКвитанциямиDP_IZVPOL_08" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен с квитанцими DP_IZVPOL_08  (с отправкой)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен квитанциями d p IZVPOL 08</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменКвитанциямиDP_IZVPOL_08</Action>
+		</Command>
+		<Command name="ОбменКвитанциямиDP_PDOTPR_03" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен с квитанцими DP_PDOTPR_03</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен квитанциями d p IZVPOL 08</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменКвитанциямиDP_PDOTPR_03</Action>
+		</Command>
+		<Command name="ОбменКвитанциямиDP_IZVPOL_05" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен с квитанцими DP_IZVPOL_05 (с отправкой)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен квитанциями d p IZVPOL 08</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменКвитанциямиDP_IZVPOL_05</Action>
+		</Command>
+		<Command name="ОбменКвитанциямиDP_IZVPOL_06" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен с квитанцими DP_IZVPOL_06  (с отправкой)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен квитанциями d p IZVPOL 08</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменКвитанциямиDP_IZVPOL_06</Action>
+		</Command>
+		<Command name="ОбменКвитанциямиDP_PDOTPR_07" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен с квитанцими DP_PDOTPR_07</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен квитанциями d p IZVPOL 08</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменКвитанциямиDP_PDOTPR_07</Action>
+		</Command>
+		<Command name="ОбменКвитанциямиDP_UVUTOCH_09" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен с квитанцими DP_UVUTOCH_09 - проверка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен квитанциями d p IZVPOL 08</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменКвитанциямиDP_UVUTOCH_09</Action>
+		</Command>
+		<Command name="ОбменКвитанциямиDP_IZVPOL_10" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен с квитанцими DP_IZVPOL_10</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен квитанциями d p IZVPOL 08</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменКвитанциямиDP_IZVPOL_10</Action>
+		</Command>
+		<Command name="ОбменКвитанциямиПодпись" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен с квитанцими Подпись (с отправкой)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен квитанциями d p IZVPOL 08</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменКвитанциямиПодпись</Action>
+		</Command>
+		<Command name="ОбменКвитанциямиDP_IZVPOL_04" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен с квитанцими DP_IZVPOL_04  (с отправкой)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен квитанциями d p IZVPOL 08</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменКвитанциямиDP_IZVPOL_04</Action>
+		</Command>
+		<Command name="ОбменКвитанциямиDP_PDPOL_02" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен с квитанцими DP_PDPOL_02</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен квитанциями d p IZVPOL 08</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменКвитанциямиDP_PDPOL_02</Action>
+		</Command>
+		<Command name="ОбменКвитанциямиDP_IZVPOL_06_Поставщик" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен квитанциями DP_IZVPOL_06</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен квитанциями d p IZVPOL 06 поставщик</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменКвитанциямиDP_IZVPOL_06_Поставщик</Action>
+		</Command>
+		<Command name="ОбменКвитанциямиDP_UVUTOCH_09_Поставщик" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен с квитанцими DP_UVUTOCH_09</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен квитанциями d p IZVPOL 08</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменКвитанциямиDP_UVUTOCH_09_Поставщик</Action>
+		</Command>
+		<Command name="ОбменКвитанциямиDP_IZVPOL_10_Поставщик" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен с квитанцими DP_IZVPOL_10 (с отправкой)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен квитанциями d p IZVPOL 08</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменКвитанциямиDP_IZVPOL_10_Поставщик</Action>
+		</Command>
+		<Command name="ОбменКвитанциямиПодпись_Поставщик" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен с квитанцими Подпись </v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен квитанциями d p IZVPOL 08</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбменКвитанциямиПодпись_Поставщик</Action>
+		</Command>
+		<Command name="ОткрытьОтбор" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть отбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть отбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЭКОМ_НастройкиОтбора</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьОтбор</Action>
+		</Command>
+		<Command name="ОтключитьОтбор" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить отбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить отбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЭКОМ_ОчиститьОтбор</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОтключитьОтбор</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ПроверкаКвитанцииНаПлатформе" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка квитанции на платформе</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка квитанции на платформе</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЭКОМ_ПроверкаПодключения</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПроверкаКвитанцииНаПлатформе</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="НайтиПовторноДокументОснования" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти повторно документ основания 1С</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти повторно документ основания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЭКОМ_ПоказатьЛогСобытий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НайтиПовторноДокументОснования</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаВыбратьПериод" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда выбрать период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьПериод</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

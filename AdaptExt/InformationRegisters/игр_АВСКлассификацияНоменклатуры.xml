@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<InformationRegister uuid="18c26a15-d5a9-408a-a84b-edcac2b0e5ff">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.игр_АВСКлассификацияНоменклатуры" category="Record">
+				<xr:TypeId>b3a32804-0d9c-432e-be75-fc720880267c</xr:TypeId>
+				<xr:ValueId>e71e3b43-acf5-4103-9459-b37c4132b615</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.игр_АВСКлассификацияНоменклатуры" category="Manager">
+				<xr:TypeId>bb4143e3-59c2-4545-b4fa-0ed48b83e4e1</xr:TypeId>
+				<xr:ValueId>90ebb488-c23f-4207-bfc6-0cdc365fb17a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.игр_АВСКлассификацияНоменклатуры" category="Selection">
+				<xr:TypeId>2f5a012a-84c3-4e14-bef8-21abdc2d0260</xr:TypeId>
+				<xr:ValueId>c8e46872-552d-43da-af4f-4696ee96ca2f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.игр_АВСКлассификацияНоменклатуры" category="List">
+				<xr:TypeId>a857c33a-06e5-4fd4-a2e0-6c3a92432ae3</xr:TypeId>
+				<xr:ValueId>7c59c3ab-54c8-4adf-97e2-44b3d06b2ce4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.игр_АВСКлассификацияНоменклатуры" category="RecordSet">
+				<xr:TypeId>f7469ba6-2ab6-41ee-8f0f-d8edf3948ff8</xr:TypeId>
+				<xr:ValueId>34d526ce-7150-459f-b627-5f9681a9dda0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.игр_АВСКлассификацияНоменклатуры" category="RecordKey">
+				<xr:TypeId>ab7da148-d25f-4846-87f2-b04226be910c</xr:TypeId>
+				<xr:ValueId>a12cdbe9-2186-48e6-9674-7cf62d4170b5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.игр_АВСКлассификацияНоменклатуры" category="RecordManager">
+				<xr:TypeId>6604b7fc-b289-4d19-84fe-ca12e90caf1b</xr:TypeId>
+				<xr:ValueId>d35033bb-bcd5-47cc-851e-69e1f9ba677e</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>игр_АВСКлассификацияНоменклатуры</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>3c04e4ac-fc17-45f0-8d11-29e5019ecaba</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Day</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="f823499e-3d9d-481b-b1fe-894bab63451a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Класс</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>a37b7c16-1e4c-447d-a725-f4c4dd14f6ab</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="3f07aad0-9b94-4666-b25b-81010392c5b5">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>КлассПредставление</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2f1032e3-0dae-40e0-ba2d-de9cef781148</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>6</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="c9899dc2-fcef-4b25-bbff-56635575c97e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Раздел</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>92fe86cc-5fb8-4b56-beea-19b9fc5e42ca</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="06b3dc76-6538-46c5-a1e3-78bc9e31137f">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Номенклатура</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>40375ca9-4108-4f15-aab2-139f59f3eb03</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>
